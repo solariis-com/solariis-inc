@@ -19,8 +19,7 @@ const About = () => {
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{
-            backgroundImage: 'url("/lovable-uploads/e0b5f399-baa3-4f81-944b-ae7d63f25d50.png")',
-            backgroundPosition: 'center 25%'
+            backgroundImage: 'url("/lovable-uploads/98af4ef5-abb3-49be-b3b8-f7d69d917f30.png")'
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
