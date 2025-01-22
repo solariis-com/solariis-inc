@@ -11,32 +11,32 @@ export const es = {
     subtitle: "con Consumidores Venezolanos",
     description: "Conectamos marcas internacionales con el mercado venezolano, ofreciendo productos de salud y belleza de alta calidad.",
     cta: {
-      partner: "Asóciate con Nosotros",
-      learnMore: "Conoce Más"
+      partner: "Crezcamos Juntos",
+      learnMore: "Descubre las Oportunidades"
     }
   },
   about: {
     hero: {
-      title: "Llevando Bienestar y Belleza Global a Ti",
+      title: "Transformando el Futuro de la Belleza en Venezuela",
       description: "Solariis está dedicada a introducir y comercializar marcas premium de salud, bienestar y belleza en Venezuela."
     },
     whoWeAre: {
-      title: "Quiénes Somos",
+      title: "Nuestra Esencia",
       description: "Solariis es una empresa comprometida con la importación, representación y comercialización de marcas premium en las industrias de salud, bienestar y belleza. Nuestro objetivo es conectar marcas globales con el mercado venezolano, asegurando el acceso a productos innovadores de alta calidad."
     },
     mission: {
-      title: "Nuestra Misión",
+      title: "Nuestro Propósito",
       description: "En Solariis, creemos en empoderar a los consumidores con productos de bienestar y belleza confiables y de alta calidad. Nuestra misión es introducir y posicionar estratégicamente marcas internacionales, asegurando una penetración exitosa en el mercado mientras mantenemos la integridad y el valor de cada marca que representamos."
     },
     vision: {
-      title: "Nuestra Visión",
+      title: "Nuestro Horizonte",
       description: "Aspiramos a establecer a Solariis como un actor clave en la industria de la belleza y el bienestar, construyendo relaciones a largo plazo con marcas internacionales, minoristas y consumidores mientras mantenemos la excelencia y confiabilidad en la distribución."
     },
     whatWeDo: {
-      title: "Qué Hacemos",
+      title: "Cómo Creamos Valor",
       items: {
         brandRepresentation: {
-          title: "Representación de Marcas y Expansión de Mercado",
+          title: "Embajadores de Marcas Visionarias",
           description: "Actuamos como representantes oficiales de marcas internacionales de belleza y bienestar."
         },
         importDistribution: {
