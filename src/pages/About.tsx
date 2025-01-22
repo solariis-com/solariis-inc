@@ -29,17 +29,17 @@ const About = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="animate-fade-up space-y-6 py-12 md:py-16 lg:py-20">
             <h1 className="font-heading text-display text-white mb-4 px-4">
-              Bringing Global Wellness & Beauty to You
+              {t.about.hero.title}
             </h1>
             <p className="text-body-lg text-white/90 max-w-3xl mx-auto px-4">
-              Solariis is dedicated to introducing and commercializing premium health, wellbeing, and beauty brands in Venezuela.
+              {t.about.hero.description}
             </p>
             <div className="space-x-4 pt-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary-dark">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact">{t.nav.contact}</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="bg-white/10 text-white hover:bg-white/20 border-white/20">
-                <a href="#learn-more">Learn More</a>
+                <a href="#learn-more">{t.hero.cta.learnMore}</a>
               </Button>
             </div>
           </div>
@@ -49,58 +49,58 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Who We Are */}
         <section id="learn-more" className="mb-20 animate-fade-up">
-          <h2 className="font-heading text-h2 text-text mb-6">Who We Are</h2>
+          <h2 className="font-heading text-h2 text-text mb-6">{t.about.whoWeAre.title}</h2>
           <p className="text-body text-text-light">
-            Solariis is a company committed to importing, representing, and commercializing premium brands in the health, wellbeing, and beauty industries. Our goal is to bridge global brands with the Venezuelan market, ensuring access to high-quality and innovative products.
+            {t.about.whoWeAre.description}
           </p>
         </section>
 
         {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-12 mb-20">
           <section className="animate-fade-up">
-            <h2 className="font-heading text-h2 text-text mb-6">Our Mission</h2>
+            <h2 className="font-heading text-h2 text-text mb-6">{t.about.mission.title}</h2>
             <p className="text-body text-text-light">
-              At Solariis, we believe in empowering consumers with trusted, high-quality wellness and beauty products. Our mission is to strategically introduce and position international brands, ensuring successful market penetration while maintaining the integrity and value of each brand we represent.
+              {t.about.mission.description}
             </p>
           </section>
           <section className="animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            <h2 className="font-heading text-h2 text-text mb-6">Our Vision</h2>
+            <h2 className="font-heading text-h2 text-text mb-6">{t.about.vision.title}</h2>
             <p className="text-body text-text-light">
-              We aspire to establish Solariis as a key player in the beauty and wellness industry, building long-term relationships with international brands, retailers, and consumers while upholding excellence and reliability in distribution.
+              {t.about.vision.description}
             </p>
           </section>
         </div>
 
         {/* What We Do */}
         <section className="mb-20">
-          <h2 className="font-heading text-h2 text-text mb-8">What We Do</h2>
+          <h2 className="font-heading text-h2 text-text mb-8">{t.about.whatWeDo.title}</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-up">
               <Leaf className="w-12 h-12 text-primary mb-4" strokeWidth={0.75} />
-              <h3 className="font-heading text-h4 text-text mb-3">Brand Representation & Market Expansion</h3>
+              <h3 className="font-heading text-h4 text-text mb-3">{t.about.whatWeDo.items.brandRepresentation.title}</h3>
               <p className="text-body text-text-light">
-                Acting as official representatives for international beauty and wellness brands.
+                {t.about.whatWeDo.items.brandRepresentation.description}
               </p>
             </div>
             <div className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-up" style={{ animationDelay: "0.2s" }}>
               <Truck className="w-12 h-12 text-primary mb-4" strokeWidth={0.75} />
-              <h3 className="font-heading text-h4 text-text mb-3">Import & Distribution</h3>
+              <h3 className="font-heading text-h4 text-text mb-3">{t.about.whatWeDo.items.importDistribution.title}</h3>
               <p className="text-body text-text-light">
-                Bringing high-quality products to trusted retail chains, pharmacies, and e-commerce platforms.
+                {t.about.whatWeDo.items.importDistribution.description}
               </p>
             </div>
             <div className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <ShoppingBag className="w-12 h-12 text-primary mb-4" strokeWidth={0.75} />
-              <h3 className="font-heading text-h4 text-text mb-3">Marketing & Brand Awareness</h3>
+              <h3 className="font-heading text-h4 text-text mb-3">{t.about.whatWeDo.items.marketing.title}</h3>
               <p className="text-body text-text-light">
-                Developing localized strategies, digital marketing, and retail activations to position brands effectively.
+                {t.about.whatWeDo.items.marketing.description}
               </p>
             </div>
             <div className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-up" style={{ animationDelay: "0.4s" }}>
               <ShieldCheck className="w-12 h-12 text-primary mb-4" strokeWidth={0.75} />
-              <h3 className="font-heading text-h4 text-text mb-3">Regulatory & Compliance Support</h3>
+              <h3 className="font-heading text-h4 text-text mb-3">{t.about.whatWeDo.items.regulatory.title}</h3>
               <p className="text-body text-text-light">
-                Handling import logistics, legal registrations, and local market compliance for seamless brand entry.
+                {t.about.whatWeDo.items.regulatory.description}
               </p>
             </div>
           </div>
@@ -108,29 +108,12 @@ const About = () => {
 
         {/* Why Choose Solariis */}
         <section className="mb-20">
-          <h2 className="font-heading text-h2 text-text mb-8">Why Choose Solariis?</h2>
+          <h2 className="font-heading text-h2 text-text mb-8">{t.about.whyChooseUs.title}</h2>
           <p className="text-body text-text-light mb-8">
-            We are committed to building strong partnerships and ensuring that international brands succeed in the Venezuelan market.
+            {t.about.whyChooseUs.description}
           </p>
           <div className="space-y-6">
-            {[
-              {
-                title: "Strategic Retail & Distribution Network",
-                description: "Access to leading retailers, pharmacies, and online marketplaces."
-              },
-              {
-                title: "Regulatory & Compliance Expertise",
-                description: "Ensuring smooth market entry and adherence to local regulations."
-              },
-              {
-                title: "Branding & Growth Support",
-                description: "Developing tailored marketing strategies to enhance brand awareness and consumer engagement."
-              },
-              {
-                title: "Commitment to Excellence",
-                description: "Upholding high-quality standards and ethical business practices in every partnership."
-              }
-            ].map((item, index) => (
+            {t.about.whyChooseUs.items.map((item, index) => (
               <div 
                 key={index}
                 className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow animate-fade-up"
@@ -148,13 +131,13 @@ const About = () => {
 
         {/* Contact CTA */}
         <section className="text-center bg-muted p-12 rounded-2xl animate-fade-up">
-          <h2 className="font-heading text-h2 text-text mb-6">Get in Touch</h2>
+          <h2 className="font-heading text-h2 text-text mb-6">{t.about.cta.title}</h2>
           <p className="text-body text-text-light mb-8 max-w-2xl mx-auto">
-            If you are an international brand looking to enter the Venezuelan market or a retailer interested in premium beauty and wellness products, we'd love to connect.
+            {t.about.cta.description}
           </p>
-          <p className="text-body-lg text-text mb-8">Let's build something great together!</p>
+          <p className="text-body-lg text-text mb-8">{t.about.cta.subtitle}</p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary-dark">
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/contact">{t.about.cta.button}</Link>
           </Button>
         </section>
       </div>

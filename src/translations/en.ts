@@ -55,6 +55,73 @@ export const en = {
       title: "Send us a Message"
     }
   },
+  about: {
+    hero: {
+      title: "Bringing Global Wellness & Beauty to You",
+      description: "Solariis is dedicated to introducing and commercializing premium health, wellbeing, and beauty brands in Venezuela."
+    },
+    whoWeAre: {
+      title: "Who We Are",
+      description: "Solariis is a company committed to importing, representing, and commercializing premium brands in the health, wellbeing, and beauty industries. Our goal is to bridge global brands with the Venezuelan market, ensuring access to high-quality and innovative products."
+    },
+    mission: {
+      title: "Our Mission",
+      description: "At Solariis, we believe in empowering consumers with trusted, high-quality wellness and beauty products. Our mission is to strategically introduce and position international brands, ensuring successful market penetration while maintaining the integrity and value of each brand we represent."
+    },
+    vision: {
+      title: "Our Vision",
+      description: "We aspire to establish Solariis as a key player in the beauty and wellness industry, building long-term relationships with international brands, retailers, and consumers while upholding excellence and reliability in distribution."
+    },
+    whatWeDo: {
+      title: "What We Do",
+      items: {
+        brandRepresentation: {
+          title: "Brand Representation & Market Expansion",
+          description: "Acting as official representatives for international beauty and wellness brands."
+        },
+        importDistribution: {
+          title: "Import & Distribution",
+          description: "Bringing high-quality products to trusted retail chains, pharmacies, and e-commerce platforms."
+        },
+        marketing: {
+          title: "Marketing & Brand Awareness",
+          description: "Developing localized strategies, digital marketing, and retail activations to position brands effectively."
+        },
+        regulatory: {
+          title: "Regulatory & Compliance Support",
+          description: "Handling import logistics, legal registrations, and local market compliance for seamless brand entry."
+        }
+      }
+    },
+    whyChooseUs: {
+      title: "Why Choose Solariis?",
+      description: "We are committed to building strong partnerships and ensuring that international brands succeed in the Venezuelan market.",
+      items: [
+        {
+          title: "Strategic Retail & Distribution Network",
+          description: "Access to leading retailers, pharmacies, and online marketplaces."
+        },
+        {
+          title: "Regulatory & Compliance Expertise",
+          description: "Ensuring smooth market entry and adherence to local regulations."
+        },
+        {
+          title: "Branding & Growth Support",
+          description: "Developing tailored marketing strategies to enhance brand awareness and consumer engagement."
+        },
+        {
+          title: "Commitment to Excellence",
+          description: "Upholding high-quality standards and ethical business practices in every partnership."
+        }
+      ]
+    },
+    cta: {
+      title: "Get in Touch",
+      description: "If you are an international brand looking to enter the Venezuelan market or a retailer interested in premium beauty and wellness products, we'd love to connect.",
+      subtitle: "Let's build something great together!",
+      button: "Contact Us"
+    }
+  },
   categories: {
     title: "Discover Our Product Categories",
     description: "At Solariis, we bring premium health, wellness, and beauty products to market, carefully curated to meet the needs of consumers and retailers.",
