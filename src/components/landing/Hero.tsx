@@ -38,8 +38,8 @@ const Hero = () => {
 
           {/* Right Visual */}
           <div className="relative">
-            <div className="aspect-square bg-black rounded-3xl overflow-hidden p-2">
-              <div className="w-full h-full bg-black rounded-2xl flex items-center justify-center p-4">
+            <div className="aspect-square bg-black rounded-3xl overflow-hidden p-1">
+              <div className="w-full h-full bg-black rounded-2xl flex items-center justify-center p-2">
                 <img 
                   alt="Solariis Creative AI" 
                   className="w-full h-full object-cover rounded-xl shadow-2xl" 
