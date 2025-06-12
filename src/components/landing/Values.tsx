@@ -12,9 +12,15 @@ const Values = () => {
         </div>
 
         <div className="grid md:grid-cols-4 gap-8 mb-16">
-          <div className="bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative">
-            <div className="text-white font-bold text-6xl mb-4">1</div>
-            <div className="text-center">
+          <div className="bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative overflow-hidden">
+            <div 
+              className="absolute inset-0 bg-cover bg-center opacity-20"
+              style={{
+                backgroundImage: 'url("https://cdn.midjourney.com/baf373eb-cd86-4f09-9d11-42da95046e68/0_0.png")'
+              }}
+            ></div>
+            <div className="relative z-10 text-white font-bold text-6xl mb-4">1</div>
+            <div className="relative z-10 text-center">
               <div className="text-white/80 text-sm mb-2">Subscribe</div>
               <div className="text-white font-semibold text-lg">Choose a plan that fits your scale</div>
             </div>
