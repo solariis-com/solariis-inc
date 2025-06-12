@@ -1,67 +1,38 @@
 
-import { Brain, Target, TrendingUp, Palette, Zap } from "lucide-react";
-
 const Connectors = () => {
-  const connectors = [
-    {
-      icon: Brain,
-      title: "Strategist",
-      description: "Market positioning and brand strategy"
-    },
-    {
-      icon: Palette,
-      title: "Creative",
-      description: "Visual identity and design systems"
-    },
-    {
-      icon: TrendingUp,
-      title: "Market Pulse",
-      description: "Competitive intelligence and trends"
-    },
-    {
-      icon: Target,
-      title: "Design",
-      description: "UI/UX and product design"
-    },
-    {
-      icon: Zap,
-      title: "AI Ops",
-      description: "Automation and workflow optimization"
-    }
+  const features = [
+    { title: "Design board", color: "bg-yellow-400", icon: "🎨" },
+    { title: "Figma projects", color: "bg-blue-500", icon: "📐" },
+    { title: "Fast delivery", color: "bg-purple-600", icon: "⚡" },
+    { title: "Top-notch quality", color: "bg-pink-500", icon: "✨" },
+    { title: "Flexible service", color: "bg-red-500", icon: "🔄" }
   ];
 
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-accent-dark">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-16">
-          <h2 className="font-heading text-h2 text-text mb-6">
-            Meet Your Connectors
+          <h2 className="font-heading text-5xl lg:text-6xl text-text mb-8 tracking-tight">
+            It's
           </h2>
-          <p className="text-body-lg text-text-light max-w-3xl mx-auto">
-            AI agents specialized in different aspects of brand building, guided by senior human expertise.
+          <p className="text-xl text-text-light max-w-3xl mx-auto leading-relaxed">
+            Asynchronous, scalable, premium. The design team that's always on-demand when you need it, with fixed pricing. It's simply everything you need to level up your brand - no contracts, no employees.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-          {connectors.map((connector, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          {features.map((feature, index) => (
             <div 
               key={index}
-              className="bg-white p-8 rounded-lg border border-transparent hover:border-primary hover:ring-2 hover:ring-primary/20 transition-all duration-300 group"
+              className="text-center"
             >
-              <div className="text-center space-y-4">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-dark group-hover:bg-primary/10 rounded-full transition-colors duration-300">
-                  <connector.icon className="w-8 h-8 text-text group-hover:text-primary transition-colors duration-300" />
-                </div>
-                
-                <h3 className="font-heading text-h4 text-text">
-                  {connector.title}
-                </h3>
-                
-                <p className="text-body-sm text-text-light leading-relaxed">
-                  {connector.description}
-                </p>
+              <div className={`${feature.color} rounded-3xl h-32 w-full mb-4 flex items-center justify-center text-4xl`}>
+                {feature.icon}
               </div>
+              <h3 className="font-heading text-lg text-text">
+                {feature.title}
+              </h3>
             </div>
           ))}
         </div>

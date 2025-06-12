@@ -1,74 +1,62 @@
 
 const Services = () => {
-  const services = [
-    {
-      title: "Brand & Identity",
-      description: "Strategy, visual identity, and brand systems that scale with your vision.",
-      accent: "bg-primary",
-      items: ["Brand Strategy", "Visual Identity", "Design Systems", "Brand Guidelines"]
-    },
-    {
-      title: "Content & Campaigns", 
-      description: "Compelling campaigns and content that convert prospects into believers.",
-      accent: "bg-coral",
-      items: ["Campaign Strategy", "Content Creation", "Brand Messaging", "Launch Support"]
-    },
-    {
-      title: "Research & Strategy",
-      description: "Market intelligence and positioning strategy powered by AI insights.",
-      accent: "bg-teal",
-      items: ["Market Research", "Competitive Analysis", "Strategic Positioning", "User Research"]
-    },
-    {
-      title: "Product & Automation",
-      description: "Technical implementation and automation to scale your operations.",
-      accent: "bg-neutral-beige",
-      items: ["Workflow Automation", "Product Strategy", "Technical Support", "Scaling Operations"]
-    }
-  ];
-
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent-dark">
+      <div className="max-w-7xl mx-auto">
         
-        <div className="text-center mb-16">
-          <h2 className="font-heading text-h2 text-text mb-6">
-            What We Build
-          </h2>
-          <p className="text-body-lg text-text-light max-w-3xl mx-auto">
-            Modular services that grow with your business, from startup to scale.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <div 
-              key={index}
-              className="bg-white border border-accent-dark shadow-sm hover:shadow-md transition-shadow duration-300"
-            >
-              {/* Color swatch top section */}
-              <div className={`h-3 w-full ${service.accent}`}></div>
-              
-              <div className="p-8 space-y-6">
-                <h3 className="font-heading text-h3 text-text">
-                  {service.title}
-                </h3>
-                
-                <p className="text-body text-text-light leading-relaxed">
-                  {service.description}
-                </p>
-                
-                <ul className="space-y-2">
-                  {service.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-center text-body text-text-light">
-                      <div className="w-1.5 h-1.5 bg-text-light rounded-full mr-3"></div>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          <div>
+            <h2 className="font-heading text-5xl lg:text-6xl text-text mb-6 tracking-tight">
+              "Designjoy shows that they know the art of subtlety."
+            </h2>
+          </div>
+          <div>
+            <h2 className="font-heading text-5xl lg:text-6xl text-text mb-6 tracking-tight">
+              "Design is everything, and these guys have nailed it."
+            </h2>
+            <div className="flex items-center mt-8">
+              <img 
+                src="/lovable-uploads/2402b619-b4b5-464a-b073-a3f87599ae58.png" 
+                alt="Client"
+                className="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <div className="font-semibold text-text">Josh Wardle</div>
+                <div className="text-text-light">Creator of Wordle</div>
               </div>
             </div>
-          ))}
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="bg-gradient-to-br from-green-400 to-blue-500 rounded-3xl aspect-square p-6 flex flex-col justify-between">
+            <div className="text-white/80 text-sm">Apps</div>
+            <div className="text-white font-semibold">iOS & Android apps</div>
+          </div>
+          
+          <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl aspect-square p-6 flex flex-col justify-between">
+            <div className="text-white/80 text-sm">Dashboard</div>
+            <div className="text-white font-semibold">Web applications</div>
+          </div>
+          
+          <div className="bg-gradient-to-br from-pink-500 to-red-500 rounded-3xl aspect-square p-6 flex flex-col justify-between">
+            <div className="text-white/80 text-sm">Websites</div>
+            <div className="text-white font-semibold">Landing pages & sites</div>
+          </div>
+          
+          <div className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-3xl aspect-square p-6 flex flex-col justify-between">
+            <div className="text-white/80 text-sm">Brands</div>
+            <div className="text-white font-semibold">Logos & brand identity</div>
+          </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <p className="text-text-light">Recent work</p>
+          <div className="flex justify-center space-x-4 mt-4">
+            <div className="w-8 h-8 bg-primary rounded"></div>
+            <div className="w-8 h-8 bg-coral rounded"></div>
+            <div className="w-8 h-8 bg-teal rounded"></div>
+          </div>
         </div>
       </div>
     </section>

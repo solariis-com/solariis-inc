@@ -1,51 +1,59 @@
 
 const Portfolio = () => {
-  const portfolioItems = [
-    {
-      image: "/lovable-uploads/7acb4e9d-c852-4bb5-afa9-9e91be10a7c0.png",
-      alt: "Brand Identity System"
-    },
-    {
-      image: "/lovable-uploads/98af4ef5-abb3-49be-b3b8-f7d69d917f30.png", 
-      alt: "Strategic Framework"
-    },
-    {
-      image: "/lovable-uploads/432c0ff8-3f4f-4199-a36a-8d63f851bd8a.png",
-      alt: "Campaign Assets"
-    },
-    {
-      image: "/lovable-uploads/bc578a58-dea8-4c91-9ac8-423c5d6b3ca4.png",
-      alt: "Product Integration"
-    }
-  ];
-
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-accent-dark">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-16">
-          <h2 className="font-heading text-h2 text-text mb-6">
-            Recent Work
+          <h2 className="font-heading text-5xl lg:text-6xl text-text mb-8 tracking-tight">
+            One subscription,
           </h2>
-          <p className="text-body-lg text-text-light">
-            Brands we've brought to life with AI-enhanced creativity.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {portfolioItems.map((item, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="bg-white border border-accent-dark hover:shadow-lg transition-shadow duration-300">
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={`${item.image}?auto=format&fit=crop&w=400&q=80`}
-                    alt={item.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </div>
+        <div className="max-w-md mx-auto bg-text rounded-3xl p-8 text-white text-center">
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-2">Monthly Club</h3>
+            <div className="text-4xl font-bold mb-2">$4,995<span className="text-lg font-normal">/m</span></div>
+          </div>
+          
+          <div className="space-y-3 text-left mb-8 text-sm">
+            <div className="flex justify-between">
+              <span>One request at a time</span>
             </div>
-          ))}
+            <div className="flex justify-between">
+              <span>Average 48 hour delivery</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Unlimited brands</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Unlimited users</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Design board</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Unlimited revisions</span>
+            </div>
+            <div className="flex justify-between">
+              <span>Pause anytime</span>
+            </div>
+          </div>
+
+          <button className="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+            Get started
+          </button>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 mt-16 text-center">
+          <div>
+            <h4 className="font-semibold text-text mb-2">Pause anytime</h4>
+            <p className="text-text-light text-sm">Billing pauses and you won't be charged when paused.</p>
+          </div>
+          <div>
+            <h4 className="font-semibold text-text mb-2">Try it for a week</h4>
+            <p className="text-text-light text-sm">Not happy? We'll refund your money, no questions asked.</p>
+          </div>
         </div>
       </div>
     </section>
