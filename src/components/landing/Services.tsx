@@ -54,7 +54,7 @@ const Services = () => {
           
           <Link to="/categories" className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden">
             <div className="absolute inset-0 opacity-20">
-              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=400&fit=crop&crop=center" alt="Product & Automation" className="w-full h-full object-cover" />
+              <img alt="Product & Automation" className="w-full h-full object-cover" src="https://cdn.midjourney.com/184f8d3b-da4e-4fe4-83ed-b2bacda08af8/0_3.png" />
             </div>
             <div className="relative z-10">
               <div className="text-white/80 text-sm">Systems</div>
