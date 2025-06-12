@@ -1,15 +1,16 @@
+
 export const en = {
   nav: {
     home: "Home",
     about: "About",
-    products: "Categories",
+    products: "What We Offer",
     contact: "Contact",
     partnerWithUs: "Partner With Us"
   },
   hero: {
-    title: "Connecting Beauty and Wellness Brands",
-    subtitle: "with Venezuelan Consumers",
-    description: "We connect international brands with the Venezuelan market, offering high-quality health and beauty products.",
+    title: "Live Radiantly.",
+    subtitle: "Create Intelligently.",
+    description: "Solariis blends AI precision with human creativity to deliver fast, high-quality brand, content, and design services through our network of GPT-powered creative agents.",
     cta: {
       partner: "Partner with Us",
       learnMore: "Learn More"
@@ -17,13 +18,13 @@ export const en = {
   },
   features: {
     forBrands: {
-      title: "For Brands",
-      description: "Looking to enter the Venezuelan market? We offer comprehensive distribution solutions and market expertise.",
+      title: "For Startups",
+      description: "Scale your brand with AI-enhanced creative services. From naming to full brand systems, we help startups build compelling identities fast.",
       link: "Learn More"
     },
     forDistributors: {
-      title: "For Distributors",
-      description: "Join our network of trusted distributors and access premium international brands.",
+      title: "For Brands",
+      description: "Elevate your brand presence with our AI-powered creative team. Strategic design, content systems, and campaign execution at scale.",
       link: "Join Our Network"
     }
   },
@@ -34,7 +35,7 @@ export const en = {
   contact: {
     hero: {
       title: "Get in Touch",
-      subtitle: "We're here to help and answer any questions you might have."
+      subtitle: "Ready to create something amazing? Let's talk about how AI-powered creativity can transform your brand."
     },
     reachUs: {
       title: "Reach Us",
@@ -57,130 +58,130 @@ export const en = {
   },
   about: {
     hero: {
-      title: "Bringing Global Wellness & Beauty to You",
-      description: "Solariis is dedicated to introducing and commercializing premium health, wellbeing, and beauty brands in Venezuela."
+      title: "Blending AI Precision with Human Creativity",
+      description: "Solariis blends AI precision with human creativity to help ideas thrive through our network of GPT-powered creative agents called 'Connectors.'"
     },
     whoWeAre: {
       title: "Who We Are",
-      description: "Solariis is a company committed to importing, representing, and commercializing premium brands in the health, wellbeing, and beauty industries. Our goal is to bridge global brands with the Venezuelan market, ensuring access to high-quality and innovative products."
+      description: "Solariis is an AI-native creative agency that operates through a network of GPT agents called 'Connectors,' each guided by real creative directors and strategists. We serve founders, strategists, and content creators who need fast, high-quality brand and design services."
     },
     mission: {
       title: "Our Mission",
-      description: "At Solariis, we believe in empowering consumers with trusted, high-quality wellness and beauty products. Our mission is to strategically introduce and position international brands, ensuring successful market penetration while maintaining the integrity and value of each brand we represent."
+      description: "To empower people and ideas through creative AI collaboration. We believe the future of creativity lies in the seamless integration of artificial intelligence and human insight, delivering exceptional results at unprecedented speed."
     },
     vision: {
       title: "Our Vision",
-      description: "We aspire to establish Solariis as a key player in the beauty and wellness industry, building long-term relationships with international brands, retailers, and consumers while upholding excellence and reliability in distribution."
+      description: "To lead a new era of brand and content creation powered by AI + humans. We envision a world where creative excellence is accessible to everyone, from ambitious startups to established brands."
     },
     whatWeDo: {
       title: "What We Do",
       items: {
         brandRepresentation: {
-          title: "Brand Representation & Market Expansion",
-          description: "Acting as official representatives for international beauty and wellness brands."
+          title: "Strategic Brand Design",
+          description: "Comprehensive brand strategy, visual identity, and positioning powered by AI insights and human creativity."
         },
         importDistribution: {
-          title: "Import & Distribution",
-          description: "Bringing high-quality products to trusted retail chains, pharmacies, and e-commerce platforms."
+          title: "AI-Optimized Campaigns",
+          description: "Data-driven campaign creation, content optimization, and performance tracking through intelligent automation."
         },
         marketing: {
-          title: "Marketing & Brand Awareness",
-          description: "Developing localized strategies, digital marketing, and retail activations to position brands effectively."
+          title: "Modular Content Systems",
+          description: "Scalable content frameworks, brand guidelines, and asset libraries designed for consistent growth."
         },
         regulatory: {
-          title: "Regulatory & Compliance Support",
-          description: "Handling import logistics, legal registrations, and local market compliance for seamless brand entry."
+          title: "Rapid Prototyping & Ideation",
+          description: "Fast concept development, design exploration, and strategic validation through AI-enhanced creative processes."
         }
       }
     },
     whyChooseUs: {
       title: "Why Choose Solariis?",
-      description: "We are committed to building strong partnerships and ensuring that international brands succeed in the Venezuelan market.",
+      description: "We combine the best of human creativity with AI efficiency to deliver exceptional creative services that scale with your ambitions.",
       items: [
         {
-          title: "Strategic Retail & Distribution Network",
-          description: "Access to leading retailers, pharmacies, and online marketplaces."
+          title: "Fast, High-Quality Creative Output",
+          description: "Our AI-enhanced workflows deliver professional results in days, not weeks, without compromising on quality."
         },
         {
-          title: "Regulatory & Compliance Expertise",
-          description: "Ensuring smooth market entry and adherence to local regulations."
+          title: "Built-in AI Superpowers",
+          description: "Our Connectors leverage advanced AI to enhance ideation, optimize content, and accelerate creative processes."
         },
         {
-          title: "Branding & Growth Support",
-          description: "Developing tailored marketing strategies to enhance brand awareness and consumer engagement."
+          title: "Human-Level Strategy & Taste",
+          description: "Every project is guided by experienced creative directors who ensure strategic alignment and aesthetic excellence."
         },
         {
-          title: "Commitment to Excellence",
-          description: "Upholding high-quality standards and ethical business practices in every partnership."
+          title: "Scalable Systems for Growth",
+          description: "We build modular creative systems that grow with your business, from startup to enterprise scale."
         }
       ]
     },
     cta: {
-      title: "Get in Touch",
-      description: "If you are an international brand looking to enter the Venezuelan market or a retailer interested in premium beauty and wellness products, we'd love to connect.",
-      subtitle: "Let's build something great together!",
+      title: "Ready to Create?",
+      description: "Whether you're a startup needing brand identity or an established company seeking creative innovation, we're here to help you create intelligently.",
+      subtitle: "Let's build something amazing together!",
       button: "Contact Us"
     }
   },
   categories: {
-    title: "Discover Our Product Categories",
-    description: "At Solariis, we bring premium health, wellness, and beauty products to market, carefully curated to meet the needs of consumers and retailers.",
-    exploreButton: "Explore our categories!",
-    sectionTitle: "Our Product Categories",
-    sectionDescription: "We specialize in importing and distributing high-quality brands in the following categories:",
+    title: "Discover Our Creative Services",
+    description: "At Solariis, we offer AI-enhanced creative services designed to help brands and startups thrive in the modern marketplace.",
+    exploreButton: "Explore our services!",
+    sectionTitle: "What We Offer",
+    sectionDescription: "We specialize in AI-powered creative services across four core areas:",
     skincare: {
-      title: "Skincare",
-      description: "Premium skincare solutions including moisturizers, serums, cleansers, and treatments.",
+      title: "Brand Strategy",
+      description: "Comprehensive brand development from positioning to visual identity, powered by AI insights.",
       items: [
-        "Moisturizers & Creams",
-        "Serums & Treatments",
-        "Cleansers & Toners",
-        "Sun Protection"
+        "Brand Positioning & Strategy",
+        "Market Research & Analysis",
+        "Competitive Intelligence",
+        "Brand Architecture"
       ]
     },
     haircare: {
-      title: "Haircare",
-      description: "Professional products for all hair types and needs.",
+      title: "Naming & Identity",
+      description: "Creative naming solutions and visual identity systems that resonate with your audience.",
       items: [
-        "Shampoos & Conditioners",
-        "Hair Masks",
-        "Oils & Serums",
-        "Styling Products"
+        "Brand Naming & Trademark",
+        "Logo & Visual Identity",
+        "Brand Guidelines",
+        "Asset Library Creation"
       ]
     },
     wellness: {
-      title: "Wellness & Self-Care",
-      description: "Holistic wellness solutions for mind, body, and soul.",
+      title: "Content & Campaigns",
+      description: "AI-optimized content creation and campaign development for maximum impact.",
       items: [
-        "Body Care",
-        "Essential Oils",
-        "Supplements",
-        "Relaxation Aids"
+        "Content Strategy & Planning",
+        "Campaign Development",
+        "Social Media Assets",
+        "Performance Optimization"
       ]
     },
     makeup: {
-      title: "Makeup & Beauty",
-      description: "Essential beauty products for a natural and flawless look.",
+      title: "Design Systems",
+      description: "Modular design frameworks that scale with your business growth.",
       items: [
-        "BB & CC Creams",
-        "Primers",
-        "Lip Care",
-        "Eye Care"
+        "Design System Architecture",
+        "Component Libraries",
+        "Style Guides",
+        "Template Creation"
       ]
     },
     whyChooseUs: {
       title: "Why Choose Solariis?",
       items: [
-        "We Guarantee Authenticity & Quality – We bring internationally recognized products of high standard.",
-        "We Support Retailers & Distributors – We provide a structured supply chain with reliable distribution.",
-        "We Comply with Local Regulations – We ensure all products meet safety and regulatory requirements.",
-        "We Expand Brand Reach – We help international brands establish a strong presence in Venezuela."
+        "We Deliver Fast, High-Quality Results – Our AI-enhanced workflows produce professional creative work in record time.",
+        "We Combine AI with Human Expertise – Our Connectors merge artificial intelligence with real creative direction and strategic thinking.",
+        "We Build Scalable Creative Systems – Our modular approach grows with your business from startup to enterprise.",
+        "We Optimize for Performance – Every creative decision is backed by data and designed for measurable impact."
       ]
     },
     partnerWithUs: {
       title: "Partner With Us",
-      description: "Whether you're a retailer, distributor, or brand looking to enter the market, we're here to collaborate. Explore our product categories and discover how we can work together.",
-      contact: "Contact us today to learn more!",
+      description: "Whether you're a startup looking to build your brand or an established company seeking creative innovation, we're here to collaborate. Explore our services and discover how AI-powered creativity can transform your business.",
+      contact: "Contact us today to start creating intelligently!",
       button: "Get in Touch"
     }
   }

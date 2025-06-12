@@ -1,3 +1,4 @@
+
 "use client"
 
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -14,6 +15,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { useToast } from "@/hooks/use-toast"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { InlineWidget } from "react-calendly"
@@ -27,8 +29,8 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
-  subject: z.string().min(5, {
-    message: "Subject must be at least 5 characters.",
+  subject: z.string().min(1, {
+    message: "Please select a subject.",
   }),
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
@@ -147,9 +149,20 @@ export function ContactForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Subject</FormLabel>
-                  <FormControl>
-                    <Input placeholder="What is this regarding?" {...field} />
-                  </FormControl>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select the type of inquiry" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      <SelectItem value="brand-partnership">Brand Partnership Inquiry</SelectItem>
+                      <SelectItem value="campaign-content">Campaign & Content Services</SelectItem>
+                      <SelectItem value="strategy-naming">Strategy & Naming Help</SelectItem>
+                      <SelectItem value="design-systems">Design System Collaboration</SelectItem>
+                      <SelectItem value="general">General Inquiry</SelectItem>
+                    </SelectContent>
+                  </Select>
                   <FormMessage />
                 </FormItem>
               )}
@@ -162,7 +175,7 @@ export function ContactForm() {
                   <FormLabel>Message</FormLabel>
                   <FormControl>
                     <Textarea 
-                      placeholder="Your message here..." 
+                      placeholder="Tell us about your project or how we can help..." 
                       className="min-h-[150px]"
                       {...field} 
                     />

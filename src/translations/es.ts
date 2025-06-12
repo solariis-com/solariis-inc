@@ -1,96 +1,97 @@
+
 export const es = {
   nav: {
     home: "Inicio",
     about: "Nosotros",
-    products: "Categorías",
+    products: "Qué Ofrecemos",
     contact: "Contacto",
     partnerWithUs: "Asóciate con Nosotros"
   },
   hero: {
-    title: "Conectando Marcas de Belleza y Bienestar",
-    subtitle: "con Consumidores Venezolanos",
-    description: "Conectamos marcas internacionales con el mercado venezolano, ofreciendo productos de salud y belleza de alta calidad.",
+    title: "Vive Radiantemente.",
+    subtitle: "Crea Inteligentemente.",
+    description: "Solariis combina la precisión de la IA con la creatividad humana para ofrecer servicios rápidos y de alta calidad en branding, contenido y diseño a través de nuestra red de agentes creativos potenciados por GPT.",
     cta: {
-      partner: "Crezcamos Juntos",
-      learnMore: "Descubre las Oportunidades"
+      partner: "Asóciate con Nosotros",
+      learnMore: "Descubre Más"
     }
   },
   about: {
     hero: {
-      title: "Transformando el Futuro de la Belleza en Venezuela",
-      description: "Solariis está dedicada a introducir y comercializar marcas premium de salud, bienestar y belleza en Venezuela."
+      title: "Combinando la Precisión de la IA con la Creatividad Humana",
+      description: "Solariis combina la precisión de la IA con la creatividad humana para ayudar a que las ideas prosperen a través de nuestra red de agentes creativos potenciados por GPT llamados 'Conectores.'"
     },
     whoWeAre: {
-      title: "Nuestra Esencia",
-      description: "Solariis es una empresa comprometida con la importación, representación y comercialización de marcas premium en las industrias de salud, bienestar y belleza. Nuestro objetivo es conectar marcas globales con el mercado venezolano, asegurando el acceso a productos innovadores de alta calidad."
+      title: "Quiénes Somos",
+      description: "Solariis es una agencia creativa nativa de IA que opera a través de una red de agentes GPT llamados 'Conectores', cada uno guiado por directores creativos y estrategas reales. Servimos a fundadores, estrategas y creadores de contenido que necesitan servicios rápidos y de alta calidad en branding y diseño."
     },
     mission: {
-      title: "Nuestro Propósito",
-      description: "En Solariis, creemos en empoderar a los consumidores con productos de bienestar y belleza confiables y de alta calidad. Nuestra misión es introducir y posicionar estratégicamente marcas internacionales, asegurando una penetración exitosa en el mercado mientras mantenemos la integridad y el valor de cada marca que representamos."
+      title: "Nuestra Misión",
+      description: "Empoderar a las personas e ideas a través de la colaboración creativa con IA. Creemos que el futuro de la creatividad radica en la integración perfecta de la inteligencia artificial y la perspicacia humana, entregando resultados excepcionales a una velocidad sin precedentes."
     },
     vision: {
-      title: "Nuestro Horizonte",
-      description: "Aspiramos a establecer a Solariis como un actor clave en la industria de la belleza y el bienestar, construyendo relaciones a largo plazo con marcas internacionales, minoristas y consumidores mientras mantenemos la excelencia y confiabilidad en la distribución."
+      title: "Nuestra Visión",
+      description: "Liderar una nueva era de creación de marcas y contenido potenciada por IA + humanos. Visualizamos un mundo donde la excelencia creativa es accesible para todos, desde startups ambiciosas hasta marcas establecidas."
     },
     whatWeDo: {
-      title: "Cómo Creamos Valor",
+      title: "Qué Hacemos",
       items: {
         brandRepresentation: {
-          title: "Embajadores de Marcas Visionarias",
-          description: "Actuamos como representantes oficiales de marcas internacionales de belleza y bienestar."
+          title: "Diseño Estratégico de Marca",
+          description: "Estrategia integral de marca, identidad visual y posicionamiento potenciado por insights de IA y creatividad humana."
         },
         importDistribution: {
-          title: "Importación y Distribución",
-          description: "Llevamos productos de alta calidad a cadenas minoristas confiables, farmacias y plataformas de comercio electrónico."
+          title: "Campañas Optimizadas por IA",
+          description: "Creación de campañas basadas en datos, optimización de contenido y seguimiento de rendimiento a través de automatización inteligente."
         },
         marketing: {
-          title: "Marketing y Reconocimiento de Marca",
-          description: "Desarrollamos estrategias localizadas, marketing digital y activaciones minoristas para posicionar marcas efectivamente."
+          title: "Sistemas de Contenido Modular",
+          description: "Marcos de contenido escalables, guías de marca y bibliotecas de activos diseñados para un crecimiento consistente."
         },
         regulatory: {
-          title: "Soporte Regulatorio y de Cumplimiento",
-          description: "Gestionamos la logística de importación, registros legales y cumplimiento del mercado local para una entrada de marca sin problemas."
+          title: "Prototipado Rápido e Ideación",
+          description: "Desarrollo rápido de conceptos, exploración de diseño y validación estratégica a través de procesos creativos mejorados por IA."
         }
       }
     },
     whyChooseUs: {
       title: "¿Por Qué Elegir Solariis?",
-      description: "Estamos comprometidos con la construcción de alianzas sólidas y asegurando que las marcas internacionales tengan éxito en el mercado venezolano.",
+      description: "Combinamos lo mejor de la creatividad humana con la eficiencia de la IA para entregar servicios creativos excepcionales que escalan con tus ambiciones.",
       items: [
         {
-          title: "Red Estratégica de Retail y Distribución",
-          description: "Acceso a minoristas líderes, farmacias y mercados en línea."
+          title: "Producción Creativa Rápida y de Alta Calidad",
+          description: "Nuestros flujos de trabajo mejorados por IA entregan resultados profesionales en días, no semanas, sin comprometer la calidad."
         },
         {
-          title: "Experiencia Regulatoria y de Cumplimiento",
-          description: "Asegurando una entrada suave al mercado y adherencia a las regulaciones locales."
+          title: "Superpoderes de IA Integrados",
+          description: "Nuestros Conectores aprovechan IA avanzada para mejorar la ideación, optimizar contenido y acelerar procesos creativos."
         },
         {
-          title: "Soporte de Marca y Crecimiento",
-          description: "Desarrollando estrategias de marketing personalizadas para mejorar el reconocimiento de marca y el compromiso del consumidor."
+          title: "Estrategia y Gusto de Nivel Humano",
+          description: "Cada proyecto es guiado por directores creativos experimentados que aseguran alineación estratégica y excelencia estética."
         },
         {
-          title: "Compromiso con la Excelencia",
-          description: "Manteniendo altos estándares de calidad y prácticas comerciales éticas en cada asociación."
+          title: "Sistemas Escalables para el Crecimiento",
+          description: "Construimos sistemas creativos modulares que crecen con tu negocio, desde startup hasta escala empresarial."
         }
       ]
     },
     cta: {
-      title: "Contáctanos",
-      description: "Si eres una marca internacional que busca ingresar al mercado venezolano o un minorista interesado en productos premium de belleza y bienestar, nos encantaría conectar.",
-      subtitle: "¡Construyamos algo grandioso juntos!",
+      title: "¿Listo para Crear?",
+      description: "Ya seas una startup que necesita identidad de marca o una empresa establecida que busca innovación creativa, estamos aquí para ayudarte a crear inteligentemente.",
+      subtitle: "¡Construyamos algo increíble juntos!",
       button: "Contáctanos"
     }
   },
   features: {
     forBrands: {
-      title: "Para Marcas",
-      description: "¿Buscas entrar al mercado venezolano? Ofrecemos soluciones integrales de distribución y experiencia en el mercado.",
+      title: "Para Startups",
+      description: "Escala tu marca con servicios creativos mejorados por IA. Desde naming hasta sistemas completos de marca, ayudamos a startups a construir identidades convincentes rápidamente.",
       link: "Conoce Más"
     },
     forDistributors: {
-      title: "Para Distribuidores",
-      description: "Únete a nuestra red de distribuidores confiables y accede a marcas internacionales premium.",
+      title: "Para Marcas",
+      description: "Eleva la presencia de tu marca con nuestro equipo creativo potenciado por IA. Diseño estratégico, sistemas de contenido y ejecución de campañas a escala.",
       link: "Únete a Nuestra Red"
     }
   },
@@ -101,7 +102,7 @@ export const es = {
   contact: {
     hero: {
       title: "Ponte en Contacto",
-      subtitle: "Estamos aquí para ayudar y responder cualquier pregunta que puedas tener."
+      subtitle: "¿Listo para crear algo increíble? Hablemos sobre cómo la creatividad potenciada por IA puede transformar tu marca."
     },
     reachUs: {
       title: "Encuéntranos",
@@ -123,64 +124,64 @@ export const es = {
     }
   },
   categories: {
-    title: "Descubre Nuestras Categorías de Productos",
-    description: "En Solariis, traemos productos premium de salud, bienestar y belleza al mercado, cuidadosamente seleccionados para satisfacer las necesidades de consumidores y minoristas.",
-    exploreButton: "¡Explora nuestras categorías!",
-    sectionTitle: "Nuestras Categorías de Productos",
-    sectionDescription: "Nos especializamos en la importación y distribución de marcas de alta calidad en las siguientes categorías:",
+    title: "Descubre Nuestros Servicios Creativos",
+    description: "En Solariis, ofrecemos servicios creativos mejorados por IA diseñados para ayudar a marcas y startups a prosperar en el mercado moderno.",
+    exploreButton: "¡Explora nuestros servicios!",
+    sectionTitle: "Qué Ofrecemos",
+    sectionDescription: "Nos especializamos en servicios creativos potenciados por IA en cuatro áreas principales:",
     skincare: {
-      title: "Cuidado de la Piel",
-      description: "Soluciones premium para el cuidado de la piel incluyendo hidratantes, sueros, limpiadores y tratamientos.",
+      title: "Estrategia de Marca",
+      description: "Desarrollo integral de marca desde posicionamiento hasta identidad visual, potenciado por insights de IA.",
       items: [
-        "Hidratantes y Cremas",
-        "Sueros y Tratamientos",
-        "Limpiadores y Tónicos",
-        "Protección Solar"
+        "Posicionamiento y Estrategia de Marca",
+        "Investigación y Análisis de Mercado",
+        "Inteligencia Competitiva",
+        "Arquitectura de Marca"
       ]
     },
     haircare: {
-      title: "Cuidado del Cabello",
-      description: "Productos profesionales para todos los tipos y necesidades de cabello.",
+      title: "Naming e Identidad",
+      description: "Soluciones creativas de naming y sistemas de identidad visual que resuenan con tu audiencia.",
       items: [
-        "Champús y Acondicionadores",
-        "Mascarillas Capilares",
-        "Aceites y Sueros",
-        "Productos de Peinado"
+        "Naming de Marca y Registro",
+        "Logo e Identidad Visual",
+        "Guías de Marca",
+        "Creación de Biblioteca de Activos"
       ]
     },
     wellness: {
-      title: "Bienestar y Autocuidado",
-      description: "Soluciones holísticas de bienestar para mente, cuerpo y alma.",
+      title: "Contenido y Campañas",
+      description: "Creación de contenido optimizada por IA y desarrollo de campañas para máximo impacto.",
       items: [
-        "Cuidado Corporal",
-        "Aceites Esenciales",
-        "Suplementos",
-        "Ayudas para Relajación"
+        "Estrategia y Planificación de Contenido",
+        "Desarrollo de Campañas",
+        "Activos para Redes Sociales",
+        "Optimización de Rendimiento"
       ]
     },
     makeup: {
-      title: "Maquillaje y Belleza",
-      description: "Productos de belleza esenciales para un look natural e impecable.",
+      title: "Sistemas de Diseño",
+      description: "Marcos de diseño modular que escalan con el crecimiento de tu negocio.",
       items: [
-        "BB y CC Creams",
-        "Primers",
-        "Cuidado de Labios",
-        "Cuidado de Ojos"
+        "Arquitectura de Sistema de Diseño",
+        "Bibliotecas de Componentes",
+        "Guías de Estilo",
+        "Creación de Plantillas"
       ]
     },
     whyChooseUs: {
       title: "¿Por Qué Elegir Solariis?",
       items: [
-        "Garantizamos Autenticidad y Calidad – Traemos productos internacionalmente reconocidos de alto estándar.",
-        "Apoyamos a Minoristas y Distribuidores – Proporcionamos una cadena de suministro estructurada con distribución confiable.",
-        "Cumplimos con las Regulaciones Locales – Aseguramos que todos los productos cumplan con los requisitos de seguridad y regulatorios.",
-        "Expandimos el Alcance de la Marca – Ayudamos a las marcas internacionales a establecer una presencia sólida en Venezuela."
+        "Entregamos Resultados Rápidos y de Alta Calidad – Nuestros flujos de trabajo mejorados por IA producen trabajo creativo profesional en tiempo récord.",
+        "Combinamos IA con Experiencia Humana – Nuestros Conectores fusionan inteligencia artificial con dirección creativa real y pensamiento estratégico.",
+        "Construimos Sistemas Creativos Escalables – Nuestro enfoque modular crece con tu negocio desde startup hasta empresa.",
+        "Optimizamos para el Rendimiento – Cada decisión creativa está respaldada por datos y diseñada para impacto medible."
       ]
     },
     partnerWithUs: {
       title: "Asóciate con Nosotros",
-      description: "Ya seas un minorista, distribuidor o marca que busca ingresar al mercado, estamos aquí para colaborar. Explora nuestras categorías de productos y descubre cómo podemos trabajar juntos.",
-      contact: "¡Contáctanos hoy para saber más!",
+      description: "Ya seas una startup que busca construir su marca o una empresa establecida que busca innovación creativa, estamos aquí para colaborar. Explora nuestros servicios y descubre cómo la creatividad potenciada por IA puede transformar tu negocio.",
+      contact: "¡Contáctanos hoy para empezar a crear inteligentemente!",
       button: "Ponte en Contacto"
     }
   }

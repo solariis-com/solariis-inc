@@ -1,3 +1,4 @@
+
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations";
 import ProductCategory from "../ProductCategory";
@@ -13,43 +14,20 @@ const CategoryList = () => {
       imageSrc: "/lovable-uploads/7acb4e9d-c852-4bb5-afa9-9e91be10a7c0.png",
       features: [
         {
-          title: "Hydration & Anti-Aging",
-          description: "Formulated with advanced ingredients like hyaluronic acid, retinol, and peptides to deeply hydrate, improve elasticity, and reduce fine lines."
+          title: "Strategic Brand Positioning",
+          description: "AI-driven market analysis and competitive research to identify unique positioning opportunities and develop compelling brand narratives."
         },
         {
-          title: "Deep Cleansing & Purifying",
-          description: "Clay masks, exfoliators, and gentle cleansers that help remove impurities, minimize pores, and maintain balanced skin."
+          title: "Visual Identity Systems",
+          description: "Comprehensive brand identity creation including logos, color palettes, typography, and visual guidelines that scale across all touchpoints."
         },
         {
-          title: "Brightening & Even-Tone Solutions",
-          description: "Skincare infused with vitamin C, niacinamide, and botanical extracts to promote a radiant complexion and even skin tone."
+          title: "Brand Architecture & Naming",
+          description: "Strategic brand structure development and creative naming solutions backed by trademark research and linguistic analysis."
         },
         {
-          title: "Sun Protection",
-          description: "Lightweight, high-SPF sun creams offering broad-spectrum UV protection, keeping skin shielded from sun damage while maintaining hydration."
-        }
-      ]
-    },
-    {
-      title: t.wellness.title,
-      description: t.wellness.description,
-      imageSrc: "/lovable-uploads/432c0ff8-3f4f-4199-a36a-8d63f851bd8a.png",
-      features: [
-        {
-          title: "Nutritional Supplements",
-          description: "High-quality vitamins, minerals, and herbal supplements to support immune health, energy, and overall well-being."
-        },
-        {
-          title: "Stress Relief & Relaxation",
-          description: "Aromatherapy, essential oils, and self-care products designed to promote relaxation, reduce stress, and improve sleep quality."
-        },
-        {
-          title: "Detox & Gut Health",
-          description: "Herbal blends, fiber-rich supplements, and probiotics to improve digestion, aid metabolism, and support internal cleansing."
-        },
-        {
-          title: "Muscle Recovery & Joint Health",
-          description: "Products designed for post-workout recovery, joint flexibility, and overall mobility support."
+          title: "Market Intelligence & Research",
+          description: "Data-driven insights into target audiences, market trends, and competitive landscapes to inform strategic brand decisions."
         }
       ]
     },
@@ -59,20 +37,43 @@ const CategoryList = () => {
       imageSrc: "/lovable-uploads/98af4ef5-abb3-49be-b3b8-f7d69d917f30.png",
       features: [
         {
-          title: "Hair Care & Treatments",
-          description: "Nourishing shampoos, conditioners, and intensive treatments infused with collagen, keratin, and ceramides to restore strength and shine."
+          title: "Creative Naming Solutions",
+          description: "AI-enhanced naming processes combined with human creativity to develop memorable, meaningful brand names with strong market appeal."
         },
         {
-          title: "Body Care & Hydration",
-          description: "Luxurious lotions, body scrubs, and moisturizing treatments enriched with shea butter, aloe vera, and botanical extracts to keep skin soft and smooth."
+          title: "Logo & Visual Identity Design",
+          description: "Distinctive logo creation and comprehensive visual identity systems that capture brand essence and resonate with target audiences."
         },
         {
-          title: "Oral Hygiene & Personal Care",
-          description: "Premium toothpaste, mouthwashes, and hygiene essentials to ensure a fresh, clean, and healthy routine."
+          title: "Brand Guidelines & Standards",
+          description: "Detailed brand style guides covering logo usage, color systems, typography, and application guidelines for consistent brand expression."
         },
         {
-          title: "Frizz Control & Styling",
-          description: "Leave-in treatments, styling sprays, and curl enhancers to maintain smooth, manageable hair with lasting hold."
+          title: "Asset Library Development",
+          description: "Organized collections of brand assets, templates, and resources designed for easy access and consistent brand application across teams."
+        }
+      ]
+    },
+    {
+      title: t.wellness.title,
+      description: t.wellness.description,
+      imageSrc: "/lovable-uploads/432c0ff8-3f4f-4199-a36a-8d63f851bd8a.png",
+      features: [
+        {
+          title: "Content Strategy & Planning",
+          description: "AI-optimized content calendars, messaging frameworks, and strategic content planning to maximize engagement and brand impact."
+        },
+        {
+          title: "Campaign Development & Execution",
+          description: "End-to-end campaign creation from concept to execution, leveraging AI insights for optimal messaging and creative performance."
+        },
+        {
+          title: "Social Media & Digital Assets",
+          description: "Platform-optimized content creation, social media strategies, and digital asset development for consistent brand presence online."
+        },
+        {
+          title: "Performance Optimization",
+          description: "Data-driven content optimization, A/B testing, and performance analytics to continuously improve content effectiveness and ROI."
         }
       ]
     },
@@ -82,20 +83,20 @@ const CategoryList = () => {
       imageSrc: "/lovable-uploads/bc578a58-dea8-4c91-9ac8-423c5d6b3ca4.png",
       features: [
         {
-          title: "Long-Lasting Foundations & Concealers",
-          description: "Lightweight, buildable coverage that evens out skin tone while keeping skin hydrated."
+          title: "Design System Architecture",
+          description: "Scalable design frameworks that establish visual consistency, improve workflow efficiency, and support rapid brand growth."
         },
         {
-          title: "Lip Care & Color",
-          description: "Hydrating lip balms, vibrant lipsticks, and high-shine glosses for long-lasting color and nourishment."
+          title: "Component Libraries & Templates",
+          description: "Modular design components, reusable templates, and standardized elements that accelerate creative production and maintain brand coherence."
         },
         {
-          title: "Eye Makeup & Definition",
-          description: "High-pigment eyeshadows, waterproof mascaras, and precise eyeliners for an expressive, bold look."
+          title: "Style Guides & Documentation",
+          description: "Comprehensive style guides covering typography, color systems, spacing, and interaction patterns for consistent design implementation."
         },
         {
-          title: "Makeup Setting & Skincare Fusion",
-          description: "Setting sprays, primers, and hybrid makeup products infused with skincare benefits to enhance and protect the skin."
+          title: "Scalable Creative Systems",
+          description: "Flexible design frameworks that adapt to growing business needs while maintaining visual consistency across all brand touchpoints."
         }
       ]
     }
