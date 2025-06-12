@@ -21,7 +21,10 @@ const Services = () => {
             className="bg-gradient-to-br from-green-400 to-blue-500 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group"
           >
             <div className="text-white/80 text-sm">Services</div>
-            <div className="text-white font-semibold">Brand & Identity</div>
+            <div className="space-y-2">
+              <div className="text-white font-semibold">Brand & Identity</div>
+              <div className="text-white/70 text-xs">Led by your Brand Agent — combining visual craft with strategic clarity.</div>
+            </div>
           </Link>
           
           <Link 
@@ -29,7 +32,10 @@ const Services = () => {
             className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group"
           >
             <div className="text-white/80 text-sm">Strategy</div>
-            <div className="text-white font-semibold">Research & Strategy</div>
+            <div className="space-y-2">
+              <div className="text-white font-semibold">Research & Strategy</div>
+              <div className="text-white/70 text-xs">Powered by your Strategy Agent — delivering insight and positioning fast.</div>
+            </div>
           </Link>
           
           <Link 
@@ -37,7 +43,10 @@ const Services = () => {
             className="bg-gradient-to-br from-pink-500 to-red-500 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group"
           >
             <div className="text-white/80 text-sm">Content</div>
-            <div className="text-white font-semibold">Content & Campaigns</div>
+            <div className="space-y-2">
+              <div className="text-white font-semibold">Content & Campaigns</div>
+              <div className="text-white/70 text-xs">Created with your Content Agent — for headlines, launches, and voice.</div>
+            </div>
           </Link>
           
           <Link 
@@ -45,7 +54,10 @@ const Services = () => {
             className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group"
           >
             <div className="text-white/80 text-sm">Systems</div>
-            <div className="text-white font-semibold">Product & Automation</div>
+            <div className="space-y-2">
+              <div className="text-white font-semibold">Product & Automation</div>
+              <div className="text-white/70 text-xs">Built by your Automation Agent — turning systems into solutions.</div>
+            </div>
           </Link>
         </div>
 

@@ -63,7 +63,7 @@ export const en = {
     },
     whoWeAre: {
       title: "Who We Are",
-      description: "Solariis is built by senior creatives and powered by GPT agents we call Connectors. It's human-level strategy at AI speed — delivering brand, strategy, content, and automation for founders, brands, and product teams building the future."
+      description: "Solariis is built by senior creatives and powered by modular AI-powered specialists we call 'Agents'. Each Agent focuses on a creative domain — brand, strategy, content, or systems — and works in sync with our senior team. It's human-level strategy at AI speed — delivering brand, strategy, content, and automation for founders, brands, and product teams building the future."
     },
     mission: {
       title: "Our Mission",
@@ -100,11 +100,11 @@ export const en = {
       items: [
         {
           title: "Bold Thinking, AI Speed",
-          description: "Our Connectors enable rapid iteration and delivery without compromising on strategic depth or creative excellence."
+          description: "Our Agents enable rapid iteration and delivery without compromising on strategic depth or creative excellence."
         },
         {
           title: "Built-in AI Capabilities",
-          description: "Our Connectors leverage advanced AI to accelerate research, ideation, content creation, and strategic analysis."
+          description: "Our Agents leverage advanced AI to accelerate research, ideation, content creation, and strategic analysis."
         },
         {
           title: "Senior Creative Leadership",
@@ -129,7 +129,7 @@ export const en = {
   },
   categories: {
     title: "Everything you need. Nothing you don't.",
-    description: "Choose your focus. We'll plug in the Connectors. Solariis offers comprehensive creative and strategic services designed to help teams move faster from idea to impact.",
+    description: "Choose your focus. We'll route your work through our specialized Agents. Solariis offers comprehensive creative and strategic services designed to help teams move faster from idea to impact.",
     exploreButton: "Explore our services!",
     sectionTitle: "Choose Your Focus",
     sectionDescription: "We specialize in AI-enhanced creative services across four core areas:",
@@ -176,7 +176,7 @@ export const en = {
     whyChooseUs: {
       title: "Why Choose Solariis?",
       items: [
-        "We Deliver Bold Thinking at AI Speed – Our Connectors enable rapid delivery without compromising on strategic depth or creative excellence.",
+        "We Deliver Bold Thinking at AI Speed – Our Agents enable rapid delivery without compromising on strategic depth or creative excellence.",
         "We Combine AI with Senior Creative Leadership – Our team merges advanced AI capabilities with experienced creative and strategic direction.",
         "We Build Modular Services from Brand to Scale – Comprehensive offerings that grow with your business from startup to enterprise.",
         "We're Designed for Visionary Teams – Our systems are built for fast-moving teams that need to stand out and scale quickly."

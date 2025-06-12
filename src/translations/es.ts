@@ -23,7 +23,7 @@ export const es = {
     },
     whoWeAre: {
       title: "Quiénes Somos",
-      description: "Solariis está construido por creativos senior y potenciado por agentes GPT que llamamos Conectores. Es estrategia de nivel humano a velocidad de IA — entregando marca, estrategia, contenido y automatización para fundadores, marcas y equipos de producto que construyen el futuro."
+      description: "Solariis está construido por creativos senior y potenciado por especialistas modulares potenciados por IA que llamamos 'Agentes'. Cada Agente se enfoca en un dominio creativo — marca, estrategia, contenido o sistemas — y trabaja en sincronía con nuestro equipo senior. Es estrategia de nivel humano a velocidad de IA — entregando marca, estrategia, contenido y automatización para fundadores, marcas y equipos de producto que construyen el futuro."
     },
     mission: {
       title: "Nuestra Misión",
@@ -60,11 +60,11 @@ export const es = {
       items: [
         {
           title: "Pensamiento Audaz, Velocidad de IA",
-          description: "Nuestros Conectores permiten iteración y entrega rápida sin comprometer la profundidad estratégica o excelencia creativa."
+          description: "Nuestros Agentes permiten iteración y entrega rápida sin comprometer la profundidad estratégica o excelencia creativa."
         },
         {
           title: "Capacidades de IA Integradas",
-          description: "Nuestros Conectores aprovechan IA avanzada para acelerar investigación, ideación, creación de contenido y análisis estratégico."
+          description: "Nuestros Agentes aprovechan IA avanzada para acelerar investigación, ideación, creación de contenido y análisis estratégico."
         },
         {
           title: "Liderazgo Creativo Senior",
@@ -129,7 +129,7 @@ export const es = {
   },
   categories: {
     title: "Todo lo que necesitas. Nada que no necesites.",
-    description: "Elige tu enfoque. Nosotros conectamos los Conectores. Solariis ofrece servicios creativos y estratégicos integrales diseñados para ayudar a equipos a moverse más rápido de la idea al impacto.",
+    description: "Elige tu enfoque. Dirigiremos tu trabajo a través de nuestros Agentes especializados. Solariis ofrece servicios creativos y estratégicos integrales diseñados para ayudar a equipos a moverse más rápido de la idea al impacto.",
     exploreButton: "¡Explora nuestros servicios!",
     sectionTitle: "Elige Tu Enfoque",
     sectionDescription: "Nos especializamos en servicios creativos mejorados por IA en cuatro áreas principales:",
@@ -176,7 +176,7 @@ export const es = {
     whyChooseUs: {
       title: "¿Por Qué Elegir Solariis?",
       items: [
-        "Entregamos Pensamiento Audaz a Velocidad de IA – Nuestros Conectores permiten entrega rápida sin comprometer la profundidad estratégica o excelencia creativa.",
+        "Entregamos Pensamiento Audaz a Velocidad de IA – Nuestros Agentes permiten entrega rápida sin comprometer la profundidad estratégica o excelencia creativa.",
         "Combinamos IA con Liderazgo Creativo Senior – Nuestro equipo fusiona capacidades avanzadas de IA con dirección creativa y estratégica experimentada.",
         "Construimos Servicios Modulares desde Marca hasta Escala – Ofertas integrales que crecen con tu negocio desde startup hasta empresa.",
         "Estamos Diseñados para Equipos Visionarios – Nuestros sistemas están construidos para equipos de movimiento rápido que necesitan destacar y escalar rápidamente."
