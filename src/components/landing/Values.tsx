@@ -11,51 +11,31 @@ const Values = () => {
         </div>
 
         <div className="grid md:grid-cols-4 gap-6 mb-16">
-          <div className="bg-white border border-gray-200 rounded-3xl p-8 h-80 flex flex-col justify-between shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="flex justify-center mb-4">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-black font-bold text-xl">1</span>
-              </div>
-            </div>
-            <div className="text-center flex-1 flex flex-col justify-end">
-              <div className="text-text-light text-sm mb-2 uppercase tracking-wide">Subscribe</div>
-              <div className="text-text font-semibold text-lg">Choose a plan that fits your scale</div>
+          <div className="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl p-8 h-64 flex items-end">
+            <div className="text-left">
+              <div className="text-black/60 text-sm mb-2">Subscribe</div>
+              <div className="text-black font-semibold text-lg">Choose a plan that fits your scale</div>
             </div>
           </div>
           
-          <div className="bg-white border border-gray-200 rounded-3xl p-8 h-80 flex flex-col justify-between shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="flex justify-center mb-4">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-black font-bold text-xl">2</span>
-              </div>
-            </div>
-            <div className="text-center flex-1 flex flex-col justify-end">
-              <div className="text-text-light text-sm mb-2 uppercase tracking-wide">Upload</div>
-              <div className="text-text font-semibold text-lg">Add briefs to your custom design board</div>
+          <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-3xl p-8 h-64 flex items-end">
+            <div className="text-left">
+              <div className="text-white/60 text-sm mb-2">Upload</div>
+              <div className="text-white font-semibold text-lg">Add briefs to your custom design board</div>
             </div>
           </div>
           
-          <div className="bg-white border border-gray-200 rounded-3xl p-8 h-80 flex flex-col justify-between shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="flex justify-center mb-4">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-black font-bold text-xl">3</span>
-              </div>
-            </div>
-            <div className="text-center flex-1 flex flex-col justify-end">
-              <div className="text-text-light text-sm mb-2 uppercase tracking-wide">We Create</div>
-              <div className="text-text font-semibold text-lg">Our AI-enhanced team delivers in days</div>
+          <div className="bg-gradient-to-br from-red-500 to-pink-500 rounded-3xl p-8 h-64 flex items-end">
+            <div className="text-left">
+              <div className="text-white/60 text-sm mb-2">We Create</div>
+              <div className="text-white font-semibold text-lg">Our AI-enhanced team delivers in days</div>
             </div>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-3xl p-8 h-80 flex flex-col justify-between shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div className="flex justify-center mb-4">
-              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-black font-bold text-xl">4</span>
-              </div>
-            </div>
-            <div className="text-center flex-1 flex flex-col justify-end">
-              <div className="text-text-light text-sm mb-2 uppercase tracking-wide">Refine</div>
-              <div className="text-text font-semibold text-lg">Revisions handled with speed and clarity</div>
+          <div className="bg-gradient-to-br from-green-500 to-teal-500 rounded-3xl p-8 h-64 flex items-end">
+            <div className="text-left">
+              <div className="text-white/60 text-sm mb-2">Refine</div>
+              <div className="text-white font-semibold text-lg">Revisions handled with speed and clarity</div>
             </div>
           </div>
         </div>
