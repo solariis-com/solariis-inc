@@ -1,7 +1,7 @@
 
 export const typography = {
   fontFamily: {
-    heading: ['"Julius Sans One"', 'sans-serif'],
+    heading: ['"Rethink Sans"', 'sans-serif'],
     body: ['"Rethink Sans"', 'sans-serif'],
     alt: ['"Julius Sans One"', 'sans-serif'],
   },
