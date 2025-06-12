@@ -1,6 +1,9 @@
+
 import { Link } from "react-router-dom";
+
 const Hero = () => {
-  return <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+  return (
+    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
@@ -35,14 +38,20 @@ const Hero = () => {
 
           {/* Right Visual */}
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-primary via-coral to-teal rounded-3xl overflow-hidden p-8">
-              <div className="w-full h-full bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                <img alt="Solariis Creative AI" className="w-3/4 h-3/4 object-cover rounded-lg" src="https://cdn.midjourney.com/795a7848-c6a6-4065-a97a-594117557ea3/0_2.png" />
+            <div className="aspect-square bg-gradient-to-br from-primary via-coral to-teal rounded-3xl overflow-hidden p-2">
+              <div className="w-full h-full bg-white/5 backdrop-blur-sm rounded-2xl flex items-center justify-center p-4">
+                <img 
+                  alt="Solariis Creative AI" 
+                  className="w-full h-full object-cover rounded-xl shadow-2xl" 
+                  src="https://cdn.midjourney.com/795a7848-c6a6-4065-a97a-594117557ea3/0_2.png" 
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
