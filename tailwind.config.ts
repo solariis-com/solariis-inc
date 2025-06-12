@@ -20,7 +20,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['"Julius Sans One"', 'sans-serif'],
+        heading: ['"Rethink Sans"', 'sans-serif'],
         body: ['"Rethink Sans"', 'sans-serif'],
       },
       colors: {
