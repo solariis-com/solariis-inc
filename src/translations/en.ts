@@ -8,9 +8,9 @@ export const en = {
     partnerWithUs: "Partner With Us"
   },
   hero: {
-    title: "Live Radiantly.",
-    subtitle: "Create Intelligently.",
-    description: "Solariis blends AI precision with human creativity to deliver fast, high-quality brand, content, and design services through our network of GPT-powered creative agents.",
+    title: "Ideas. Engineered by AI.",
+    subtitle: "Shaped by Humans.",
+    description: "Solariis is a creative engine for founders, brands, and product teams building the future.",
     cta: {
       partner: "Partner with Us",
       learnMore: "Learn More"
@@ -19,12 +19,12 @@ export const en = {
   features: {
     forBrands: {
       title: "For Startups",
-      description: "Scale your brand with AI-enhanced creative services. From naming to full brand systems, we help startups build compelling identities fast.",
+      description: "Move from idea to market faster with AI-enhanced strategy, brand systems, and launch support designed for early-stage ventures.",
       link: "Learn More"
     },
     forDistributors: {
       title: "For Brands",
-      description: "Elevate your brand presence with our AI-powered creative team. Strategic design, content systems, and campaign execution at scale.",
+      description: "Reinvent and scale with senior creative leadership and AI-powered systems for brand evolution, content, and automation.",
       link: "Join Our Network"
     }
   },
@@ -35,7 +35,7 @@ export const en = {
   contact: {
     hero: {
       title: "Get in Touch",
-      subtitle: "Ready to create something amazing? Let's talk about how AI-powered creativity can transform your brand."
+      subtitle: "Ready to build something extraordinary? Let's talk about how AI-enhanced creativity can accelerate your vision."
     },
     reachUs: {
       title: "Reach Us",
@@ -58,130 +58,134 @@ export const en = {
   },
   about: {
     hero: {
-      title: "Blending AI Precision with Human Creativity",
-      description: "Solariis blends AI precision with human creativity to help ideas thrive through our network of GPT-powered creative agents called 'Connectors.'"
+      title: "An agency where AI is not the future — it's the foundation.",
+      description: "Solariis combines senior talent from the advertising and design world with powerful AI systems to help ideas move faster."
     },
     whoWeAre: {
       title: "Who We Are",
-      description: "Solariis is an AI-native creative agency that operates through a network of GPT agents called 'Connectors,' each guided by real creative directors and strategists. We serve founders, strategists, and content creators who need fast, high-quality brand and design services."
+      description: "Solariis is a senior-led team of creatives and strategists, enhanced by AI agents called 'Connectors.' We deliver brand, strategy, content, and automation at scale for founders, brands, and product teams building the future."
     },
     mission: {
       title: "Our Mission",
-      description: "To empower people and ideas through creative AI collaboration. We believe the future of creativity lies in the seamless integration of artificial intelligence and human insight, delivering exceptional results at unprecedented speed."
+      description: "To empower creators, companies, and campaigns with intelligent systems and standout storytelling."
     },
     vision: {
       title: "Our Vision",
-      description: "To lead a new era of brand and content creation powered by AI + humans. We envision a world where creative excellence is accessible to everyone, from ambitious startups to established brands."
+      description: "To shape a new creative standard — human-led, AI-enhanced."
     },
     whatWeDo: {
       title: "What We Do",
       items: {
         brandRepresentation: {
-          title: "Strategic Brand Design",
-          description: "Comprehensive brand strategy, visual identity, and positioning powered by AI insights and human creativity."
+          title: "AI-Enhanced Brand Systems",
+          description: "Comprehensive brand strategy, visual identity, and modular systems powered by AI insights and senior creative direction."
         },
         importDistribution: {
-          title: "AI-Optimized Campaigns",
-          description: "Data-driven campaign creation, content optimization, and performance tracking through intelligent automation."
+          title: "Strategic Positioning & Research",
+          description: "Market intelligence, competitive analysis, and positioning strategy driven by AI research and human strategic thinking."
         },
         marketing: {
-          title: "Modular Content Systems",
-          description: "Scalable content frameworks, brand guidelines, and asset libraries designed for consistent growth."
+          title: "Content, Naming & Launch Campaigns",
+          description: "End-to-end campaign creation, brand naming, and content systems designed for maximum impact and scalability."
         },
         regulatory: {
-          title: "Rapid Prototyping & Ideation",
-          description: "Fast concept development, design exploration, and strategic validation through AI-enhanced creative processes."
+          title: "Automation & Product Layer Support",
+          description: "AI-powered workflow automation, product strategy, and technical implementation support for scaling operations."
         }
       }
     },
     whyChooseUs: {
       title: "Why Choose Solariis?",
-      description: "We combine the best of human creativity with AI efficiency to deliver exceptional creative services that scale with your ambitions.",
+      description: "We combine senior creative leadership with AI capabilities to deliver exceptional results that scale with your ambitions.",
       items: [
         {
-          title: "Fast, High-Quality Creative Output",
-          description: "Our AI-enhanced workflows deliver professional results in days, not weeks, without compromising on quality."
+          title: "Bold Thinking, Fast Execution",
+          description: "Our AI-enhanced workflows enable rapid iteration and delivery without compromising on strategic depth or creative quality."
         },
         {
-          title: "Built-in AI Superpowers",
-          description: "Our Connectors leverage advanced AI to enhance ideation, optimize content, and accelerate creative processes."
+          title: "Built-in AI Capabilities",
+          description: "Our Connectors leverage advanced AI to accelerate research, ideation, content creation, and strategic analysis."
         },
         {
-          title: "Human-Level Strategy & Taste",
-          description: "Every project is guided by experienced creative directors who ensure strategic alignment and aesthetic excellence."
+          title: "Senior Creative Leadership",
+          description: "Every project is guided by experienced creatives and strategists who ensure brand excellence and market relevance."
         },
         {
-          title: "Scalable Systems for Growth",
-          description: "We build modular creative systems that grow with your business, from startup to enterprise scale."
+          title: "Modular Services from Brand to Build",
+          description: "Comprehensive offerings from brand identity and strategy to automation and product development support."
+        },
+        {
+          title: "Designed for Startups and Scaling Brands",
+          description: "Our systems and processes are built specifically for fast-moving companies that need to stand out and scale quickly."
         }
       ]
     },
     cta: {
-      title: "Ready to Create?",
-      description: "Whether you're a startup needing brand identity or an established company seeking creative innovation, we're here to help you create intelligently.",
-      subtitle: "Let's build something amazing together!",
+      title: "Ready to Build the Future?",
+      description: "Whether you're a startup launching your first product or an established brand looking to reinvent, we're here to help you move faster and stand out.",
+      subtitle: "Let's engineer something extraordinary together!",
       button: "Contact Us"
     }
   },
   categories: {
-    title: "Discover Our Creative Services",
-    description: "At Solariis, we offer AI-enhanced creative services designed to help brands and startups thrive in the modern marketplace.",
+    title: "Discover Our AI-Enhanced Services",
+    description: "At Solariis, we offer comprehensive creative and strategic services designed to help startups and brands move faster from idea to impact.",
     exploreButton: "Explore our services!",
     sectionTitle: "What We Offer",
-    sectionDescription: "We specialize in AI-powered creative services across four core areas:",
+    sectionDescription: "We specialize in AI-enhanced creative services across four core areas:",
     skincare: {
-      title: "Brand Strategy",
-      description: "Comprehensive brand development from positioning to visual identity, powered by AI insights.",
+      title: "Brand & Identity",
+      description: "Comprehensive brand development from strategy to visual systems, enhanced by AI insights and senior creative direction.",
       items: [
-        "Brand Positioning & Strategy",
-        "Market Research & Analysis",
-        "Competitive Intelligence",
-        "Brand Architecture"
+        "Brand Strategy & Positioning",
+        "Visual Identity & Logo Design",
+        "Brand Guidelines & Systems",
+        "Asset Library Creation"
       ]
     },
     haircare: {
-      title: "Naming & Identity",
-      description: "Creative naming solutions and visual identity systems that resonate with your audience.",
+      title: "Research & Strategy",
+      description: "Market intelligence, competitive analysis, and strategic positioning powered by AI research and human expertise.",
       items: [
-        "Brand Naming & Trademark",
-        "Logo & Visual Identity",
-        "Brand Guidelines",
-        "Asset Library Creation"
+        "Market Research & Analysis",
+        "Competitive Intelligence",
+        "Strategic Positioning",
+        "Audience & User Research"
       ]
     },
     wellness: {
       title: "Content & Campaigns",
-      description: "AI-optimized content creation and campaign development for maximum impact.",
+      description: "End-to-end campaign development, content creation, and brand naming designed for maximum impact.",
       items: [
-        "Content Strategy & Planning",
-        "Campaign Development",
-        "Social Media Assets",
-        "Performance Optimization"
+        "Campaign Strategy & Development",
+        "Content Creation & Planning",
+        "Brand Naming & Messaging",
+        "Launch Campaign Execution"
       ]
     },
     makeup: {
-      title: "Design Systems",
-      description: "Modular design frameworks that scale with your business growth.",
+      title: "Product & Automation",
+      description: "AI-powered workflow automation, product strategy, and technical implementation support for scaling operations.",
       items: [
-        "Design System Architecture",
-        "Component Libraries",
-        "Style Guides",
-        "Template Creation"
+        "Workflow Automation",
+        "Product Strategy Support",
+        "Technical Implementation",
+        "Scaling Operations"
       ]
     },
     whyChooseUs: {
       title: "Why Choose Solariis?",
       items: [
-        "We Deliver Fast, High-Quality Results – Our AI-enhanced workflows produce professional creative work in record time.",
-        "We Combine AI with Human Expertise – Our Connectors merge artificial intelligence with real creative direction and strategic thinking.",
-        "We Build Scalable Creative Systems – Our modular approach grows with your business from startup to enterprise.",
-        "We Optimize for Performance – Every creative decision is backed by data and designed for measurable impact."
+        "We Deliver Bold Thinking with Fast Execution – Our AI-enhanced workflows enable rapid delivery without compromising on strategic depth.",
+        "We Combine AI with Senior Creative Leadership – Our team merges advanced AI capabilities with experienced creative and strategic direction.",
+        "We Build Modular Services from Brand to Build – Comprehensive offerings that grow with your business from startup to scale.",
+        "We're Designed for Startups and Scaling Brands – Our systems are built for fast-moving companies that need to stand out and scale quickly."
       ]
     },
     partnerWithUs: {
       title: "Partner With Us",
-      description: "Whether you're a startup looking to build your brand or an established company seeking creative innovation, we're here to collaborate. Explore our services and discover how AI-powered creativity can transform your business.",
-      contact: "Contact us today to start creating intelligently!",
+      description: "Whether you're a startup launching your vision or an established brand looking to reinvent, we're here to help you move faster and stand out. Explore our services and discover how AI-enhanced creativity can accelerate your success.",
+      contact: "Contact us today to start engineering your next breakthrough!",
       button: "Get in Touch"
     }
   }

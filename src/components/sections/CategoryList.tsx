@@ -22,12 +22,12 @@ const CategoryList = () => {
           description: "Comprehensive brand identity creation including logos, color palettes, typography, and visual guidelines that scale across all touchpoints."
         },
         {
-          title: "Brand Architecture & Naming",
-          description: "Strategic brand structure development and creative naming solutions backed by trademark research and linguistic analysis."
+          title: "Brand Architecture & Guidelines",
+          description: "Strategic brand structure development and comprehensive guidelines backed by AI insights and senior creative direction."
         },
         {
-          title: "Market Intelligence & Research",
-          description: "Data-driven insights into target audiences, market trends, and competitive landscapes to inform strategic brand decisions."
+          title: "Asset Library & Template Creation",
+          description: "Organized collections of brand assets, templates, and resources designed for consistent application and team scalability."
         }
       ]
     },
@@ -37,20 +37,20 @@ const CategoryList = () => {
       imageSrc: "/lovable-uploads/98af4ef5-abb3-49be-b3b8-f7d69d917f30.png",
       features: [
         {
-          title: "Creative Naming Solutions",
-          description: "AI-enhanced naming processes combined with human creativity to develop memorable, meaningful brand names with strong market appeal."
+          title: "Market Intelligence & Analysis",
+          description: "AI-enhanced market research combined with human strategic analysis to uncover opportunities and competitive advantages."
         },
         {
-          title: "Logo & Visual Identity Design",
-          description: "Distinctive logo creation and comprehensive visual identity systems that capture brand essence and resonate with target audiences."
+          title: "Competitive Landscape Mapping",
+          description: "Comprehensive competitive analysis and positioning strategy to help your brand stand out in crowded markets."
         },
         {
-          title: "Brand Guidelines & Standards",
-          description: "Detailed brand style guides covering logo usage, color systems, typography, and application guidelines for consistent brand expression."
+          title: "Audience Research & Insights",
+          description: "Deep audience analysis using AI-powered research tools combined with human behavioral expertise for precise targeting."
         },
         {
-          title: "Asset Library Development",
-          description: "Organized collections of brand assets, templates, and resources designed for easy access and consistent brand application across teams."
+          title: "Strategic Positioning Framework",
+          description: "Data-driven positioning strategies designed for market entry, brand evolution, and competitive differentiation."
         }
       ]
     },
@@ -60,20 +60,20 @@ const CategoryList = () => {
       imageSrc: "/lovable-uploads/432c0ff8-3f4f-4199-a36a-8d63f851bd8a.png",
       features: [
         {
-          title: "Content Strategy & Planning",
-          description: "AI-optimized content calendars, messaging frameworks, and strategic content planning to maximize engagement and brand impact."
-        },
-        {
-          title: "Campaign Development & Execution",
+          title: "Campaign Strategy & Development",
           description: "End-to-end campaign creation from concept to execution, leveraging AI insights for optimal messaging and creative performance."
         },
         {
-          title: "Social Media & Digital Assets",
-          description: "Platform-optimized content creation, social media strategies, and digital asset development for consistent brand presence online."
+          title: "Brand Naming & Messaging",
+          description: "AI-enhanced naming processes and messaging frameworks that resonate with target audiences and support brand goals."
         },
         {
-          title: "Performance Optimization",
-          description: "Data-driven content optimization, A/B testing, and performance analytics to continuously improve content effectiveness and ROI."
+          title: "Content Creation & Planning",
+          description: "Strategic content development, social media planning, and digital asset creation for consistent brand presence."
+        },
+        {
+          title: "Launch Campaign Execution",
+          description: "Comprehensive launch support including campaign management, performance optimization, and real-time adjustments."
         }
       ]
     },
@@ -83,20 +83,20 @@ const CategoryList = () => {
       imageSrc: "/lovable-uploads/bc578a58-dea8-4c91-9ac8-423c5d6b3ca4.png",
       features: [
         {
-          title: "Design System Architecture",
-          description: "Scalable design frameworks that establish visual consistency, improve workflow efficiency, and support rapid brand growth."
+          title: "Workflow Automation Systems",
+          description: "AI-powered automation solutions that streamline creative processes, reduce manual tasks, and accelerate project delivery."
         },
         {
-          title: "Component Libraries & Templates",
-          description: "Modular design components, reusable templates, and standardized elements that accelerate creative production and maintain brand coherence."
+          title: "Product Strategy Support",
+          description: "Strategic product development guidance, user experience optimization, and go-to-market planning for digital products."
         },
         {
-          title: "Style Guides & Documentation",
-          description: "Comprehensive style guides covering typography, color systems, spacing, and interaction patterns for consistent design implementation."
+          title: "Technical Implementation",
+          description: "Support for technical execution including system integration, process optimization, and scalable infrastructure setup."
         },
         {
-          title: "Scalable Creative Systems",
-          description: "Flexible design frameworks that adapt to growing business needs while maintaining visual consistency across all brand touchpoints."
+          title: "Scaling Operations Framework",
+          description: "Modular systems and processes designed to support rapid growth while maintaining quality and brand consistency."
         }
       ]
     }

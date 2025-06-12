@@ -156,10 +156,10 @@ export function ContactForm() {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="brand-partnership">Brand Partnership Inquiry</SelectItem>
-                      <SelectItem value="campaign-content">Campaign & Content Services</SelectItem>
-                      <SelectItem value="strategy-naming">Strategy & Naming Help</SelectItem>
-                      <SelectItem value="design-systems">Design System Collaboration</SelectItem>
+                      <SelectItem value="brand-identity">Brand & Identity Inquiry</SelectItem>
+                      <SelectItem value="strategy-research">Strategy or Research Collaboration</SelectItem>
+                      <SelectItem value="launch-campaign">Launch Campaign or Naming Request</SelectItem>
+                      <SelectItem value="product-automation">Product & Automation Services</SelectItem>
                       <SelectItem value="general">General Inquiry</SelectItem>
                     </SelectContent>
                   </Select>
@@ -175,7 +175,7 @@ export function ContactForm() {
                   <FormLabel>Message</FormLabel>
                   <FormControl>
                     <Textarea 
-                      placeholder="Tell us about your project or how we can help..." 
+                      placeholder="Tell us about your project or how we can help accelerate your vision..." 
                       className="min-h-[150px]"
                       {...field} 
                     />
