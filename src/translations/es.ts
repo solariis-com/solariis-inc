@@ -3,14 +3,14 @@ export const es = {
   nav: {
     home: "Inicio",
     about: "Nosotros",
-    products: "Qué Ofrecemos",
+    products: "Servicios",
     contact: "Contacto",
     partnerWithUs: "Asóciate con Nosotros"
   },
   hero: {
-    title: "Ideas. Diseñadas por IA.",
-    subtitle: "Moldeadas por Humanos.",
-    description: "Solariis es un motor creativo para fundadores, marcas y equipos de producto que construyen el futuro.",
+    title: "Sistemas creativos potenciados por IA",
+    subtitle: "para equipos visionarios.",
+    description: "Solariis combina talento creativo senior con agentes de IA inteligentes para entregar diseño estratégico, pensamiento de marca y automatización a velocidad sin precedentes.",
     cta: {
       partner: "Asóciate con Nosotros",
       learnMore: "Descubre Más"
@@ -18,20 +18,20 @@ export const es = {
   },
   about: {
     hero: {
-      title: "Una agencia donde la IA no es el futuro — es la base.",
-      description: "Solariis combina talento senior del mundo de la publicidad y el diseño con poderosos sistemas de IA para ayudar a que las ideas se muevan más rápido."
+      title: "Una agencia construida con mentes creativas y sistemas inteligentes.",
+      description: "Solariis combina talento senior del mundo creativo con poderosos agentes de IA para ayudar a equipos visionarios a moverse más rápido de la idea al impacto."
     },
     whoWeAre: {
       title: "Quiénes Somos",
-      description: "Solariis es un equipo liderado por creativos y estrategas senior, potenciado por agentes de IA llamados 'Conectores.' Entregamos marca, estrategia, contenido y automatización a escala para fundadores, marcas y equipos de producto que construyen el futuro."
+      description: "Solariis está construido por creativos senior y potenciado por agentes GPT que llamamos Conectores. Es estrategia de nivel humano a velocidad de IA — entregando marca, estrategia, contenido y automatización para fundadores, marcas y equipos de producto que construyen el futuro."
     },
     mission: {
       title: "Nuestra Misión",
-      description: "Empoderar a creadores, empresas y campañas con sistemas inteligentes y narrativas destacadas."
+      description: "Empoderar a fundadores y equipos con creatividad escalable e inteligente."
     },
     vision: {
       title: "Nuestra Visión",
-      description: "Dar forma a un nuevo estándar creativo — liderado por humanos, potenciado por IA."
+      description: "Redefinir cómo las ideas se lanzan — a través de la colaboración entre humanos y máquinas."
     },
     whatWeDo: {
       title: "Qué Hacemos",
@@ -59,8 +59,8 @@ export const es = {
       description: "Combinamos liderazgo creativo senior con capacidades de IA para entregar resultados excepcionales que escalan con tus ambiciones.",
       items: [
         {
-          title: "Pensamiento Audaz, Ejecución Rápida",
-          description: "Nuestros flujos de trabajo mejorados por IA permiten iteración y entrega rápida sin comprometer la profundidad estratégica o calidad creativa."
+          title: "Pensamiento Audaz, Velocidad de IA",
+          description: "Nuestros Conectores permiten iteración y entrega rápida sin comprometer la profundidad estratégica o excelencia creativa."
         },
         {
           title: "Capacidades de IA Integradas",
@@ -71,20 +71,20 @@ export const es = {
           description: "Cada proyecto es guiado por creativos y estrategas experimentados que aseguran excelencia de marca y relevancia de mercado."
         },
         {
-          title: "Servicios Modulares desde Marca hasta Construcción",
+          title: "Servicios Modulares desde Marca hasta Escala",
           description: "Ofertas integrales desde identidad de marca y estrategia hasta automatización y soporte de desarrollo de producto."
         },
         {
-          title: "Diseñado para Startups y Marcas en Crecimiento",
-          description: "Nuestros sistemas y procesos están construidos específicamente para empresas de movimiento rápido que necesitan destacar y escalar rápidamente."
+          title: "Diseñado para Equipos Visionarios",
+          description: "Nuestros sistemas y procesos están construidos específicamente para equipos de movimiento rápido que necesitan destacar y escalar rápidamente."
         }
       ]
     },
     cta: {
       title: "¿Listo para Construir el Futuro?",
-      description: "Ya seas una startup lanzando tu primer producto o una marca establecida buscando reinventarse, estamos aquí para ayudarte a moverte más rápido y destacar.",
-      subtitle: "¡Ingenieremos algo extraordinario juntos!",
-      button: "Contáctanos"
+      description: "Ya seas una startup lanzando tu visión o una marca establecida buscando reinventarse, estamos aquí para ayudarte a moverte más rápido y destacar.",
+      subtitle: "¡Construyamos algo extraordinario juntos!",
+      button: "Construyamos el Futuro Juntos"
     }
   },
   features: {
@@ -105,8 +105,8 @@ export const es = {
   },
   contact: {
     hero: {
-      title: "Ponte en Contacto",
-      subtitle: "¿Listo para construir algo extraordinario? Hablemos sobre cómo la creatividad mejorada por IA puede acelerar tu visión."
+      title: "Construyamos el Futuro Juntos",
+      subtitle: "¿Listo para acelerar tu visión? Exploremos cómo la creatividad mejorada por IA puede transformar tu marca y escalar tu impacto."
     },
     reachUs: {
       title: "Encuéntranos",
@@ -124,69 +124,69 @@ export const es = {
       }
     },
     form: {
-      title: "Envíanos un Mensaje"
+      title: "Cuéntanos sobre tu visión"
     }
   },
   categories: {
-    title: "Descubre Nuestros Servicios Mejorados por IA",
-    description: "En Solariis, ofrecemos servicios creativos y estratégicos integrales diseñados para ayudar a startups y marcas a moverse más rápido de la idea al impacto.",
+    title: "Todo lo que necesitas. Nada que no necesites.",
+    description: "Elige tu enfoque. Nosotros conectamos los Conectores. Solariis ofrece servicios creativos y estratégicos integrales diseñados para ayudar a equipos a moverse más rápido de la idea al impacto.",
     exploreButton: "¡Explora nuestros servicios!",
-    sectionTitle: "Qué Ofrecemos",
+    sectionTitle: "Elige Tu Enfoque",
     sectionDescription: "Nos especializamos en servicios creativos mejorados por IA en cuatro áreas principales:",
     skincare: {
       title: "Marca e Identidad",
-      description: "Desarrollo integral de marca desde estrategia hasta sistemas visuales, mejorado por insights de IA y dirección creativa senior.",
+      description: "Naming, Diseño de Logo, Sistemas de Marca — todo lo que necesitas para establecer y evolucionar tu presencia de marca.",
       items: [
         "Estrategia y Posicionamiento de Marca",
-        "Identidad Visual y Diseño de Logo",
-        "Guías y Sistemas de Marca",
-        "Creación de Biblioteca de Activos"
+        "Naming y Arquitectura de Marca",
+        "Diseño de Logo e Identidad Visual",
+        "Guías de Marca y Bibliotecas de Activos"
       ]
     },
     haircare: {
       title: "Investigación y Estrategia",
-      description: "Inteligencia de mercado, análisis competitivo y posicionamiento estratégico potenciado por investigación de IA y experiencia humana.",
+      description: "Posicionamiento, Mensajería, Personas — inteligencia estratégica que informa cada decisión creativa.",
       items: [
-        "Investigación y Análisis de Mercado",
-        "Inteligencia Competitiva",
-        "Posicionamiento Estratégico",
-        "Investigación de Audiencia y Usuario"
+        "Investigación de Mercado y Análisis Competitivo",
+        "Posicionamiento Estratégico y Mensajería",
+        "Investigación de Audiencia y Desarrollo de Personas",
+        "Estrategia de Salida al Mercado"
       ]
     },
     wellness: {
       title: "Contenido y Campañas",
-      description: "Desarrollo integral de campañas, creación de contenido y naming de marca diseñado para máximo impacto.",
+      description: "Copywriting, Lanzamientos Sociales, Campañas — contenido que convierte y campañas que cautivan.",
       items: [
         "Estrategia y Desarrollo de Campañas",
-        "Creación y Planificación de Contenido",
-        "Naming de Marca y Mensajería",
-        "Ejecución de Campañas de Lanzamiento"
+        "Creación de Contenido y Copywriting",
+        "Redes Sociales y Campañas de Lanzamiento",
+        "Voz de Marca y Sistemas de Mensajería"
       ]
     },
     makeup: {
       title: "Producto y Automatización",
-      description: "Automatización de flujos de trabajo potenciada por IA, estrategia de producto y soporte de implementación técnica para operaciones escalables.",
+      description: "Flujos de Onboarding, Herramientas No-code, Ops Internas — sistemas que escalan con tu crecimiento.",
       items: [
-        "Automatización de Flujos de Trabajo",
-        "Soporte de Estrategia de Producto",
-        "Implementación Técnica",
-        "Operaciones Escalables"
+        "Onboarding de Usuario y Flujos de Experiencia",
+        "Implementación de Herramientas No-code",
+        "Automatización y Optimización de Flujos de Trabajo",
+        "Operaciones Internas y Diseño de Procesos"
       ]
     },
     whyChooseUs: {
       title: "¿Por Qué Elegir Solariis?",
       items: [
-        "Entregamos Pensamiento Audaz con Ejecución Rápida – Nuestros flujos de trabajo mejorados por IA permiten entrega rápida sin comprometer la profundidad estratégica.",
+        "Entregamos Pensamiento Audaz a Velocidad de IA – Nuestros Conectores permiten entrega rápida sin comprometer la profundidad estratégica o excelencia creativa.",
         "Combinamos IA con Liderazgo Creativo Senior – Nuestro equipo fusiona capacidades avanzadas de IA con dirección creativa y estratégica experimentada.",
-        "Construimos Servicios Modulares desde Marca hasta Construcción – Ofertas integrales que crecen con tu negocio desde startup hasta escala.",
-        "Estamos Diseñados para Startups y Marcas en Crecimiento – Nuestros sistemas están construidos para empresas de movimiento rápido que necesitan destacar y escalar rápidamente."
+        "Construimos Servicios Modulares desde Marca hasta Escala – Ofertas integrales que crecen con tu negocio desde startup hasta empresa.",
+        "Estamos Diseñados para Equipos Visionarios – Nuestros sistemas están construidos para equipos de movimiento rápido que necesitan destacar y escalar rápidamente."
       ]
     },
     partnerWithUs: {
-      title: "Asóciate con Nosotros",
+      title: "Asóciate con Solariis",
       description: "Ya seas una startup lanzando tu visión o una marca establecida buscando reinventarse, estamos aquí para ayudarte a moverte más rápido y destacar. Explora nuestros servicios y descubre cómo la creatividad mejorada por IA puede acelerar tu éxito.",
-      contact: "¡Contáctanos hoy para empezar a ingeniar tu próximo avance!",
-      button: "Ponte en Contacto"
+      contact: "¡Contáctanos hoy para empezar a construir el futuro juntos!",
+      button: "Construyamos el Futuro Juntos"
     }
   }
 };

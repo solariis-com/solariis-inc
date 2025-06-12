@@ -10,27 +10,21 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="font-heading text-6xl lg:text-7xl leading-tight text-text tracking-tight">
-                Design
-                <br />
-                subscriptions
-                <br />
-                for
-                <br />
-                <span className="text-text-light">brands</span>
+              <h1 className="font-heading text-6xl lg:text-7xl leading-tight text-text tracking-tight max-w-4xl">
+                AI-powered creative systems for visionary teams.
               </h1>
               
               <p className="text-xl text-text-light max-w-lg leading-relaxed mt-8">
-                Pause or cancel anytime
+                Strategic design, brand thinking, and automation — available in modular tiers.
               </p>
             </div>
             
             <div className="pt-4">
               <Link
-                to="/contact"
+                to="/categories"
                 className="inline-flex items-center bg-text text-white px-8 py-4 text-lg font-medium hover:bg-text/90 transition-colors duration-200"
               >
-                See plans
+                See How It Works
               </Link>
             </div>
           </div>
@@ -41,7 +35,7 @@ const Hero = () => {
               <div className="w-full h-full bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/2402b619-b4b5-464a-b073-a3f87599ae58.png"
-                  alt="Creative Core AI"
+                  alt="Solariis Creative AI"
                   className="w-3/4 h-3/4 object-cover rounded-lg"
                 />
               </div>
