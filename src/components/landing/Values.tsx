@@ -1,4 +1,5 @@
 
+
 const Values = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -12,7 +13,7 @@ const Values = () => {
 
         <div className="grid md:grid-cols-4 gap-8 mb-16">
           <div className="bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative">
-            <div className="text-white font-bold text-4xl mb-4">1</div>
+            <div className="text-white font-bold text-6xl mb-4">1</div>
             <div className="text-center">
               <div className="text-white/80 text-sm mb-2">Subscribe</div>
               <div className="text-white font-semibold text-lg">Choose a plan that fits your scale</div>
@@ -20,7 +21,7 @@ const Values = () => {
           </div>
           
           <div className="bg-gradient-to-br from-orange-500 to-orange-700 rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative">
-            <div className="text-white font-bold text-4xl mb-4">2</div>
+            <div className="text-white font-bold text-6xl mb-4">2</div>
             <div className="text-center">
               <div className="text-white/80 text-sm mb-2">Upload</div>
               <div className="text-white font-semibold text-lg">Add briefs to your custom design board</div>
@@ -28,7 +29,7 @@ const Values = () => {
           </div>
           
           <div className="bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative">
-            <div className="text-white font-bold text-4xl mb-4">3</div>
+            <div className="text-white font-bold text-6xl mb-4">3</div>
             <div className="text-center">
               <div className="text-white/80 text-sm mb-2">We Create</div>
               <div className="text-white font-semibold text-lg">Our AI-enhanced team delivers in days</div>
@@ -36,7 +37,7 @@ const Values = () => {
           </div>
 
           <div className="bg-gradient-to-br from-orange-500 to-orange-700 rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative">
-            <div className="text-white font-bold text-4xl mb-4">4</div>
+            <div className="text-white font-bold text-6xl mb-4">4</div>
             <div className="text-center">
               <div className="text-white/80 text-sm mb-2">Refine</div>
               <div className="text-white font-semibold text-lg">Revisions handled with speed and clarity</div>
@@ -53,3 +54,4 @@ const Values = () => {
 };
 
 export default Values;
+
