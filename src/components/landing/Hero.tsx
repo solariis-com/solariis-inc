@@ -19,13 +19,26 @@ const Hero = () => {
               </p>
             </div>
             
-            <div className="pt-4">
+            <div className="pt-4 space-y-4">
               <Link
                 to="/categories"
                 className="inline-flex items-center bg-text text-white px-8 py-4 text-lg font-medium hover:bg-text/90 transition-colors duration-200"
               >
-                See How It Works
+                Start Your Subscription
               </Link>
+              
+              <div className="space-y-2">
+                <Link
+                  to="/categories"
+                  className="block text-text-light hover:text-text transition-colors duration-200 text-base underline"
+                >
+                  See how it works
+                </Link>
+                
+                <p className="text-sm text-text-light">
+                  Flexible plans. Human taste. AI speed.
+                </p>
+              </div>
             </div>
           </div>
 
