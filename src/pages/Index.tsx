@@ -1,16 +1,23 @@
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import HeroSection from "../components/sections/HeroSection";
-import FeaturesSection from "../components/sections/FeaturesSection";
-import CategoriesSection from "../components/sections/CategoriesSection";
+import LandingHero from "../components/landing/LandingHero";
+import WhySolariis from "../components/landing/WhySolariis";
+import ConnectorRoles from "../components/landing/ConnectorRoles";
+import ServicesGrid from "../components/landing/ServicesGrid";
+import PortfolioStrip from "../components/landing/PortfolioStrip";
+import FinalCTA from "../components/landing/FinalCTA";
 
 const Index = () => {
   return (
-    <div className="min-h-screen font-body">
+    <div className="min-h-screen font-body bg-white">
       <Navbar />
-      <HeroSection />
-      <FeaturesSection />
-      <CategoriesSection />
+      <LandingHero />
+      <WhySolariis />
+      <ConnectorRoles />
+      <ServicesGrid />
+      <PortfolioStrip />
+      <FinalCTA />
       <Footer />
     </div>
   );
