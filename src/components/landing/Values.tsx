@@ -20,24 +20,24 @@ const Values = () => {
       <div className="max-w-6xl mx-auto">
         
         <div className="text-center mb-16">
-          <h2 className="font-heading text-4xl lg:text-5xl text-gray-900 mb-6">
+          <h2 className="font-heading text-h2 text-text mb-6">
             Why Solariis?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-body-lg text-text-light max-w-3xl mx-auto">
             We're not just another agency. We're a creative operating system for founders building the future.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-12 divide-x divide-accent-dark">
           {values.map((value, index) => (
-            <div key={index} className="space-y-6">
+            <div key={index} className="space-y-6 px-6 first:pl-0 last:pr-0">
               <div className="w-4 h-4 bg-primary rounded-full"></div>
               
-              <h3 className="font-heading text-2xl text-gray-900">
+              <h3 className="font-heading text-h3 text-text">
                 {value.title}
               </h3>
               
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-body text-text-light leading-relaxed">
                 {value.copy}
               </p>
             </div>
