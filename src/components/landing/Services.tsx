@@ -1,9 +1,6 @@
-
 import { Link } from "react-router-dom";
-
 const Services = () => {
-  return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent-dark">
+  return <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent-dark">
       <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-16">
@@ -16,16 +13,9 @@ const Services = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <Link 
-            to="/categories"
-            className="bg-gradient-to-br from-green-400 to-blue-500 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden"
-          >
+          <Link to="/categories" className="bg-gradient-to-br from-green-400 to-blue-500 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden">
             <div className="absolute inset-0 opacity-20">
-              <img 
-                src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=400&fit=crop&crop=center" 
-                alt="Brand & Identity" 
-                className="w-full h-full object-cover"
-              />
+              <img alt="Brand & Identity" className="w-full h-full object-cover" src="https://cdn.midjourney.com/0e5d5bf8-8ea6-4c09-9e66-e333727aaa50/0_3.png" />
             </div>
             <div className="relative z-10">
               <div className="text-white/80 text-sm">Services</div>
@@ -36,16 +26,9 @@ const Services = () => {
             </div>
           </Link>
           
-          <Link 
-            to="/categories"
-            className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden"
-          >
+          <Link to="/categories" className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden">
             <div className="absolute inset-0 opacity-20">
-              <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop&crop=center" 
-                alt="Research & Strategy" 
-                className="w-full h-full object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop&crop=center" alt="Research & Strategy" className="w-full h-full object-cover" />
             </div>
             <div className="relative z-10">
               <div className="text-white/80 text-sm">Strategy</div>
@@ -56,16 +39,9 @@ const Services = () => {
             </div>
           </Link>
           
-          <Link 
-            to="/categories"
-            className="bg-gradient-to-br from-pink-500 to-red-500 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden"
-          >
+          <Link to="/categories" className="bg-gradient-to-br from-pink-500 to-red-500 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden">
             <div className="absolute inset-0 opacity-20">
-              <img 
-                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=400&fit=crop&crop=center" 
-                alt="Content & Campaigns" 
-                className="w-full h-full object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=400&fit=crop&crop=center" alt="Content & Campaigns" className="w-full h-full object-cover" />
             </div>
             <div className="relative z-10">
               <div className="text-white/80 text-sm">Content</div>
@@ -76,16 +52,9 @@ const Services = () => {
             </div>
           </Link>
           
-          <Link 
-            to="/categories"
-            className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden"
-          >
+          <Link to="/categories" className="bg-gradient-to-br from-purple-600 to-blue-600 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden">
             <div className="absolute inset-0 opacity-20">
-              <img 
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=400&fit=crop&crop=center" 
-                alt="Product & Automation" 
-                className="w-full h-full object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=400&fit=crop&crop=center" alt="Product & Automation" className="w-full h-full object-cover" />
             </div>
             <div className="relative z-10">
               <div className="text-white/80 text-sm">Systems</div>
@@ -98,16 +67,11 @@ const Services = () => {
         </div>
 
         <div className="text-center">
-          <Link
-            to="/categories"
-            className="inline-flex items-center bg-primary text-white px-8 py-4 text-lg font-medium rounded-lg hover:bg-primary-dark transition-colors duration-200"
-          >
+          <Link to="/categories" className="inline-flex items-center bg-primary text-white px-8 py-4 text-lg font-medium rounded-lg hover:bg-primary-dark transition-colors duration-200">
             Explore All Services
           </Link>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Services;
