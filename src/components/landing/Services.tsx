@@ -15,7 +15,7 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <Link to="/categories" className="bg-green-500 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden">
-            <div className="absolute inset-0 opacity-20">
+            <div className="absolute inset-0">
               <img alt="Brand & Identity" className="w-full h-full object-cover" src="https://cdn.midjourney.com/a5b8d896-9ca6-4e82-b720-43515bdae68f/0_1.png" />
             </div>
             <div className="relative z-10">
@@ -28,7 +28,7 @@ const Services = () => {
           </Link>
           
           <Link to="/categories" className="bg-blue-600 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden">
-            <div className="absolute inset-0 opacity-20">
+            <div className="absolute inset-0">
               <img alt="Research & Strategy" className="w-full h-full object-cover" src="https://cdn.midjourney.com/92b920b5-90d3-45ad-8444-d683ca275ebd/0_2.png" />
             </div>
             <div className="relative z-10">
@@ -41,7 +41,7 @@ const Services = () => {
           </Link>
           
           <Link to="/categories" className="bg-pink-500 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden">
-            <div className="absolute inset-0 opacity-20">
+            <div className="absolute inset-0">
               <img alt="Content & Campaigns" className="w-full h-full object-cover" src="https://cdn.midjourney.com/3e2b91b7-2126-41c3-b287-861042855364/0_2.png" />
             </div>
             <div className="relative z-10">
@@ -54,7 +54,7 @@ const Services = () => {
           </Link>
           
           <Link to="/categories" className="bg-purple-600 rounded-3xl aspect-square p-6 flex flex-col justify-between hover:transform hover:scale-105 transition-all duration-300 group relative overflow-hidden">
-            <div className="absolute inset-0 opacity-20">
+            <div className="absolute inset-0">
               <img alt="Product & Automation" className="w-full h-full object-cover" src="https://cdn.midjourney.com/184f8d3b-da4e-4fe4-83ed-b2bacda08af8/0_3.png" />
             </div>
             <div className="relative z-10">
