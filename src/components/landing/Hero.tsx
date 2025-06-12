@@ -13,9 +13,9 @@ const Hero = () => {
               <h1 className="font-heading text-6xl lg:text-7xl leading-tight text-text tracking-tight">
                 Design
                 <br />
-                subscripti
+                subscriptions
                 <br />
-                ons for
+                for
                 <br />
                 <span className="text-text-light">brands</span>
               </h1>

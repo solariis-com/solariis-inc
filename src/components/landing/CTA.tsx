@@ -26,7 +26,7 @@ const CTA = () => {
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <h2 className="font-heading text-5xl lg:text-6xl text-text mb-8 tracking-tight">
-              Frequently
+              Frequently asked questions
             </h2>
             
             <div className="space-y-4">
@@ -53,12 +53,8 @@ const CTA = () => {
         </div>
 
         <div className="mt-32 bg-text rounded-3xl p-16 text-center text-white">
-          <h2 className="font-heading text-5xl lg:text-6xl mb-8 tracking-tight">
-            See if Designjoy
-            <br />
-            is the right fit
-            <br />
-            for you
+          <h2 className="font-heading text-5xl lg:text-6xl mb-8 tracking-tight max-w-4xl mx-auto">
+            See if Designjoy is the right fit for you
           </h2>
           <p className="text-white/80 text-xl mb-8 max-w-2xl mx-auto">
             Good design leads to higher conversions, higher revenue and lower acquisition costs. Let's get your brand to the next level.

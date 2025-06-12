@@ -13,12 +13,8 @@ const LandingHero = () => {
         
         {/* Left Content */}
         <div className="space-y-8 animate-fade-up">
-          <h1 className="font-heading text-6xl lg:text-7xl xl:text-8xl leading-tight text-gray-800">
-            We build
-            <br />
-            <span className="text-primary">living</span>
-            <br />
-            brands.
+          <h1 className="font-heading text-6xl lg:text-7xl xl:text-8xl leading-tight text-gray-800 max-w-3xl">
+            We build <span className="text-primary">living</span> brands.
           </h1>
           
           <p className="text-xl text-gray-600 max-w-lg leading-relaxed">

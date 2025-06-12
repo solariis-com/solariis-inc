@@ -7,10 +7,8 @@ const FinalCTA = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         <div className="space-y-8 animate-fade-up">
-          <h2 className="font-heading text-5xl lg:text-6xl xl:text-7xl leading-tight text-gray-800">
-            Let's build
-            <br />
-            your <span className="text-primary">brand</span>.
+          <h2 className="font-heading text-5xl lg:text-6xl xl:text-7xl leading-tight text-gray-800 max-w-4xl mx-auto">
+            Let's build your <span className="text-primary">brand</span>.
           </h2>
           
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
