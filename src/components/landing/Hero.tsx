@@ -1,9 +1,6 @@
-
 import { Link } from "react-router-dom";
-
 const Hero = () => {
-  return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+  return <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
@@ -20,18 +17,12 @@ const Hero = () => {
             </div>
             
             <div className="pt-4 space-y-4">
-              <Link
-                to="/categories"
-                className="inline-flex items-center bg-text text-white px-8 py-4 text-lg font-medium hover:bg-text/90 transition-colors duration-200"
-              >
+              <Link to="/categories" className="inline-flex items-center bg-text text-white px-8 py-4 text-lg font-medium hover:bg-text/90 transition-colors duration-200">
                 Start Your Subscription
               </Link>
               
               <div className="space-y-2">
-                <Link
-                  to="/categories"
-                  className="block text-text-light hover:text-text transition-colors duration-200 text-base underline"
-                >
+                <Link to="/categories" className="block text-text-light hover:text-text transition-colors duration-200 text-base underline">
                   See how it works
                 </Link>
                 
@@ -46,18 +37,12 @@ const Hero = () => {
           <div className="relative">
             <div className="aspect-square bg-gradient-to-br from-primary via-coral to-teal rounded-3xl overflow-hidden p-8">
               <div className="w-full h-full bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/2402b619-b4b5-464a-b073-a3f87599ae58.png"
-                  alt="Solariis Creative AI"
-                  className="w-3/4 h-3/4 object-cover rounded-lg"
-                />
+                <img alt="Solariis Creative AI" className="w-3/4 h-3/4 object-cover rounded-lg" src="https://cdn.midjourney.com/795a7848-c6a6-4065-a97a-594117557ea3/0_2.png" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
