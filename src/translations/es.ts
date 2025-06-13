@@ -188,5 +188,34 @@ export const es = {
       contact: "¡Contáctanos hoy para empezar a construir el futuro juntos!",
       button: "Construyamos el Futuro Juntos"
     }
+  },
+  faq: {
+    title: "Preguntas frecuentes",
+    questions: [
+      {
+        question: "¿Qué incluye cada plan?",
+        answer: "Starter incluye 1 solicitud activa con entrega en 3-5 días y acceso a 1 Agente. Growth incluye solicitudes secuenciales ilimitadas, entrega en 2-3 días, acceso a los 4 Agentes y soporte dedicado de líder creativo."
+      },
+      {
+        question: "¿Qué pasa si necesito más de un tipo de servicio?",
+        answer: "Con el plan Growth, obtienes acceso a los 4 Agentes (Marca, Estrategia, Contenido, Automatización). Puedes enviar diferentes tipos de solicitudes y las manejamos secuencialmente. El plan Starter se enfoca en un área de servicio a la vez."
+      },
+      {
+        question: "¿Qué tan rápido se entregan las tareas?",
+        answer: "La mayoría de solicitudes se entregan dentro de 2-5 días hábiles. Proyectos complejos pueden tomar más tiempo, pero siempre comunicamos los tiempos por adelantado. El plan Growth tiene prioridad con entrega promedio de 2-3 días."
+      },
+      {
+        question: "¿Qué son los Agentes?",
+        answer: "Los Agentes son nuestros especialistas potenciados por IA: Agente de Marca (identidad y sistemas visuales), Agente de Estrategia (investigación y posicionamiento), Agente de Contenido (campañas y mensajería), y Agente de Automatización (sistemas y flujos de trabajo). Cada uno combina capacidades de IA con experiencia humana senior."
+      },
+      {
+        question: "¿Puedo pausar o cancelar?",
+        answer: "¡Sí! Puedes pausar tu suscripción en cualquier momento y la facturación se detiene inmediatamente. Cancela en cualquier momento sin penalizaciones o contratos a largo plazo. Cuando estés listo para reanudar, simplemente reactiva tu suscripción."
+      },
+      {
+        question: "¿Qué pasa si no me gusta un entregable?",
+        answer: "Lo revisaremos hasta que estés satisfecho. La mayoría de proyectos incluyen 2-3 rondas de revisiones. Si aún no estás satisfecho dentro de la primera semana, ofrecemos garantía de devolución del dinero."
+      }
+    ]
   }
 };
