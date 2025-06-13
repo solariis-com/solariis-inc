@@ -1,6 +1,7 @@
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import CategoryHero from "../components/sections/CategoryHero";
+import Hero from "../components/landing/Hero";
 import CategoryList from "../components/sections/CategoryList";
 import WhyChooseUs from "../components/sections/WhyChooseUs";
 import PartnerWithUs from "../components/sections/PartnerWithUs";
@@ -9,7 +10,7 @@ const Categories = () => {
   return (
     <>
       <Navbar />
-      <CategoryHero />
+      <Hero />
       <CategoryList />
       <WhyChooseUs />
       <PartnerWithUs />
