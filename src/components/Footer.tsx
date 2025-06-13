@@ -3,82 +3,11 @@ import { Mail, MessageCircle } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
 import LogoSvg from "../assets/logo.svg";
-import { useState, FormEvent } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
-import { supabase } from '@/integrations/supabase/client';
+import { InlineWidget } from "react-calendly";
 
 const Footer = () => {
   const { language } = useLanguage();
   const t = translations[language];
-  
-  // Contact form state
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
-
-  const handleContactSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      const { error: submissionError } = await supabase
-        .from('contact_submissions')
-        .insert([{
-          name: formData.name,
-          email: formData.email,
-          subject: 'General',
-          message: formData.message,
-        }]);
-
-      if (submissionError) {
-        throw submissionError;
-      }
-
-      const { error: emailError } = await supabase.functions.invoke('send-contact-email', {
-        body: { 
-          name: formData.name,
-          email: formData.email,
-          subject: 'General',
-          message: formData.message
-        },
-      });
-
-      if (emailError) {
-        console.error('Email sending error:', emailError);
-        toast({
-          title: "Message saved but email notification failed",
-          description: "We received your message but couldn't send the email notification. We'll still get back to you soon.",
-        });
-      } else {
-        toast({
-          title: "Message sent successfully!",
-          description: "We'll get back to you as soon as possible.",
-        });
-      }
-      
-      setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      toast({
-        title: "Error sending message",
-        description: "Please try again later.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <footer id="contact" className="bg-gray-50 border-t border-gray-100">
@@ -96,50 +25,18 @@ const Footer = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 mb-20">
           
-          {/* Contact Form */}
+          {/* Calendly Widget */}
           <div className="lg:col-span-3">
-            <h3 className="text-2xl font-semibold text-text mb-8">Send us a message</h3>
-            <form onSubmit={handleContactSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-text font-medium mb-2">Name</label>
-                  <Input
-                    type="text"
-                    placeholder="Your name"
-                    value={formData.name}
-                    onChange={(e) => handleInputChange('name', e.target.value)}
-                    required
-                    className="bg-white border-gray-200 rounded-none"
-                  />
-                </div>
-                <div>
-                  <label className="block text-text font-medium mb-2">Email</label>
-                  <Input
-                    type="email"
-                    placeholder="your.email@example.com"
-                    value={formData.email}
-                    onChange={(e) => handleInputChange('email', e.target.value)}
-                    required
-                    className="bg-white border-gray-200 rounded-none"
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-text font-medium mb-2">Message</label>
-                <Textarea
-                  placeholder="Tell us about your project or how we can help..."
-                  className="min-h-[140px] bg-white border-gray-200 rounded-none"
-                  value={formData.message}
-                  onChange={(e) => handleInputChange('message', e.target.value)}
-                  required
-                />
-              </div>
-              
-              <Button type="submit" className="px-8 py-3 text-lg rounded-none" disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : "Send Message"}
-              </Button>
-            </form>
+            <h3 className="text-2xl font-semibold text-text mb-8">Schedule a Meeting</h3>
+            <div className="h-[600px] bg-white border border-gray-200">
+              <InlineWidget 
+                url="https://calendly.com/solariis-info/30min"
+                styles={{
+                  height: '100%',
+                  width: '100%'
+                }}
+              />
+            </div>
           </div>
 
           {/* Contact Information */}
