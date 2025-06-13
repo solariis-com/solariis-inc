@@ -1,5 +1,4 @@
-
-import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
 import LogoSvg from "../assets/logo.svg";
@@ -170,22 +169,6 @@ const Footer = () => {
                   <a href="mailto:hello@solariis.agency" className="text-text-light hover:text-primary transition-colors">
                     hello@solariis.agency
                   </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <Phone size={24} className="text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-text">Phone</p>
-                  <span className="text-text-light">+58 (412) 0907684</span>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <MapPin size={24} className="text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-text">Location</p>
-                  <span className="text-text-light">Nueva Esparta, Venezuela</span>
                 </div>
               </div>
               
