@@ -19,11 +19,11 @@ export const es = {
   about: {
     hero: {
       title: "Una agencia construida con mentes creativas y sistemas inteligentes.",
-      description: "Solariis combina talento senior del mundo creativo con poderosos agentes de IA para ayudar a equipos visionarios a moverse más rápido de la idea al impacto."
+      description: "Solariis combina talento senior del mundo creativo con poderosos agentes de IA para ayudar a equipos visionarios a acelerar el camino de la idea al impacto."
     },
     whoWeAre: {
       title: "Quiénes Somos",
-      description: "Solariis está construido por creativos senior y potenciado por especialistas modulares potenciados por IA que llamamos 'Agentes'. Cada Agente se enfoca en un dominio creativo — marca, estrategia, contenido o sistemas — y trabaja en sincronía con nuestro equipo senior. Es estrategia de nivel humano a velocidad de IA — entregando marca, estrategia, contenido y automatización para fundadores, marcas y equipos de producto que construyen el futuro."
+      description: "Solariis está construido por creativos senior y potenciado por especialistas modulares con IA que llamamos 'Agentes'. Cada Agente se enfoca en un área creativa — marca, estrategia, contenido o sistemas — y trabaja en sincronía con nuestro equipo senior. Es estrategia de nivel humano a velocidad de IA — entregando marca, estrategia, contenido y automatización para fundadores, marcas y equipos de producto que construyen el futuro."
     },
     mission: {
       title: "Nuestra Misión",
@@ -49,7 +49,7 @@ export const es = {
           description: "Creación integral de campañas, naming de marca y sistemas de contenido diseñados para máximo impacto y escalabilidad."
         },
         regulatory: {
-          title: "Automatización y Soporte de Capa de Producto",
+          title: "Automatización y Soporte de Producto",
           description: "Automatización de flujos de trabajo potenciada por IA, estrategia de producto y soporte de implementación técnica para operaciones escalables."
         }
       }
@@ -76,13 +76,13 @@ export const es = {
         },
         {
           title: "Diseñado para Equipos Visionarios",
-          description: "Nuestros sistemas y procesos están construidos específicamente para equipos de movimiento rápido que necesitan destacar y escalar rápidamente."
+          description: "Nuestros sistemas y procesos están construidos específicamente para equipos ágiles que necesitan destacar y escalar rápidamente."
         }
       ]
     },
     cta: {
       title: "¿Listo para Construir el Futuro?",
-      description: "Ya seas una startup lanzando tu visión o una marca establecida buscando reinventarse, estamos aquí para ayudarte a moverte más rápido y destacar.",
+      description: "Ya seas una startup lanzando tu visión o una marca establecida buscando reinventarse, estamos aquí para ayudarte a acelerar y destacar.",
       subtitle: "¡Construyamos algo extraordinario juntos!",
       button: "Construyamos el Futuro Juntos"
     }
@@ -90,7 +90,7 @@ export const es = {
   features: {
     forBrands: {
       title: "Para Startups",
-      description: "Muévete de la idea al mercado más rápido con estrategia mejorada por IA, sistemas de marca y soporte de lanzamiento diseñado para ventures en etapa temprana.",
+      description: "Acelera el camino de la idea al mercado con estrategia potenciada por IA, sistemas de marca y soporte de lanzamiento diseñado para ventures en etapa temprana.",
       link: "Conoce Más"
     },
     forDistributors: {
@@ -106,7 +106,7 @@ export const es = {
   contact: {
     hero: {
       title: "Construyamos el Futuro Juntos",
-      subtitle: "¿Listo para acelerar tu visión? Exploremos cómo la creatividad mejorada por IA puede transformar tu marca y escalar tu impacto."
+      subtitle: "¿Listo para acelerar tu visión? Exploremos cómo la creatividad potenciada por IA puede transformar tu marca y escalar tu impacto."
     },
     reachUs: {
       title: "Encuéntranos",
@@ -129,10 +129,10 @@ export const es = {
   },
   categories: {
     title: "Todo lo que necesitas. Nada que no necesites.",
-    description: "Elige tu enfoque. Dirigiremos tu trabajo a través de nuestros Agentes especializados. Solariis ofrece servicios creativos y estratégicos integrales diseñados para ayudar a equipos a moverse más rápido de la idea al impacto.",
+    description: "Elige tu enfoque. Dirigiremos tu trabajo a través de nuestros Agentes especializados. Solariis ofrece servicios creativos y estratégicos integrales diseñados para ayudar a equipos a acelerar el camino de la idea al impacto.",
     exploreButton: "¡Explora nuestros servicios!",
     sectionTitle: "Elige Tu Enfoque",
-    sectionDescription: "Nos especializamos en servicios creativos mejorados por IA en cuatro áreas principales:",
+    sectionDescription: "Nos especializamos en servicios creativos potenciados por IA en cuatro áreas principales:",
     skincare: {
       title: "Marca e Identidad",
       description: "Naming, Diseño de Logo, Sistemas de Marca — todo lo que necesitas para establecer y evolucionar tu presencia de marca.",
@@ -140,7 +140,7 @@ export const es = {
         "Estrategia y Posicionamiento de Marca",
         "Naming y Arquitectura de Marca",
         "Diseño de Logo e Identidad Visual",
-        "Guías de Marca y Bibliotecas de Activos"
+        "Guías de Marca y Bibliotecas de Recursos"
       ]
     },
     haircare: {
@@ -150,12 +150,12 @@ export const es = {
         "Investigación de Mercado y Análisis Competitivo",
         "Posicionamiento Estratégico y Mensajería",
         "Investigación de Audiencia y Desarrollo de Personas",
-        "Estrategia de Salida al Mercado"
+        "Estrategia de Lanzamiento al Mercado"
       ]
     },
     wellness: {
       title: "Contenido y Campañas",
-      description: "Copywriting, Lanzamientos Sociales, Campañas — contenido que convierte y campañas que cautivan.",
+      description: "Copywriting, Lanzamientos en Redes, Campañas — contenido que convierte y campañas que cautivan.",
       items: [
         "Estrategia y Desarrollo de Campañas",
         "Creación de Contenido y Copywriting",
@@ -165,7 +165,7 @@ export const es = {
     },
     makeup: {
       title: "Producto y Automatización",
-      description: "Flujos de Onboarding, Herramientas No-code, Ops Internas — sistemas que escalan con tu crecimiento.",
+      description: "Flujos de Onboarding, Herramientas No-code, Operaciones Internas — sistemas que escalan con tu crecimiento.",
       items: [
         "Onboarding de Usuario y Flujos de Experiencia",
         "Implementación de Herramientas No-code",
@@ -179,12 +179,12 @@ export const es = {
         "Entregamos Pensamiento Audaz a Velocidad de IA – Nuestros Agentes permiten entrega rápida sin comprometer la profundidad estratégica o excelencia creativa.",
         "Combinamos IA con Liderazgo Creativo Senior – Nuestro equipo fusiona capacidades avanzadas de IA con dirección creativa y estratégica experimentada.",
         "Construimos Servicios Modulares desde Marca hasta Escala – Ofertas integrales que crecen con tu negocio desde startup hasta empresa.",
-        "Estamos Diseñados para Equipos Visionarios – Nuestros sistemas están construidos para equipos de movimiento rápido que necesitan destacar y escalar rápidamente."
+        "Estamos Diseñados para Equipos Visionarios – Nuestros sistemas están construidos para equipos ágiles que necesitan destacar y escalar rápidamente."
       ]
     },
     partnerWithUs: {
       title: "Asóciate con Solariis",
-      description: "Ya seas una startup lanzando tu visión o una marca establecida buscando reinventarse, estamos aquí para ayudarte a moverte más rápido y destacar. Explora nuestros servicios y descubre cómo la creatividad mejorada por IA puede acelerar tu éxito.",
+      description: "Ya seas una startup lanzando tu visión o una marca establecida buscando reinventarse, estamos aquí para ayudarte a acelerar y destacar. Explora nuestros servicios y descubre cómo la creatividad potenciada por IA puede acelerar tu éxito.",
       contact: "¡Contáctanos hoy para empezar a construir el futuro juntos!",
       button: "Construyamos el Futuro Juntos"
     }
