@@ -6,7 +6,6 @@ import HowItWorks from "../components/onepage/HowItWorks";
 import Services from "../components/onepage/Services";
 import Pricing from "../components/onepage/Pricing";
 import FAQ from "../components/onepage/FAQ";
-import Contact from "../components/onepage/Contact";
 import FinalCTA from "../components/onepage/FinalCTA";
 
 const Index = () => {
@@ -18,7 +17,6 @@ const Index = () => {
       <Services />
       <Pricing />
       <FAQ />
-      <Contact />
       <FinalCTA />
       <Footer />
     </div>
