@@ -14,9 +14,6 @@ import { supabase } from '@/integrations/supabase/client';
 const Footer = () => {
   const { language } = useLanguage();
   const t = translations[language];
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
   
   // Contact form state
   const [formData, setFormData] = useState({
@@ -85,28 +82,6 @@ const Footer = () => {
     }
   };
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setError("");
-
-    if (!email || !password) {
-      setError("Please fill in all fields");
-      return;
-    }
-
-    if (!email.includes("@")) {
-      setError("Please enter a valid email address");
-      return;
-    }
-
-    try {
-      setError("Incorrect email or password");
-    } catch (err) {
-      setError("An error occurred during login");
-      console.error(err);
-    }
-  };
-
   return (
     <footer id="contact" className="bg-accent border-t border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -172,7 +147,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Sidebar - Contact Info & Login */}
+          {/* Sidebar - Contact Info Only */}
           <div className="space-y-8">
             
             {/* Contact Information */}
@@ -213,35 +188,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Client Login */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <h4 className="font-semibold text-text text-lg mb-4">Client Login</h4>
-              <p className="text-text-light text-sm mb-4">Access your client account</p>
-              
-              {error && (
-                <div className="text-red-500 text-sm mb-4 p-3 bg-red-50 rounded-lg">
-                  {error}
-                </div>
-              )}
-              
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <Input
-                  type="email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <Input
-                  type="password"
-                  placeholder="Password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                <Button type="submit" className="w-full">
-                  Login
-                </Button>
-              </form>
-            </div>
           </div>
         </div>
 
