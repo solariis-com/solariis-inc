@@ -29,12 +29,12 @@ const FinalCTA = () => {
             </button>
             
             <div>
-              <a 
-                href="mailto:hello@solariis.agency"
+              <button
+                onClick={() => scrollToSection('contact')}
                 className="text-white/80 hover:text-white transition-colors duration-200 text-base underline"
               >
-                Need a custom quote?
-              </a>
+                Have questions? Get in touch
+              </button>
             </div>
           </div>
         </div>

@@ -63,9 +63,12 @@ const Navbar = () => {
             >
               FAQ
             </button>
-            <Link to="/contact" className="text-text-light hover:text-text transition-colors">
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="text-text-light hover:text-text transition-colors"
+            >
               {t.nav.contact}
-            </Link>
+            </button>
             
             {/* Language Selector */}
             <DropdownMenu>
@@ -123,13 +126,12 @@ const Navbar = () => {
               >
                 FAQ
               </button>
-              <Link
-                to="/contact"
-                className="block px-3 py-2 text-text-light hover:text-text transition-colors"
-                onClick={toggleMenu}
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="block px-3 py-2 text-text-light hover:text-text transition-colors w-full text-left"
               >
                 {t.nav.contact}
-              </Link>
+              </button>
               
               {/* Mobile Language Selector */}
               <div className="px-3 py-2">

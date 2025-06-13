@@ -12,6 +12,13 @@ const Footer = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setError("");
@@ -53,19 +60,28 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/categories" className="text-text-light hover:text-text transition-colors">
+                <button 
+                  onClick={() => scrollToSection('services')}
+                  className="text-text-light hover:text-text transition-colors"
+                >
                   {t.nav.products}
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/pricing" className="text-text-light hover:text-text transition-colors">
+                <button 
+                  onClick={() => scrollToSection('pricing')}
+                  className="text-text-light hover:text-text transition-colors"
+                >
                   Pricing
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/contact" className="text-text-light hover:text-text transition-colors">
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="text-text-light hover:text-text transition-colors"
+                >
                   {t.nav.contact}
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
