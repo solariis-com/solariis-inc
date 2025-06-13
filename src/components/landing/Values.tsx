@@ -1,5 +1,4 @@
 
-
 const Values = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -117,14 +116,35 @@ const Values = () => {
             <div className="bg-white rounded-2xl p-8 hover:shadow-lg transition-all duration-300 group">
               <div className="text-text-light text-sm font-medium mb-6">Step 4</div>
               
-              {/* Abstract motif - clean arrow/spark */}
+              {/* Abstract motif - package/delivery box */}
               <div className="w-24 h-24 mx-auto mb-8 relative flex items-center justify-center">
                 <div className="relative">
-                  <div className="w-10 h-0.5 bg-primary"></div>
-                  <div className="absolute right-0 top-0 w-0 h-0 border-l-[6px] border-l-primary border-t-[3px] border-b-[3px] border-t-transparent border-b-transparent"></div>
-                  <div className="absolute -top-1.5 -right-3 w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
-                  <div className="absolute -bottom-1.5 right-1.5 w-1 h-1 rounded-full bg-primary/60"></div>
-                  <div className="absolute -top-2.5 -right-1 w-0.5 h-0.5 rounded-full bg-primary/40"></div>
+                  {/* Box outline */}
+                  <div className="w-12 h-10 border-2 border-primary rounded-sm relative">
+                    {/* Box flap lines */}
+                    <div className="absolute top-0 left-1/4 w-px h-full bg-primary/40"></div>
+                    <div className="absolute top-0 right-1/4 w-px h-full bg-primary/40"></div>
+                    <div className="absolute top-1/3 left-0 w-full h-px bg-primary/40"></div>
+                    
+                    {/* Delivery checkmark */}
+                    <div className="absolute -top-2 -right-2 w-4 h-4 bg-primary rounded-full flex items-center justify-center">
+                      <svg width="10" height="8" viewBox="0 0 10 8" className="text-white">
+                        <path
+                          d="M1 4l2.5 2.5L9 1"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    
+                    {/* Motion lines */}
+                    <div className="absolute -left-3 top-2 w-2 h-px bg-primary/30"></div>
+                    <div className="absolute -left-4 top-4 w-3 h-px bg-primary/50"></div>
+                    <div className="absolute -left-3 top-6 w-2 h-px bg-primary/30"></div>
+                  </div>
                 </div>
               </div>
 
@@ -153,4 +173,3 @@ const Values = () => {
 };
 
 export default Values;
-
