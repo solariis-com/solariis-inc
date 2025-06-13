@@ -32,11 +32,12 @@ const Values = () => {
               <div className="text-text-light text-sm font-medium mb-6">Step 1</div>
               
               {/* Abstract motif - soft ripple */}
-              <div className="w-20 h-20 mx-auto mb-8 relative">
+              <div className="w-24 h-24 mx-auto mb-8 relative">
                 <div className="absolute inset-0 rounded-full border-2 border-primary/20"></div>
-                <div className="absolute inset-2 rounded-full border border-primary/30"></div>
-                <div className="absolute inset-4 rounded-full bg-primary/10"></div>
-                <div className="absolute top-1/2 left-1/2 w-2 h-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary"></div>
+                <div className="absolute inset-2 rounded-full border-2 border-primary/30"></div>
+                <div className="absolute inset-4 rounded-full border-2 border-primary/40"></div>
+                <div className="absolute inset-6 rounded-full bg-primary/10"></div>
+                <div className="absolute top-1/2 left-1/2 w-3 h-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary"></div>
               </div>
 
               <div className="space-y-3">
@@ -52,13 +53,14 @@ const Values = () => {
               <div className="text-text-light text-sm font-medium mb-6">Step 2</div>
               
               {/* Abstract motif - floating feather/dotted line */}
-              <div className="w-20 h-20 mx-auto mb-8 relative flex items-center justify-center">
-                <div className="flex flex-col items-center space-y-1">
-                  <div className="w-1 h-1 rounded-full bg-primary"></div>
-                  <div className="w-2 h-2 rounded-full bg-primary/70"></div>
-                  <div className="w-3 h-3 rounded-full bg-primary/50"></div>
-                  <div className="w-4 h-4 rounded-full bg-primary/30"></div>
-                  <div className="w-5 h-5 rounded-full bg-primary/20"></div>
+              <div className="w-24 h-24 mx-auto mb-8 relative flex items-center justify-center">
+                <div className="flex flex-col items-center space-y-1.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                  <div className="w-2.5 h-2.5 rounded-full bg-primary/80"></div>
+                  <div className="w-3.5 h-3.5 rounded-full bg-primary/60"></div>
+                  <div className="w-4.5 h-4.5 rounded-full bg-primary/40"></div>
+                  <div className="w-5.5 h-5.5 rounded-full bg-primary/20"></div>
+                  <div className="w-6.5 h-6.5 rounded-full bg-primary/10"></div>
                 </div>
               </div>
 
@@ -75,8 +77,8 @@ const Values = () => {
               <div className="text-text-light text-sm font-medium mb-6">Step 3</div>
               
               {/* Abstract motif - spiral/swirl */}
-              <div className="w-20 h-20 mx-auto mb-8 relative flex items-center justify-center">
-                <svg width="48" height="48" viewBox="0 0 48 48" className="text-primary">
+              <div className="w-24 h-24 mx-auto mb-8 relative flex items-center justify-center">
+                <svg width="60" height="60" viewBox="0 0 48 48" className="text-primary">
                   <path
                     d="M24 4c11 0 20 9 20 20s-9 20-20 20-20-9-20-20c0-8 4.7-15 12-18.3"
                     stroke="currentColor"
@@ -116,12 +118,13 @@ const Values = () => {
               <div className="text-text-light text-sm font-medium mb-6">Step 4</div>
               
               {/* Abstract motif - clean arrow/spark */}
-              <div className="w-20 h-20 mx-auto mb-8 relative flex items-center justify-center">
+              <div className="w-24 h-24 mx-auto mb-8 relative flex items-center justify-center">
                 <div className="relative">
-                  <div className="w-8 h-px bg-primary"></div>
-                  <div className="absolute right-0 top-0 w-0 h-0 border-l-4 border-l-primary border-t-2 border-b-2 border-t-transparent border-b-transparent"></div>
-                  <div className="absolute -top-1 -right-2 w-1 h-1 rounded-full bg-primary animate-pulse"></div>
-                  <div className="absolute -bottom-1 right-1 w-0.5 h-0.5 rounded-full bg-primary/60"></div>
+                  <div className="w-10 h-0.5 bg-primary"></div>
+                  <div className="absolute right-0 top-0 w-0 h-0 border-l-[6px] border-l-primary border-t-[3px] border-b-[3px] border-t-transparent border-b-transparent"></div>
+                  <div className="absolute -top-1.5 -right-3 w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></div>
+                  <div className="absolute -bottom-1.5 right-1.5 w-1 h-1 rounded-full bg-primary/60"></div>
+                  <div className="absolute -top-2.5 -right-1 w-0.5 h-0.5 rounded-full bg-primary/40"></div>
                 </div>
               </div>
 
