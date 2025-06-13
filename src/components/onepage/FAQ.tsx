@@ -37,25 +37,25 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
       <div className="max-w-4xl mx-auto">
         
         <div className="text-center mb-16">
-          <h2 className="font-heading text-5xl lg:text-6xl text-text mb-6 tracking-tight">
+          <h2 className="font-heading text-5xl lg:text-6xl text-white mb-6 tracking-tight">
             Frequently asked questions
           </h2>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-gray-200 rounded-lg">
+            <div key={index} className="border border-gray-700 rounded-lg">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-accent transition-colors"
+                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-800 transition-colors"
               >
-                <span className="font-semibold text-text">{faq.question}</span>
+                <span className="font-semibold text-white">{faq.question}</span>
                 <ChevronDown 
-                  className={`w-5 h-5 text-text-light transition-transform ${
+                  className={`w-5 h-5 text-gray-300 transition-transform ${
                     openIndex === index ? 'transform rotate-180' : ''
                   }`}
                 />
@@ -63,7 +63,7 @@ const FAQ = () => {
               
               {openIndex === index && (
                 <div className="px-6 pb-4">
-                  <p className="text-text-light leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </div>
