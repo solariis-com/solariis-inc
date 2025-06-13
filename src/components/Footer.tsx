@@ -89,7 +89,7 @@ const Footer = () => {
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-text mb-4 tracking-tight">
             Let's Build Smarter
           </h2>
-          <p className="text-lg sm:text-xl text-text-light max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-text-light max-w-3xl mx-auto leading-relaxed">
             Start your subscription today — or reach out with questions.
           </p>
         </div>
