@@ -109,7 +109,7 @@ const Footer = () => {
                     value={formData.name}
                     onChange={(e) => handleInputChange('name', e.target.value)}
                     required
-                    className="bg-white border-gray-200"
+                    className="bg-white border-gray-200 rounded-none"
                   />
                 </div>
                 <div>
@@ -120,7 +120,7 @@ const Footer = () => {
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
                     required
-                    className="bg-white border-gray-200"
+                    className="bg-white border-gray-200 rounded-none"
                   />
                 </div>
               </div>
@@ -129,14 +129,14 @@ const Footer = () => {
                 <label className="block text-text font-medium mb-2">Message</label>
                 <Textarea
                   placeholder="Tell us about your project or how we can help..."
-                  className="min-h-[140px] bg-white border-gray-200"
+                  className="min-h-[140px] bg-white border-gray-200 rounded-none"
                   value={formData.message}
                   onChange={(e) => handleInputChange('message', e.target.value)}
                   required
                 />
               </div>
               
-              <Button type="submit" className="px-8 py-3 text-lg" disabled={isSubmitting}>
+              <Button type="submit" className="px-8 py-3 text-lg rounded-none" disabled={isSubmitting}>
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
