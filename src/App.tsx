@@ -6,10 +6,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Index from "./pages/Index";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Categories from "./pages/Categories";
-import Pricing from "./pages/Pricing";
 
 const queryClient = new QueryClient();
 
@@ -22,10 +19,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/categories" element={<Categories />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/pricing" element={<Pricing />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
