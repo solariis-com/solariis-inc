@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, MessageCircle, MessageSquare } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -111,10 +110,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Login Form section */}
+          {/* Client Login section */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-text">Distributor Login</h4>
-            <p className="text-text-light">Access your distributor or reseller account</p>
+            <h4 className="font-semibold text-text">Client Login</h4>
+            <p className="text-text-light">Access your client account</p>
             {error && (
               <p className="text-red-500 text-sm">{error}</p>
             )}
