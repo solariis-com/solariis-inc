@@ -1,3 +1,4 @@
+
 import { Mail, MessageCircle } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
@@ -6,7 +7,6 @@ import { useState, FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from '@/integrations/supabase/client';
 
@@ -18,7 +18,6 @@ const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    topic: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,7 +37,7 @@ const Footer = () => {
         .insert([{
           name: formData.name,
           email: formData.email,
-          subject: formData.topic || 'General',
+          subject: 'General',
           message: formData.message,
         }]);
 
@@ -50,7 +49,7 @@ const Footer = () => {
         body: { 
           name: formData.name,
           email: formData.email,
-          subject: formData.topic || 'General',
+          subject: 'General',
           message: formData.message
         },
       });
@@ -68,7 +67,7 @@ const Footer = () => {
         });
       }
       
-      setFormData({ name: "", email: "", topic: "", message: "" });
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
@@ -124,21 +123,6 @@ const Footer = () => {
                     className="bg-white border-gray-200"
                   />
                 </div>
-              </div>
-              
-              <div>
-                <label className="block text-text font-medium mb-2">Topic</label>
-                <Select onValueChange={(value) => handleInputChange('topic', value)} value={formData.topic}>
-                  <SelectTrigger className="bg-white border-gray-200">
-                    <SelectValue placeholder="Select a topic" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="general">General Inquiry</SelectItem>
-                    <SelectItem value="partnership">Partnership</SelectItem>
-                    <SelectItem value="support">Support</SelectItem>
-                    <SelectItem value="pricing">Pricing & Plans</SelectItem>
-                  </SelectContent>
-                </Select>
               </div>
               
               <div>
