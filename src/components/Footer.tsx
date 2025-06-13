@@ -87,10 +87,10 @@ const Footer = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl lg:text-5xl text-text mb-6 tracking-tight">
-            Get in Touch
+            Let's Build Smarter
           </h2>
           <p className="text-xl text-text-light max-w-3xl mx-auto leading-relaxed">
-            Have questions before subscribing? Reach out — we usually reply within a few hours.
+            Start your subscription today — or reach out with questions.
           </p>
         </div>
 
