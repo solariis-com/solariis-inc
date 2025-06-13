@@ -16,11 +16,11 @@ const Pricing = () => {
       quarterly: { price: 2250, display: "$2,250", total: "$6,750" },
       features: [
         "1 active request at a time",
-        "Branding, content, or systems tasks",
+        "Access to 1 Agent per cycle",
         "3–5 day turnaround",
         "Pause or cancel anytime",
         "AI-enhanced output with expert oversight",
-        "Access to 1 Agent per cycle"
+        "Dedicated creative lead"
       ],
       cta: "Start with Starter",
       popular: false
@@ -31,11 +31,12 @@ const Pricing = () => {
       monthly: { price: 4800, display: "$4,800" },
       quarterly: { price: 4320, display: "$4,320", total: "$12,960" },
       features: [
-        "Unlimited task queue (handled sequentially)",
-        "Access to Brand, Strategy, Content & Automation Agents",
+        "2 active requests at a time",
+        "Access to all 4 Agents: Brand, Strategy, Content & Automation",
         "2–3 day average turnaround",
         "Async strategy support",
         "Optional Slack or Notion integration",
+        "AI-enhanced output with expert oversight",
         "Dedicated creative lead"
       ],
       cta: "Start with Growth",
