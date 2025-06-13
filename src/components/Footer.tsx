@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, MessageCircle, MessageSquare } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -55,6 +56,11 @@ const Footer = () => {
               <li>
                 <Link to="/categories" className="text-text-light hover:text-text transition-colors">
                   {t.nav.products}
+                </Link>
+              </li>
+              <li>
+                <Link to="/pricing" className="text-text-light hover:text-text transition-colors">
+                  Pricing
                 </Link>
               </li>
               <li>

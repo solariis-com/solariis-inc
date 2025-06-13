@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -38,6 +39,9 @@ const Navbar = () => {
             </Link>
             <Link to="/categories" className="text-text-light hover:text-text transition-colors">
               {t.nav.products}
+            </Link>
+            <Link to="/pricing" className="text-text-light hover:text-text transition-colors">
+              Pricing
             </Link>
             <Link to="/contact" className="text-text-light hover:text-text transition-colors">
               {t.nav.contact}
@@ -95,6 +99,13 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 {t.nav.products}
+              </Link>
+              <Link
+                to="/pricing"
+                className="block px-3 py-2 text-text-light hover:text-text transition-colors"
+                onClick={toggleMenu}
+              >
+                Pricing
               </Link>
               <Link
                 to="/contact"
