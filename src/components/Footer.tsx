@@ -83,45 +83,54 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-accent border-t border-gray-200">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer id="contact" className="bg-gray-50 border-t border-gray-100">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="font-heading text-3xl lg:text-4xl text-text mb-4 tracking-tight">
+          <h2 className="font-heading text-4xl lg:text-5xl text-text mb-6 tracking-tight">
             Get in Touch
           </h2>
-          <p className="text-lg text-text-light max-w-2xl mx-auto">
+          <p className="text-xl text-text-light max-w-3xl mx-auto leading-relaxed">
             Have questions before subscribing? Reach out — we usually reply within a few hours.
           </p>
         </div>
 
-        {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 mb-20">
           
-          {/* Contact Form - Takes 2 columns on large screens */}
-          <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
-              <h3 className="font-semibold text-text text-xl mb-6">Send us a message</h3>
-              <form onSubmit={handleContactSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* Contact Form */}
+          <div className="lg:col-span-3">
+            <h3 className="text-2xl font-semibold text-text mb-8">Send us a message</h3>
+            <form onSubmit={handleContactSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-text font-medium mb-2">Name</label>
                   <Input
                     type="text"
                     placeholder="Your name"
                     value={formData.name}
                     onChange={(e) => handleInputChange('name', e.target.value)}
                     required
+                    className="bg-white border-gray-200"
                   />
+                </div>
+                <div>
+                  <label className="block text-text font-medium mb-2">Email</label>
                   <Input
                     type="email"
                     placeholder="your.email@example.com"
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
                     required
+                    className="bg-white border-gray-200"
                   />
                 </div>
-                
+              </div>
+              
+              <div>
+                <label className="block text-text font-medium mb-2">Topic</label>
                 <Select onValueChange={(value) => handleInputChange('topic', value)} value={formData.topic}>
-                  <SelectTrigger>
+                  <SelectTrigger className="bg-white border-gray-200">
                     <SelectValue placeholder="Select a topic" />
                   </SelectTrigger>
                   <SelectContent>
@@ -131,63 +140,77 @@ const Footer = () => {
                     <SelectItem value="pricing">Pricing & Plans</SelectItem>
                   </SelectContent>
                 </Select>
-                
+              </div>
+              
+              <div>
+                <label className="block text-text font-medium mb-2">Message</label>
                 <Textarea
                   placeholder="Tell us about your project or how we can help..."
-                  className="min-h-[120px]"
+                  className="min-h-[140px] bg-white border-gray-200"
                   value={formData.message}
                   onChange={(e) => handleInputChange('message', e.target.value)}
                   required
                 />
-                
-                <Button type="submit" className="w-full" disabled={isSubmitting}>
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                </Button>
-              </form>
-            </div>
+              </div>
+              
+              <Button type="submit" className="px-8 py-3 text-lg" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </Button>
+            </form>
           </div>
 
-          {/* Sidebar - Contact Info Only */}
-          <div className="space-y-8">
-            
-            {/* Contact Information */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <h4 className="font-semibold text-text text-lg mb-4">Direct Contact</h4>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3 text-text-light">
-                  <Mail size={18} className="text-primary" />
-                  <a href="mailto:hello@solariis.agency" className="hover:text-text transition-colors">
+          {/* Contact Information */}
+          <div className="lg:col-span-2">
+            <h3 className="text-2xl font-semibold text-text mb-8">Direct Contact</h3>
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <Mail size={24} className="text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-text">Email</p>
+                  <a href="mailto:hello@solariis.agency" className="text-text-light hover:text-primary transition-colors">
                     hello@solariis.agency
-                  </a>
-                </div>
-                <div className="flex items-center space-x-3 text-text-light">
-                  <Phone size={18} className="text-primary" />
-                  <span>+58 (412) 0907684</span>
-                </div>
-                <div className="flex items-center space-x-3 text-text-light">
-                  <MapPin size={18} className="text-primary" />
-                  <span>Nueva Esparta, Venezuela</span>
-                </div>
-                <div className="flex items-center space-x-3 text-text-light">
-                  <MessageCircle size={18} className="text-primary" />
-                  <a 
-                    href="https://wa.me/584120907684" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-text transition-colors"
-                  >
-                    WhatsApp Chat
                   </a>
                 </div>
               </div>
               
-              <div className="mt-4 pt-4 border-t border-gray-100">
-                <p className="text-sm text-text-light">
-                  <span className="font-medium">Response Time:</span> Usually within 2-4 hours during business hours (EST)
-                </p>
+              <div className="flex items-start space-x-4">
+                <Phone size={24} className="text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-text">Phone</p>
+                  <span className="text-text-light">+58 (412) 0907684</span>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <MapPin size={24} className="text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-text">Location</p>
+                  <span className="text-text-light">Nueva Esparta, Venezuela</span>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <MessageCircle size={24} className="text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-text">WhatsApp</p>
+                  <a 
+                    href="https://wa.me/584120907684" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-text-light hover:text-primary transition-colors"
+                  >
+                    Chat with us
+                  </a>
+                </div>
               </div>
             </div>
-
+            
+            <div className="mt-8 p-4 bg-gray-100 rounded-lg">
+              <p className="text-sm text-text-light">
+                <span className="font-medium text-text">Response Time:</span><br />
+                Usually within 2-4 hours during business hours (EST)
+              </p>
+            </div>
           </div>
         </div>
 
