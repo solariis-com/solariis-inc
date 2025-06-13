@@ -11,43 +11,47 @@ const Values = () => {
         </div>
 
         <div className="grid md:grid-cols-4 gap-8 mb-16">
-          <div className="rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative overflow-hidden bg-cover bg-center" style={{
+          <div className="rounded-2xl h-80 flex flex-col items-center justify-end relative overflow-hidden bg-cover bg-center" style={{
             backgroundImage: 'url("https://cdn.midjourney.com/baf373eb-cd86-4f09-9d11-42da95046e68/0_0.png")'
           }}>
-            <div className="relative z-10 text-white font-bold text-6xl mb-4 drop-shadow-lg">1</div>
-            <div className="relative z-10 text-center">
-              <div className="text-white/90 text-sm mb-2 drop-shadow">Subscribe</div>
-              <div className="text-white font-semibold text-lg drop-shadow">Choose a plan that fits your scale</div>
+            <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
+            <div className="relative z-10 text-black font-bold text-8xl mb-4">1</div>
+            <div className="relative z-10 text-center pb-8">
+              <div className="text-black text-sm mb-2">Subscribe</div>
+              <div className="text-black font-semibold text-lg">Choose a plan that fits your scale</div>
             </div>
           </div>
           
-          <div className="rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative overflow-hidden bg-cover bg-center" style={{
+          <div className="rounded-2xl h-80 flex flex-col items-center justify-end relative overflow-hidden bg-cover bg-center" style={{
             backgroundImage: 'url("https://cdn.midjourney.com/91cdbbe8-db78-42e4-874c-440ee155aed1/0_1.png")'
           }}>
-            <div className="relative z-10 text-white font-bold text-6xl mb-4 drop-shadow-lg">2</div>
-            <div className="relative z-10 text-center">
-              <div className="text-white/90 text-sm mb-2 drop-shadow">Upload</div>
-              <div className="text-white font-semibold text-lg drop-shadow">Add briefs to your custom design board</div>
+            <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
+            <div className="relative z-10 text-black font-bold text-8xl mb-4">2</div>
+            <div className="relative z-10 text-center pb-8">
+              <div className="text-black text-sm mb-2">Upload</div>
+              <div className="text-black font-semibold text-lg">Add briefs to your custom design board</div>
             </div>
           </div>
           
-          <div className="rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative overflow-hidden bg-cover bg-center" style={{
+          <div className="rounded-2xl h-80 flex flex-col items-center justify-end relative overflow-hidden bg-cover bg-center" style={{
             backgroundImage: 'url("https://cdn.midjourney.com/1576975d-bece-4966-8284-c83442b0a06b/0_0.png")'
           }}>
-            <div className="relative z-10 text-white font-bold text-6xl mb-4 drop-shadow-lg">3</div>
-            <div className="relative z-10 text-center">
-              <div className="text-white/90 text-sm mb-2 drop-shadow">We Create</div>
-              <div className="text-white font-semibold text-lg drop-shadow">Our AI-enhanced team delivers in days</div>
+            <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
+            <div className="relative z-10 text-black font-bold text-8xl mb-4">3</div>
+            <div className="relative z-10 text-center pb-8">
+              <div className="text-black text-sm mb-2">We Create</div>
+              <div className="text-black font-semibold text-lg">Our AI-enhanced team delivers in days</div>
             </div>
           </div>
 
-          <div className="rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative overflow-hidden bg-cover bg-center" style={{
+          <div className="rounded-2xl h-80 flex flex-col items-center justify-end relative overflow-hidden bg-cover bg-center" style={{
             backgroundImage: 'url("https://cdn.midjourney.com/c2920b57-d689-4602-b101-11b7387b2b44/0_2.png")'
           }}>
-            <div className="relative z-10 text-white font-bold text-6xl mb-4 drop-shadow-lg">4</div>
-            <div className="relative z-10 text-center">
-              <div className="text-white/90 text-sm mb-2 drop-shadow">Refine</div>
-              <div className="text-white font-semibold text-lg drop-shadow">Revisions handled with speed and clarity</div>
+            <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
+            <div className="relative z-10 text-black font-bold text-8xl mb-4">4</div>
+            <div className="relative z-10 text-center pb-8">
+              <div className="text-black text-sm mb-2">Refine</div>
+              <div className="text-black font-semibold text-lg">Revisions handled with speed and clarity</div>
             </div>
           </div>
         </div>
