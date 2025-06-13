@@ -77,15 +77,15 @@ const CTA = () => {
               Frequently asked questions
             </h2>
             
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion type="single" collapsible className="space-y-2">
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="border-b border-accent-dark">
-                  <AccordionTrigger className="text-left text-text hover:text-primary transition-colors py-3">
+                  <AccordionTrigger className="text-left text-text hover:text-primary transition-colors py-4 text-base font-medium">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-text-light pb-4">
+                  <AccordionContent className="text-text-light pb-4 pt-0 text-sm leading-relaxed">
                     {faq.answer.split('\n\n').map((paragraph, pIndex) => (
-                      <p key={pIndex} className={pIndex > 0 ? "mt-4" : ""}>
+                      <p key={pIndex} className={pIndex > 0 ? "mt-3" : ""}>
                         {paragraph}
                       </p>
                     ))}
