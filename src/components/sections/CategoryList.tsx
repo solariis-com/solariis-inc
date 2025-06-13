@@ -11,7 +11,7 @@ const CategoryList = () => {
     {
       title: t.skincare.title,
       description: t.skincare.description,
-      imageSrc: "/lovable-uploads/7acb4e9d-c852-4bb5-afa9-9e91be10a7c0.png",
+      imageSrc: "https://cdn.midjourney.com/a5b8d896-9ca6-4e82-b720-43515bdae68f/0_1.png",
       features: [
         {
           title: "Strategic Brand Positioning",
@@ -34,7 +34,7 @@ const CategoryList = () => {
     {
       title: t.haircare.title,
       description: t.haircare.description,
-      imageSrc: "/lovable-uploads/98af4ef5-abb3-49be-b3b8-f7d69d917f30.png",
+      imageSrc: "https://cdn.midjourney.com/92b920b5-90d3-45ad-8444-d683ca275ebd/0_2.png",
       features: [
         {
           title: "Market Intelligence & Analysis",
@@ -57,7 +57,7 @@ const CategoryList = () => {
     {
       title: t.wellness.title,
       description: t.wellness.description,
-      imageSrc: "/lovable-uploads/432c0ff8-3f4f-4199-a36a-8d63f851bd8a.png",
+      imageSrc: "https://cdn.midjourney.com/3e2b91b7-2126-41c3-b287-861042855364/0_2.png",
       features: [
         {
           title: "Campaign Strategy & Development",
@@ -80,7 +80,7 @@ const CategoryList = () => {
     {
       title: t.makeup.title,
       description: t.makeup.description,
-      imageSrc: "/lovable-uploads/bc578a58-dea8-4c91-9ac8-423c5d6b3ca4.png",
+      imageSrc: "https://cdn.midjourney.com/184f8d3b-da4e-4fe4-83ed-b2bacda08af8/0_3.png",
       features: [
         {
           title: "Workflow Automation Systems",
