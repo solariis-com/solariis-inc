@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import {
   Accordion,
@@ -77,15 +76,15 @@ const CTA = () => {
               Frequently asked questions
             </h2>
             
-            <Accordion type="single" collapsible className="space-y-2">
+            <Accordion type="single" collapsible className="space-y-1">
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="border-b border-accent-dark">
-                  <AccordionTrigger className="text-left text-text hover:text-primary transition-colors py-4 text-base font-medium">
+                  <AccordionTrigger className="text-left text-text hover:text-primary transition-colors py-2 text-base font-medium">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-text-light pb-4 pt-0 text-sm leading-relaxed">
+                  <AccordionContent className="text-text-light pb-2 pt-0 text-sm leading-relaxed">
                     {faq.answer.split('\n\n').map((paragraph, pIndex) => (
-                      <p key={pIndex} className={pIndex > 0 ? "mt-3" : ""}>
+                      <p key={pIndex} className={pIndex > 0 ? "mt-2" : ""}>
                         {paragraph}
                       </p>
                     ))}
