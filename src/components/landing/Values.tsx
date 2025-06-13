@@ -1,6 +1,4 @@
 
-
-
 const Values = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -24,7 +22,7 @@ const Values = () => {
           </div>
           
           <div className="rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative overflow-hidden bg-cover bg-center" style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1498050108023-c5249f4df085")'
+            backgroundImage: 'url("https://cdn.midjourney.com/91cdbbe8-db78-42e4-874c-440ee155aed1/0_1.png")'
           }}>
             <div className="relative z-10 text-white font-bold text-6xl mb-4 drop-shadow-lg">2</div>
             <div className="relative z-10 text-center">
@@ -34,7 +32,7 @@ const Values = () => {
           </div>
           
           <div className="rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative overflow-hidden bg-cover bg-center" style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6")'
+            backgroundImage: 'url("https://cdn.midjourney.com/1576975d-bece-4966-8284-c83442b0a06b/0_0.png")'
           }}>
             <div className="relative z-10 text-white font-bold text-6xl mb-4 drop-shadow-lg">3</div>
             <div className="relative z-10 text-center">
@@ -44,7 +42,7 @@ const Values = () => {
           </div>
 
           <div className="rounded-2xl p-8 h-48 flex flex-col items-center justify-center relative overflow-hidden bg-cover bg-center" style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7")'
+            backgroundImage: 'url("https://cdn.midjourney.com/c2920b57-d689-4602-b101-11b7387b2b44/0_2.png")'
           }}>
             <div className="relative z-10 text-white font-bold text-6xl mb-4 drop-shadow-lg">4</div>
             <div className="relative z-10 text-center">
@@ -63,4 +61,3 @@ const Values = () => {
 };
 
 export default Values;
-
