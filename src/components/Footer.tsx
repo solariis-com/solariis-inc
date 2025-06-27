@@ -1,14 +1,16 @@
+
 import { Mail, MessageCircle } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
 import LogoSvg from "../assets/logo.svg";
 import { InlineWidget } from "react-calendly";
+
 const Footer = () => {
-  const {
-    language
-  } = useLanguage();
+  const { language } = useLanguage();
   const t = translations[language];
-  return <footer id="contact" className="bg-gray-50 border-t border-gray-100">
+
+  return (
+    <footer id="contact" className="bg-gray-50 border-t border-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         
         {/* Header */}
@@ -28,9 +30,9 @@ const Footer = () => {
             <h3 className="text-2xl font-semibold text-text mb-8">Schedule a Meeting</h3>
             <div className="h-[600px] bg-white border border-gray-200">
               <InlineWidget url="https://calendly.com/solariis-info/30min" styles={{
-              height: '100%',
-              width: '100%'
-            }} />
+                height: '100%',
+                width: '100%'
+              }} />
             </div>
           </div>
 
@@ -42,8 +44,8 @@ const Footer = () => {
                 <Mail size={24} className="text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-text">Email</p>
-                  <a href="mailto:hello@solariis.agency" className="text-text-light hover:text-primary transition-colors">
-                    hello@solariis.agency
+                  <a href="mailto:contacto@solariis.com" className="text-text-light hover:text-primary transition-colors">
+                    contacto@solariis.com
                   </a>
                 </div>
               </div>
@@ -78,6 +80,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;

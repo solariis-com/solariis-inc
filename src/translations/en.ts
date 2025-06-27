@@ -1,4 +1,3 @@
-
 export const en = {
   nav: {
     home: "Home",
@@ -49,7 +48,7 @@ export const en = {
       },
       email: {
         title: "Email",
-        value: "info@solariis.com"
+        value: "contacto@solariis.com"
       }
     },
     form: {
