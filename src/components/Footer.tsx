@@ -1,83 +1,151 @@
-
-import { Mail, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Mail, Phone, MapPin, MessageCircle, MessageSquare } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
 import LogoSvg from "../assets/logo.svg";
-import { InlineWidget } from "react-calendly";
+import { useState, FormEvent } from "react";
 
 const Footer = () => {
   const { language } = useLanguage();
   const t = translations[language];
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    setError("");
+
+    if (!email || !password) {
+      setError("Please fill in all fields");
+      return;
+    }
+
+    if (!email.includes("@")) {
+      setError("Please enter a valid email address");
+      return;
+    }
+
+    try {
+      setError("Incorrect email or password");
+    } catch (err) {
+      setError("An error occurred during login");
+      console.error(err);
+    }
+  };
 
   return (
-    <footer id="contact" className="bg-gray-50 border-t border-gray-100">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-text mb-4 tracking-tight">
-            Let's Build Smarter
-          </h2>
-          <p className="text-xl text-text-light max-w-3xl mx-auto leading-relaxed">
-            Start your subscription today — or reach out with questions.
+    <footer className="bg-accent mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Quick Links section */}
+          <div className="space-y-4">
+            <h4 className="font-semibold text-text">{t.footer.quickLinks}</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/" className="text-text-light hover:text-text transition-colors">
+                  {t.nav.home}
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-text-light hover:text-text transition-colors">
+                  {t.nav.about}
+                </Link>
+              </li>
+              <li>
+                <Link to="/categories" className="text-text-light hover:text-text transition-colors">
+                  {t.nav.products}
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-text-light hover:text-text transition-colors">
+                  {t.nav.contact}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-semibold text-text">{t.footer.contact}</h4>
+            <ul className="space-y-2">
+              <li className="flex items-center space-x-2 text-text-light">
+                <Mail size={16} />
+                <span>info@solariis.com</span>
+              </li>
+              <li className="flex items-center space-x-2 text-text-light">
+                <Phone size={16} />
+                <span>+58 (412) 0907684</span>
+              </li>
+              <li className="flex items-center space-x-2 text-text-light">
+                <MapPin size={16} />
+                <span>Nueva Esparta, Campiña, T-5, Venezuela</span>
+              </li>
+              <li className="flex items-center space-x-2 text-text-light">
+                <MessageCircle size={16} />
+                <a 
+                  href="https://wa.me/584120907684" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-text transition-colors"
+                >
+                  WhatsApp
+                </a>
+              </li>
+              {/* <li className="flex items-center space-x-2 text-text-light">
+                <MessageSquare size={16} />
+                <a 
+                  href="https://t.me/solariis" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-text transition-colors"
+                >
+                  Telegram
+                </a>
+              </li> */}
+            </ul>
+          </div>
+
+          {/* Login Form section */}
+          <div className="space-y-4">
+            <h4 className="font-semibold text-text">Distributor Login</h4>
+            <p className="text-text-light">Access your distributor or reseller account</p>
+            {error && (
+              <p className="text-red-500 text-sm">{error}</p>
+            )}
+            <form onSubmit={handleSubmit} className="space-y-2">
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+              <button
+                type="submit"
+                className="w-full bg-primary hover:bg-primary-dark text-text px-4 py-2 rounded-lg transition-colors"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-gray-200">
+          <div className="flex justify-center space-x-4 mb-4">
+            <div className="flex items-end">
+              <img src={LogoSvg} alt="Solariis Logo" className="w-36 h-auto" />
+            </div>
+          </div>
+          <p className="text-center text-text-light text-body-sm">
+            © 2025 Solariis Venezuela C.A. All rights reserved.
           </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 mb-20">
-          
-          {/* Calendly Widget */}
-          <div className="lg:col-span-3">
-            <h3 className="text-2xl font-semibold text-text mb-8">Schedule a Meeting</h3>
-            <div className="h-[600px] bg-white border border-gray-200">
-              <InlineWidget url="https://calendly.com/solariis-info/30min" styles={{
-                height: '100%',
-                width: '100%'
-              }} />
-            </div>
-          </div>
-
-          {/* Contact Information */}
-          <div className="lg:col-span-2">
-            <h3 className="text-2xl font-semibold text-text mb-8">Direct Contact</h3>
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <Mail size={24} className="text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-text">Email</p>
-                  <a href="mailto:contacto@solariis.com" className="text-text-light hover:text-primary transition-colors">
-                    contacto@solariis.com
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-4">
-                <MessageCircle size={24} className="text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-text">WhatsApp</p>
-                  <a href="https://wa.me/584120907684" target="_blank" rel="noopener noreferrer" className="text-text-light hover:text-primary transition-colors">
-                    Chat with us
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-            <div className="mt-8 p-4 bg-gray-100 rounded-lg">
-              <p className="text-sm text-text-light">
-                <span className="font-medium text-text">Response Time:</span><br />
-                Usually within 2-4 hours during business hours (EST)
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Footer Bottom */}
-        <div className="pt-8 border-t border-gray-200">
-          <div className="flex flex-col sm:flex-row items-center justify-between">
-            <div className="flex items-center mb-4 sm:mb-0">
-              <img src={LogoSvg} alt="Solariis Logo" className="w-32 h-auto" />
-            </div>
-            <p className="text-text-light text-sm">© 2025 Solariis. All rights reserved.</p>
-          </div>
         </div>
       </div>
     </footer>

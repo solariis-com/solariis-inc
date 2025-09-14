@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,3 +95,5 @@
     @apply text-body mb-4;
   }
 }
+
+/* Instead of using @apply for these utility classes, we'll use them directly from Tailwind */

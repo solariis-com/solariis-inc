@@ -1,21 +1,16 @@
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Hero from "../components/onepage/Hero";
-import HowItWorks from "../components/onepage/HowItWorks";
-import Services from "../components/onepage/Services";
-import Pricing from "../components/onepage/Pricing";
-import FAQ from "../components/onepage/FAQ";
+import HeroSection from "../components/sections/HeroSection";
+import FeaturesSection from "../components/sections/FeaturesSection";
+import CategoriesSection from "../components/sections/CategoriesSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen font-body bg-white">
+    <div className="min-h-screen font-body">
       <Navbar />
-      <Hero />
-      <HowItWorks />
-      <Services />
-      <Pricing />
-      <FAQ />
+      <HeroSection />
+      <FeaturesSection />
+      <CategoriesSection />
       <Footer />
     </div>
   );

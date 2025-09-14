@@ -2,99 +2,95 @@ export const es = {
   nav: {
     home: "Inicio",
     about: "Nosotros",
-    products: "Servicios",
+    products: "Categorías",
     contact: "Contacto",
     partnerWithUs: "Asóciate con Nosotros"
   },
   hero: {
-    title: "Sistemas creativos potenciados por IA",
-    subtitle: "para equipos visionarios.",
-    description: "Solariis combina talento creativo senior con agentes de IA inteligentes para entregar diseño estratégico, pensamiento de marca y automatización a velocidad sin precedentes.",
+    title: "Conectando Marcas de Belleza y Bienestar",
+    subtitle: "con Consumidores Venezolanos",
+    description: "Conectamos marcas internacionales con el mercado venezolano, ofreciendo productos de salud y belleza de alta calidad.",
     cta: {
-      partner: "Asóciate con Nosotros",
-      learnMore: "Descubre Más"
+      partner: "Crezcamos Juntos",
+      learnMore: "Descubre las Oportunidades"
     }
   },
   about: {
     hero: {
-      title: "Una agencia construida con mentes creativas y sistemas inteligentes.",
-      description: "Solariis combina talento senior del mundo creativo con poderosos agentes de IA para ayudar a equipos visionarios a acelerar el camino de la idea al impacto."
+      title: "Transformando el Futuro de la Belleza en Venezuela",
+      description: "Solariis está dedicada a introducir y comercializar marcas premium de salud, bienestar y belleza en Venezuela."
     },
     whoWeAre: {
-      title: "Quiénes Somos",
-      description: "Solariis está construido por creativos senior y potenciado por especialistas modulares con IA que llamamos 'Agentes'. Cada Agente se enfoca en un área creativa — marca, estrategia, contenido o sistemas — y trabaja en sincronía con nuestro equipo senior. Es estrategia de nivel humano a velocidad de IA — entregando marca, estrategia, contenido y automatización para fundadores, marcas y equipos de producto que construyen el futuro."
+      title: "Nuestra Esencia",
+      description: "Solariis es una empresa comprometida con la importación, representación y comercialización de marcas premium en las industrias de salud, bienestar y belleza. Nuestro objetivo es conectar marcas globales con el mercado venezolano, asegurando el acceso a productos innovadores de alta calidad."
     },
     mission: {
-      title: "Nuestra Misión",
-      description: "Empoderar a fundadores y equipos con creatividad escalable e inteligente."
+      title: "Nuestro Propósito",
+      description: "En Solariis, creemos en empoderar a los consumidores con productos de bienestar y belleza confiables y de alta calidad. Nuestra misión es introducir y posicionar estratégicamente marcas internacionales, asegurando una penetración exitosa en el mercado mientras mantenemos la integridad y el valor de cada marca que representamos."
     },
     vision: {
-      title: "Nuestra Visión",
-      description: "Redefinir cómo las ideas se lanzan — a través de la colaboración entre humanos y máquinas."
+      title: "Nuestro Horizonte",
+      description: "Aspiramos a establecer a Solariis como un actor clave en la industria de la belleza y el bienestar, construyendo relaciones a largo plazo con marcas internacionales, minoristas y consumidores mientras mantenemos la excelencia y confiabilidad en la distribución."
     },
     whatWeDo: {
-      title: "Qué Hacemos",
+      title: "Cómo Creamos Valor",
       items: {
         brandRepresentation: {
-          title: "Sistemas de Marca Potenciados por IA",
-          description: "Estrategia integral de marca, identidad visual y sistemas modulares potenciados por insights de IA y dirección creativa senior."
+          title: "Embajadores de Marcas Visionarias",
+          description: "Actuamos como representantes oficiales de marcas internacionales de belleza y bienestar."
         },
         importDistribution: {
-          title: "Posicionamiento Estratégico e Investigación",
-          description: "Inteligencia de mercado, análisis competitivo y estrategia de posicionamiento impulsada por investigación de IA y pensamiento estratégico humano."
+          title: "Importación y Distribución",
+          description: "Llevamos productos de alta calidad a cadenas minoristas confiables, farmacias y plataformas de comercio electrónico."
         },
         marketing: {
-          title: "Contenido, Naming y Campañas de Lanzamiento",
-          description: "Creación integral de campañas, naming de marca y sistemas de contenido diseñados para máximo impacto y escalabilidad."
+          title: "Marketing y Reconocimiento de Marca",
+          description: "Desarrollamos estrategias localizadas, marketing digital y activaciones minoristas para posicionar marcas efectivamente."
         },
         regulatory: {
-          title: "Automatización y Soporte de Producto",
-          description: "Automatización de flujos de trabajo potenciada por IA, estrategia de producto y soporte de implementación técnica para operaciones escalables."
+          title: "Soporte Regulatorio y de Cumplimiento",
+          description: "Gestionamos la logística de importación, registros legales y cumplimiento del mercado local para una entrada de marca sin problemas."
         }
       }
     },
     whyChooseUs: {
       title: "¿Por Qué Elegir Solariis?",
-      description: "Combinamos liderazgo creativo senior con capacidades de IA para entregar resultados excepcionales que escalan con tus ambiciones.",
+      description: "Estamos comprometidos con la construcción de alianzas sólidas y asegurando que las marcas internacionales tengan éxito en el mercado venezolano.",
       items: [
         {
-          title: "Pensamiento Audaz, Velocidad de IA",
-          description: "Nuestros Agentes permiten iteración y entrega rápida sin comprometer la profundidad estratégica o excelencia creativa."
+          title: "Red Estratégica de Retail y Distribución",
+          description: "Acceso a minoristas líderes, farmacias y mercados en línea."
         },
         {
-          title: "Capacidades de IA Integradas",
-          description: "Nuestros Agentes aprovechan IA avanzada para acelerar investigación, ideación, creación de contenido y análisis estratégico."
+          title: "Experiencia Regulatoria y de Cumplimiento",
+          description: "Asegurando una entrada suave al mercado y adherencia a las regulaciones locales."
         },
         {
-          title: "Liderazgo Creativo Senior",
-          description: "Cada proyecto es guiado por creativos y estrategas experimentados que aseguran excelencia de marca y relevancia de mercado."
+          title: "Soporte de Marca y Crecimiento",
+          description: "Desarrollando estrategias de marketing personalizadas para mejorar el reconocimiento de marca y el compromiso del consumidor."
         },
         {
-          title: "Servicios Modulares desde Marca hasta Escala",
-          description: "Ofertas integrales desde identidad de marca y estrategia hasta automatización y soporte de desarrollo de producto."
-        },
-        {
-          title: "Diseñado para Equipos Visionarios",
-          description: "Nuestros sistemas y procesos están construidos específicamente para equipos ágiles que necesitan destacar y escalar rápidamente."
+          title: "Compromiso con la Excelencia",
+          description: "Manteniendo altos estándares de calidad y prácticas comerciales éticas en cada asociación."
         }
       ]
     },
     cta: {
-      title: "¿Listo para Construir el Futuro?",
-      description: "Ya seas una startup lanzando tu visión o una marca establecida buscando reinventarse, estamos aquí para ayudarte a acelerar y destacar.",
-      subtitle: "¡Construyamos algo extraordinario juntos!",
-      button: "Construyamos el Futuro Juntos"
+      title: "Contáctanos",
+      description: "Si eres una marca internacional que busca ingresar al mercado venezolano o un minorista interesado en productos premium de belleza y bienestar, nos encantaría conectar.",
+      subtitle: "¡Construyamos algo grandioso juntos!",
+      button: "Contáctanos"
     }
   },
   features: {
     forBrands: {
-      title: "Para Startups",
-      description: "Acelera el camino de la idea al mercado con estrategia potenciada por IA, sistemas de marca y soporte de lanzamiento diseñado para ventures en etapa temprana.",
+      title: "Para Marcas",
+      description: "¿Buscas entrar al mercado venezolano? Ofrecemos soluciones integrales de distribución y experiencia en el mercado.",
       link: "Conoce Más"
     },
     forDistributors: {
-      title: "Para Marcas",
-      description: "Reinvéntate y escala con liderazgo creativo senior y sistemas potenciados por IA para evolución de marca, contenido y automatización.",
+      title: "Para Distribuidores",
+      description: "Únete a nuestra red de distribuidores confiables y accede a marcas internacionales premium.",
       link: "Únete a Nuestra Red"
     }
   },
@@ -104,8 +100,8 @@ export const es = {
   },
   contact: {
     hero: {
-      title: "Construyamos el Futuro Juntos",
-      subtitle: "¿Listo para acelerar tu visión? Exploremos cómo la creatividad potenciada por IA puede transformar tu marca y escalar tu impacto."
+      title: "Ponte en Contacto",
+      subtitle: "Estamos aquí para ayudar y responder cualquier pregunta que puedas tener."
     },
     reachUs: {
       title: "Encuéntranos",
@@ -119,102 +115,73 @@ export const es = {
       },
       email: {
         title: "Correo",
-        value: "contacto@solariis.com"
+        value: "info@solariis.com"
       }
     },
     form: {
-      title: "Cuéntanos sobre tu visión"
+      title: "Envíanos un Mensaje"
     }
   },
   categories: {
-    title: "Todo lo que necesitas. Nada que no necesites.",
-    description: "Elige tu enfoque. Dirigiremos tu trabajo a través de nuestros Agentes especializados. Solariis ofrece servicios creativos y estratégicos integrales diseñados para ayudar a equipos a acelerar el camino de la idea al impacto.",
-    exploreButton: "¡Explora nuestros servicios!",
-    sectionTitle: "Elige Tu Enfoque",
-    sectionDescription: "Nos especializamos en servicios creativos potenciados por IA en cuatro áreas principales:",
+    title: "Descubre Nuestras Categorías de Productos",
+    description: "En Solariis, traemos productos premium de salud, bienestar y belleza al mercado, cuidadosamente seleccionados para satisfacer las necesidades de consumidores y minoristas.",
+    exploreButton: "¡Explora nuestras categorías!",
+    sectionTitle: "Nuestras Categorías de Productos",
+    sectionDescription: "Nos especializamos en la importación y distribución de marcas de alta calidad en las siguientes categorías:",
     skincare: {
-      title: "Marca e Identidad",
-      description: "Naming, Diseño de Logo, Sistemas de Marca — todo lo que necesitas para establecer y evolucionar tu presencia de marca.",
+      title: "Cuidado de la Piel",
+      description: "Soluciones premium para el cuidado de la piel incluyendo hidratantes, sueros, limpiadores y tratamientos.",
       items: [
-        "Estrategia y Posicionamiento de Marca",
-        "Naming y Arquitectura de Marca",
-        "Diseño de Logo e Identidad Visual",
-        "Guías de Marca y Bibliotecas de Recursos"
+        "Hidratantes y Cremas",
+        "Sueros y Tratamientos",
+        "Limpiadores y Tónicos",
+        "Protección Solar"
       ]
     },
     haircare: {
-      title: "Investigación y Estrategia",
-      description: "Posicionamiento, Mensajería, Personas — inteligencia estratégica que informa cada decisión creativa.",
+      title: "Cuidado del Cabello",
+      description: "Productos profesionales para todos los tipos y necesidades de cabello.",
       items: [
-        "Investigación de Mercado y Análisis Competitivo",
-        "Posicionamiento Estratégico y Mensajería",
-        "Investigación de Audiencia y Desarrollo de Personas",
-        "Estrategia de Lanzamiento al Mercado"
+        "Champús y Acondicionadores",
+        "Mascarillas Capilares",
+        "Aceites y Sueros",
+        "Productos de Peinado"
       ]
     },
     wellness: {
-      title: "Contenido y Campañas",
-      description: "Copywriting, Lanzamientos en Redes, Campañas — contenido que convierte y campañas que cautivan.",
+      title: "Bienestar y Autocuidado",
+      description: "Soluciones holísticas de bienestar para mente, cuerpo y alma.",
       items: [
-        "Estrategia y Desarrollo de Campañas",
-        "Creación de Contenido y Copywriting",
-        "Redes Sociales y Campañas de Lanzamiento",
-        "Voz de Marca y Sistemas de Mensajería"
+        "Cuidado Corporal",
+        "Aceites Esenciales",
+        "Suplementos",
+        "Ayudas para Relajación"
       ]
     },
     makeup: {
-      title: "Producto y Automatización",
-      description: "Flujos de Onboarding, Herramientas No-code, Operaciones Internas — sistemas que escalan con tu crecimiento.",
+      title: "Maquillaje y Belleza",
+      description: "Productos de belleza esenciales para un look natural e impecable.",
       items: [
-        "Onboarding de Usuario y Flujos de Experiencia",
-        "Implementación de Herramientas No-code",
-        "Automatización y Optimización de Flujos de Trabajo",
-        "Operaciones Internas y Diseño de Procesos"
+        "BB y CC Creams",
+        "Primers",
+        "Cuidado de Labios",
+        "Cuidado de Ojos"
       ]
     },
     whyChooseUs: {
       title: "¿Por Qué Elegir Solariis?",
       items: [
-        "Entregamos Pensamiento Audaz a Velocidad de IA – Nuestros Agentes permiten entrega rápida sin comprometer la profundidad estratégica o excelencia creativa.",
-        "Combinamos IA con Liderazgo Creativo Senior – Nuestro equipo fusiona capacidades avanzadas de IA con dirección creativa y estratégica experimentada.",
-        "Construimos Servicios Modulares desde Marca hasta Escala – Ofertas integrales que crecen con tu negocio desde startup hasta empresa.",
-        "Estamos Diseñados para Equipos Visionarios – Nuestros sistemas están construidos para equipos ágiles que necesitan destacar y escalar rápidamente."
+        "Garantizamos Autenticidad y Calidad – Traemos productos internacionalmente reconocidos de alto estándar.",
+        "Apoyamos a Minoristas y Distribuidores – Proporcionamos una cadena de suministro estructurada con distribución confiable.",
+        "Cumplimos con las Regulaciones Locales – Aseguramos que todos los productos cumplan con los requisitos de seguridad y regulatorios.",
+        "Expandimos el Alcance de la Marca – Ayudamos a las marcas internacionales a establecer una presencia sólida en Venezuela."
       ]
     },
     partnerWithUs: {
-      title: "Asóciate con Solariis",
-      description: "Ya seas una startup lanzando tu visión o una marca establecida buscando reinventarse, estamos aquí para ayudarte a acelerar y destacar. Explora nuestros servicios y descubre cómo la creatividad potenciada por IA puede acelerar tu éxito.",
-      contact: "¡Contáctanos hoy para empezar a construir el futuro juntos!",
-      button: "Construyamos el Futuro Juntos"
+      title: "Asóciate con Nosotros",
+      description: "Ya seas un minorista, distribuidor o marca que busca ingresar al mercado, estamos aquí para colaborar. Explora nuestras categorías de productos y descubre cómo podemos trabajar juntos.",
+      contact: "¡Contáctanos hoy para saber más!",
+      button: "Ponte en Contacto"
     }
-  },
-  faq: {
-    title: "Preguntas frecuentes",
-    questions: [
-      {
-        question: "¿Qué incluye cada plan?",
-        answer: "Starter incluye 1 solicitud activa con entrega en 3-5 días y acceso a 1 Agente. Growth incluye solicitudes secuenciales ilimitadas, entrega en 2-3 días, acceso a los 4 Agentes y soporte dedicado de líder creativo."
-      },
-      {
-        question: "¿Qué pasa si necesito más de un tipo de servicio?",
-        answer: "Con el plan Growth, obtienes acceso a los 4 Agentes (Marca, Estrategia, Contenido, Automatización). Puedes enviar diferentes tipos de solicitudes y las manejamos secuencialmente. El plan Starter se enfoca en un área de servicio a la vez."
-      },
-      {
-        question: "¿Qué tan rápido se entregan las tareas?",
-        answer: "La mayoría de solicitudes se entregan dentro de 2-5 días hábiles. Proyectos complejos pueden tomar más tiempo, pero siempre comunicamos los tiempos por adelantado. El plan Growth tiene prioridad con entrega promedio de 2-3 días."
-      },
-      {
-        question: "¿Qué son los Agentes?",
-        answer: "Los Agentes son nuestros especialistas potenciados por IA: Agente de Marca (identidad y sistemas visuales), Agente de Estrategia (investigación y posicionamiento), Agente de Contenido (campañas y mensajería), y Agente de Automatización (sistemas y flujos de trabajo). Cada uno combina capacidades de IA con experiencia humana senior."
-      },
-      {
-        question: "¿Puedo pausar o cancelar?",
-        answer: "¡Sí! Puedes pausar tu suscripción en cualquier momento y la facturación se detiene inmediatamente. Cancela en cualquier momento sin penalizaciones o contratos a largo plazo. Cuando estés listo para reanudar, simplemente reactiva tu suscripción."
-      },
-      {
-        question: "¿Qué pasa si no me gusta un entregable?",
-        answer: "Lo revisaremos hasta que estés satisfecho. La mayoría de proyectos incluyen 2-3 rondas de revisiones. Si aún no estás satisfecho dentro de la primera semana, ofrecemos garantía de devolución del dinero."
-      }
-    ]
   }
 };
