@@ -193,7 +193,7 @@ export const en = {
     questions: [
       {
         question: "What's included in each plan?",
-        answer: "Starter includes 1 active request with 3-5 day turnaround and access to 1 Agent. Growth includes unlimited sequential requests, 2-3 day turnaround, access to all brand phases, and dedicated creative lead support."
+        answer: "Starter includes 1 active request with 3-5 day turnaround and access to 1 brand phase. Growth includes unlimited sequential requests, 2-3 day turnaround, access to all brand phases, and dedicated creative lead support."
       },
       {
         question: "What if I need more than one type of service?",
