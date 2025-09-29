@@ -193,11 +193,11 @@ export const es = {
     questions: [
       {
         question: "¿Qué incluye cada plan?",
-        answer: "Starter incluye 1 solicitud activa con entrega en 3-5 días y acceso a 1 Agente. Growth incluye solicitudes secuenciales ilimitadas, entrega en 2-3 días, acceso a los 4 Agentes y soporte dedicado de líder creativo."
+        answer: "Starter incluye 1 solicitud activa con entrega en 3-5 días y acceso a 1 Agente. Growth incluye solicitudes secuenciales ilimitadas, entrega en 2-3 días, acceso a todas las fases de desarrollo de marca y soporte dedicado de líder creativo."
       },
       {
         question: "¿Qué pasa si necesito más de un tipo de servicio?",
-        answer: "Con el plan Growth, obtienes acceso a los 4 Agentes (Marca, Estrategia, Contenido, Automatización). Puedes enviar diferentes tipos de solicitudes y las manejamos secuencialmente. El plan Starter se enfoca en un área de servicio a la vez."
+        answer: "Con el plan Growth, obtienes acceso a todas las fases de desarrollo de marca: Estrategia, Creatividad, Visual, Guías y Aplicaciones. Puedes enviar diferentes tipos de solicitudes y las manejamos secuencialmente. El plan Starter se enfoca en un área de servicio a la vez."
       },
       {
         question: "¿Qué tan rápido se entregan las tareas?",
