@@ -16,7 +16,7 @@ const Pricing = () => {
       quarterly: { price: 2250, display: "$2,250", total: "$6,750" },
       features: [
         "1 active request at a time",
-        "Access to brand phase per cycle",
+        "Access to one brand phase per cycle",
         "3–5 day turnaround",
         "Pause or cancel anytime",
         "AI-enhanced output with expert oversight",
