@@ -2,14 +2,14 @@ export const en = {
   nav: {
     home: "Home",
     about: "About",
-    products: "Categories",
+    products: "Services",
     contact: "Contact",
     partnerWithUs: "Partner With Us"
   },
   hero: {
-    title: "Connecting Beauty and Wellness Brands",
-    subtitle: "with Venezuelan Consumers",
-    description: "We connect international brands with the Venezuelan market, offering high-quality health and beauty products.",
+    title: "AI-powered creative systems",
+    subtitle: "for visionary teams.",
+    description: "Solariis combines senior creative talent with intelligent AI agents to deliver strategic design, brand thinking, and automation at unprecedented speed.",
     cta: {
       partner: "Partner with Us",
       learnMore: "Learn More"
@@ -17,13 +17,13 @@ export const en = {
   },
   features: {
     forBrands: {
-      title: "For Brands",
-      description: "Looking to enter the Venezuelan market? We offer comprehensive distribution solutions and market expertise.",
+      title: "For Startups",
+      description: "Move from idea to market faster with AI-enhanced strategy, brand systems, and launch support designed for early-stage ventures.",
       link: "Learn More"
     },
     forDistributors: {
-      title: "For Distributors",
-      description: "Join our network of trusted distributors and access premium international brands.",
+      title: "For Brands",
+      description: "Reinvent and scale with senior creative leadership and AI-powered systems for brand evolution, content, and automation.",
       link: "Join Our Network"
     }
   },
@@ -33,8 +33,8 @@ export const en = {
   },
   contact: {
     hero: {
-      title: "Get in Touch",
-      subtitle: "We're here to help and answer any questions you might have."
+      title: "Let's Build the Future Together",
+      subtitle: "Ready to accelerate your vision? Let's explore how AI-enhanced creativity can transform your brand and scale your impact."
     },
     reachUs: {
       title: "Reach Us",
@@ -48,140 +48,173 @@ export const en = {
       },
       email: {
         title: "Email",
-        value: "info@solariis.com"
+        value: "contacto@solariis.com"
       }
     },
     form: {
-      title: "Send us a Message"
+      title: "Tell us about your vision"
     }
   },
   about: {
     hero: {
-      title: "Bringing Global Wellness & Beauty to You",
-      description: "Solariis is dedicated to introducing and commercializing premium health, wellbeing, and beauty brands in Venezuela."
+      title: "An agency built with creative minds and intelligent systems.",
+      description: "Solariis combines senior talent from the creative world with powerful AI agents to help visionary teams move faster from idea to impact."
     },
     whoWeAre: {
       title: "Who We Are",
-      description: "Solariis is a company committed to importing, representing, and commercializing premium brands in the health, wellbeing, and beauty industries. Our goal is to bridge global brands with the Venezuelan market, ensuring access to high-quality and innovative products."
+      description: "Solariis is built by senior creatives and powered by modular AI-powered specialists we call 'Agents'. Each Agent focuses on a creative domain — brand, strategy, content, or systems — and works in sync with our senior team. It's human-level strategy at AI speed — delivering brand, strategy, content, and automation for founders, brands, and product teams building the future."
     },
     mission: {
       title: "Our Mission",
-      description: "At Solariis, we believe in empowering consumers with trusted, high-quality wellness and beauty products. Our mission is to strategically introduce and position international brands, ensuring successful market penetration while maintaining the integrity and value of each brand we represent."
+      description: "To empower founders and teams with scalable, intelligent creativity."
     },
     vision: {
       title: "Our Vision",
-      description: "We aspire to establish Solariis as a key player in the beauty and wellness industry, building long-term relationships with international brands, retailers, and consumers while upholding excellence and reliability in distribution."
+      description: "To redefine how ideas launch — through collaboration between humans and machines."
     },
     whatWeDo: {
       title: "What We Do",
       items: {
         brandRepresentation: {
-          title: "Brand Representation & Market Expansion",
-          description: "Acting as official representatives for international beauty and wellness brands."
+          title: "AI-Enhanced Brand Systems",
+          description: "Comprehensive brand strategy, visual identity, and modular systems powered by AI insights and senior creative direction."
         },
         importDistribution: {
-          title: "Import & Distribution",
-          description: "Bringing high-quality products to trusted retail chains, pharmacies, and e-commerce platforms."
+          title: "Strategic Positioning & Research",
+          description: "Market intelligence, competitive analysis, and positioning strategy driven by AI research and human strategic thinking."
         },
         marketing: {
-          title: "Marketing & Brand Awareness",
-          description: "Developing localized strategies, digital marketing, and retail activations to position brands effectively."
+          title: "Content, Naming & Launch Campaigns",
+          description: "End-to-end campaign creation, brand naming, and content systems designed for maximum impact and scalability."
         },
         regulatory: {
-          title: "Regulatory & Compliance Support",
-          description: "Handling import logistics, legal registrations, and local market compliance for seamless brand entry."
+          title: "Automation & Product Layer Support",
+          description: "AI-powered workflow automation, product strategy, and technical implementation support for scaling operations."
         }
       }
     },
     whyChooseUs: {
       title: "Why Choose Solariis?",
-      description: "We are committed to building strong partnerships and ensuring that international brands succeed in the Venezuelan market.",
+      description: "We combine senior creative leadership with AI capabilities to deliver exceptional results that scale with your ambitions.",
       items: [
         {
-          title: "Strategic Retail & Distribution Network",
-          description: "Access to leading retailers, pharmacies, and online marketplaces."
+          title: "Bold Thinking, AI Speed",
+          description: "Our Agents enable rapid iteration and delivery without compromising on strategic depth or creative excellence."
         },
         {
-          title: "Regulatory & Compliance Expertise",
-          description: "Ensuring smooth market entry and adherence to local regulations."
+          title: "Built-in AI Capabilities",
+          description: "Our Agents leverage advanced AI to accelerate research, ideation, content creation, and strategic analysis."
         },
         {
-          title: "Branding & Growth Support",
-          description: "Developing tailored marketing strategies to enhance brand awareness and consumer engagement."
+          title: "Senior Creative Leadership",
+          description: "Every project is guided by experienced creatives and strategists who ensure brand excellence and market relevance."
         },
         {
-          title: "Commitment to Excellence",
-          description: "Upholding high-quality standards and ethical business practices in every partnership."
+          title: "Modular Services from Brand to Build",
+          description: "Comprehensive offerings from brand identity and strategy to automation and product development support."
+        },
+        {
+          title: "Designed for Visionary Teams",
+          description: "Our systems and processes are built specifically for fast-moving teams that need to stand out and scale quickly."
         }
       ]
     },
     cta: {
-      title: "Get in Touch",
-      description: "If you are an international brand looking to enter the Venezuelan market or a retailer interested in premium beauty and wellness products, we'd love to connect.",
-      subtitle: "Let's build something great together!",
-      button: "Contact Us"
+      title: "Ready to Build the Future?",
+      description: "Whether you're a startup launching your vision or an established brand looking to reinvent, we're here to help you move faster and stand out.",
+      subtitle: "Let's engineer something extraordinary together!",
+      button: "Let's Build the Future Together"
     }
   },
   categories: {
-    title: "Discover Our Product Categories",
-    description: "At Solariis, we bring premium health, wellness, and beauty products to market, carefully curated to meet the needs of consumers and retailers.",
-    exploreButton: "Explore our categories!",
-    sectionTitle: "Our Product Categories",
-    sectionDescription: "We specialize in importing and distributing high-quality brands in the following categories:",
+    title: "Everything you need. Nothing you don't.",
+    description: "Choose your focus. We'll route your work through our specialized Agents. Solariis offers comprehensive creative and strategic services designed to help teams move faster from idea to impact.",
+    exploreButton: "Explore our services!",
+    sectionTitle: "Choose Your Focus",
+    sectionDescription: "We specialize in AI-enhanced creative services across four core areas:",
     skincare: {
-      title: "Skincare",
-      description: "Premium skincare solutions including moisturizers, serums, cleansers, and treatments.",
+      title: "Brand & Identity",
+      description: "Naming, Logo Design, Brand Systems — everything you need to establish and evolve your brand presence.",
       items: [
-        "Moisturizers & Creams",
-        "Serums & Treatments",
-        "Cleansers & Toners",
-        "Sun Protection"
+        "Brand Strategy & Positioning",
+        "Naming & Brand Architecture", 
+        "Logo Design & Visual Identity",
+        "Brand Guidelines & Asset Libraries"
       ]
     },
     haircare: {
-      title: "Haircare",
-      description: "Professional products for all hair types and needs.",
+      title: "Research & Strategy",
+      description: "Positioning, Messaging, Personas — strategic intelligence that informs every creative decision.",
       items: [
-        "Shampoos & Conditioners",
-        "Hair Masks",
-        "Oils & Serums",
-        "Styling Products"
+        "Market Research & Competitive Analysis",
+        "Strategic Positioning & Messaging",
+        "Audience Research & Persona Development",
+        "Go-to-Market Strategy"
       ]
     },
     wellness: {
-      title: "Wellness & Self-Care",
-      description: "Holistic wellness solutions for mind, body, and soul.",
+      title: "Content & Campaigns",
+      description: "Copywriting, Social Launches, Campaigns — content that converts and campaigns that captivate.",
       items: [
-        "Body Care",
-        "Essential Oils",
-        "Supplements",
-        "Relaxation Aids"
+        "Campaign Strategy & Development",
+        "Content Creation & Copywriting",
+        "Social Media & Launch Campaigns",
+        "Brand Voice & Messaging Systems"
       ]
     },
     makeup: {
-      title: "Makeup & Beauty",
-      description: "Essential beauty products for a natural and flawless look.",
+      title: "Product & Automation",
+      description: "Onboarding Flows, No-code Tools, Internal Ops — systems that scale with your growth.",
       items: [
-        "BB & CC Creams",
-        "Primers",
-        "Lip Care",
-        "Eye Care"
+        "User Onboarding & Experience Flows",
+        "No-code Tool Implementation",
+        "Workflow Automation & Optimization",
+        "Internal Operations & Process Design"
       ]
     },
     whyChooseUs: {
       title: "Why Choose Solariis?",
       items: [
-        "We Guarantee Authenticity & Quality – We bring internationally recognized products of high standard.",
-        "We Support Retailers & Distributors – We provide a structured supply chain with reliable distribution.",
-        "We Comply with Local Regulations – We ensure all products meet safety and regulatory requirements.",
-        "We Expand Brand Reach – We help international brands establish a strong presence in Venezuela."
+        "We Deliver Bold Thinking at AI Speed – Our Agents enable rapid delivery without compromising on strategic depth or creative excellence.",
+        "We Combine AI with Senior Creative Leadership – Our team merges advanced AI capabilities with experienced creative and strategic direction.",
+        "We Build Modular Services from Brand to Scale – Comprehensive offerings that grow with your business from startup to enterprise.",
+        "We're Designed for Visionary Teams – Our systems are built for fast-moving teams that need to stand out and scale quickly."
       ]
     },
     partnerWithUs: {
-      title: "Partner With Us",
-      description: "Whether you're a retailer, distributor, or brand looking to enter the market, we're here to collaborate. Explore our product categories and discover how we can work together.",
-      contact: "Contact us today to learn more!",
-      button: "Get in Touch"
+      title: "Partner With Solariis",
+      description: "Whether you're a startup launching your vision or an established brand looking to reinvent, we're here to help you move faster and stand out. Explore our services and discover how AI-enhanced creativity can accelerate your success.",
+      contact: "Contact us today to start building the future together!",
+      button: "Let's Build the Future Together"
     }
+  },
+  faq: {
+    title: "Frequently asked questions",
+    questions: [
+      {
+        question: "What's included in each plan?",
+        answer: "Starter includes 1 active request with 3-5 day turnaround and access to 1 Agent. Growth includes unlimited sequential requests, 2-3 day turnaround, access to all 4 Agents, and dedicated creative lead support."
+      },
+      {
+        question: "What if I need more than one type of service?",
+        answer: "With Growth plan, you get access to all 4 Agents (Brand, Strategy, Content, Automation). You can submit different types of requests and we'll handle them sequentially. Starter plan focuses on one service area at a time."
+      },
+      {
+        question: "How fast are tasks delivered?",
+        answer: "Most requests are delivered within 2-5 business days. Complex projects may take longer, but we'll always communicate timelines upfront. Growth plan gets priority with 2-3 day average turnaround."
+      },
+      {
+        question: "What are Agents?",
+        answer: "Agents are our AI-enhanced specialists: Brand Agent (identity & visual systems), Strategy Agent (research & positioning), Content Agent (campaigns & messaging), and Automation Agent (systems & workflows). Each combines AI capabilities with senior human expertise."
+      },
+      {
+        question: "Can I pause or cancel?",
+        answer: "Yes! You can pause your subscription at any time and billing stops immediately. Cancel anytime with no penalties or long-term contracts. When you're ready to resume, just reactivate your subscription."
+      },
+      {
+        question: "What if I don't like a deliverable?",
+        answer: "We'll revise it until you're happy. Most projects include 2-3 rounds of revisions. If you're still not satisfied within the first week, we offer a money-back guarantee."
+      }
+    ]
   }
 };

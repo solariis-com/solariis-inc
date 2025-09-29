@@ -1,3 +1,4 @@
+
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations";
 import ProductCategory from "../ProductCategory";
@@ -10,92 +11,92 @@ const CategoryList = () => {
     {
       title: t.skincare.title,
       description: t.skincare.description,
-      imageSrc: "/lovable-uploads/7acb4e9d-c852-4bb5-afa9-9e91be10a7c0.png",
+      imageSrc: "https://cdn.midjourney.com/a5b8d896-9ca6-4e82-b720-43515bdae68f/0_1.png",
       features: [
         {
-          title: "Hydration & Anti-Aging",
-          description: "Formulated with advanced ingredients like hyaluronic acid, retinol, and peptides to deeply hydrate, improve elasticity, and reduce fine lines."
+          title: "Strategic Brand Positioning",
+          description: "AI-driven market analysis and competitive research to identify unique positioning opportunities and develop compelling brand narratives."
         },
         {
-          title: "Deep Cleansing & Purifying",
-          description: "Clay masks, exfoliators, and gentle cleansers that help remove impurities, minimize pores, and maintain balanced skin."
+          title: "Visual Identity Systems",
+          description: "Comprehensive brand identity creation including logos, color palettes, typography, and visual guidelines that scale across all touchpoints."
         },
         {
-          title: "Brightening & Even-Tone Solutions",
-          description: "Skincare infused with vitamin C, niacinamide, and botanical extracts to promote a radiant complexion and even skin tone."
+          title: "Brand Architecture & Guidelines",
+          description: "Strategic brand structure development and comprehensive guidelines backed by AI insights and senior creative direction."
         },
         {
-          title: "Sun Protection",
-          description: "Lightweight, high-SPF sun creams offering broad-spectrum UV protection, keeping skin shielded from sun damage while maintaining hydration."
-        }
-      ]
-    },
-    {
-      title: t.wellness.title,
-      description: t.wellness.description,
-      imageSrc: "/lovable-uploads/432c0ff8-3f4f-4199-a36a-8d63f851bd8a.png",
-      features: [
-        {
-          title: "Nutritional Supplements",
-          description: "High-quality vitamins, minerals, and herbal supplements to support immune health, energy, and overall well-being."
-        },
-        {
-          title: "Stress Relief & Relaxation",
-          description: "Aromatherapy, essential oils, and self-care products designed to promote relaxation, reduce stress, and improve sleep quality."
-        },
-        {
-          title: "Detox & Gut Health",
-          description: "Herbal blends, fiber-rich supplements, and probiotics to improve digestion, aid metabolism, and support internal cleansing."
-        },
-        {
-          title: "Muscle Recovery & Joint Health",
-          description: "Products designed for post-workout recovery, joint flexibility, and overall mobility support."
+          title: "Asset Library & Template Creation",
+          description: "Organized collections of brand assets, templates, and resources designed for consistent application and team scalability."
         }
       ]
     },
     {
       title: t.haircare.title,
       description: t.haircare.description,
-      imageSrc: "/lovable-uploads/98af4ef5-abb3-49be-b3b8-f7d69d917f30.png",
+      imageSrc: "https://cdn.midjourney.com/92b920b5-90d3-45ad-8444-d683ca275ebd/0_2.png",
       features: [
         {
-          title: "Hair Care & Treatments",
-          description: "Nourishing shampoos, conditioners, and intensive treatments infused with collagen, keratin, and ceramides to restore strength and shine."
+          title: "Market Intelligence & Analysis",
+          description: "AI-enhanced market research combined with human strategic analysis to uncover opportunities and competitive advantages."
         },
         {
-          title: "Body Care & Hydration",
-          description: "Luxurious lotions, body scrubs, and moisturizing treatments enriched with shea butter, aloe vera, and botanical extracts to keep skin soft and smooth."
+          title: "Competitive Landscape Mapping",
+          description: "Comprehensive competitive analysis and positioning strategy to help your brand stand out in crowded markets."
         },
         {
-          title: "Oral Hygiene & Personal Care",
-          description: "Premium toothpaste, mouthwashes, and hygiene essentials to ensure a fresh, clean, and healthy routine."
+          title: "Audience Research & Insights",
+          description: "Deep audience analysis using AI-powered research tools combined with human behavioral expertise for precise targeting."
         },
         {
-          title: "Frizz Control & Styling",
-          description: "Leave-in treatments, styling sprays, and curl enhancers to maintain smooth, manageable hair with lasting hold."
+          title: "Strategic Positioning Framework",
+          description: "Data-driven positioning strategies designed for market entry, brand evolution, and competitive differentiation."
+        }
+      ]
+    },
+    {
+      title: t.wellness.title,
+      description: t.wellness.description,
+      imageSrc: "https://cdn.midjourney.com/3e2b91b7-2126-41c3-b287-861042855364/0_2.png",
+      features: [
+        {
+          title: "Campaign Strategy & Development",
+          description: "End-to-end campaign creation from concept to execution, leveraging AI insights for optimal messaging and creative performance."
+        },
+        {
+          title: "Brand Naming & Messaging",
+          description: "AI-enhanced naming processes and messaging frameworks that resonate with target audiences and support brand goals."
+        },
+        {
+          title: "Content Creation & Planning",
+          description: "Strategic content development, social media planning, and digital asset creation for consistent brand presence."
+        },
+        {
+          title: "Launch Campaign Execution",
+          description: "Comprehensive launch support including campaign management, performance optimization, and real-time adjustments."
         }
       ]
     },
     {
       title: t.makeup.title,
       description: t.makeup.description,
-      imageSrc: "/lovable-uploads/bc578a58-dea8-4c91-9ac8-423c5d6b3ca4.png",
+      imageSrc: "https://cdn.midjourney.com/184f8d3b-da4e-4fe4-83ed-b2bacda08af8/0_3.png",
       features: [
         {
-          title: "Long-Lasting Foundations & Concealers",
-          description: "Lightweight, buildable coverage that evens out skin tone while keeping skin hydrated."
+          title: "Workflow Automation Systems",
+          description: "AI-powered automation solutions that streamline creative processes, reduce manual tasks, and accelerate project delivery."
         },
         {
-          title: "Lip Care & Color",
-          description: "Hydrating lip balms, vibrant lipsticks, and high-shine glosses for long-lasting color and nourishment."
+          title: "Product Strategy Support",
+          description: "Strategic product development guidance, user experience optimization, and go-to-market planning for digital products."
         },
         {
-          title: "Eye Makeup & Definition",
-          description: "High-pigment eyeshadows, waterproof mascaras, and precise eyeliners for an expressive, bold look."
+          title: "Technical Implementation",
+          description: "Support for technical execution including system integration, process optimization, and scalable infrastructure setup."
         },
         {
-          title: "Makeup Setting & Skincare Fusion",
-          description: "Setting sprays, primers, and hybrid makeup products infused with skincare benefits to enhance and protect the skin."
+          title: "Scaling Operations Framework",
+          description: "Modular systems and processes designed to support rapid growth while maintaining quality and brand consistency."
         }
       ]
     }

@@ -1,3 +1,4 @@
+
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations";
@@ -28,7 +29,10 @@ const CategoriesSection = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-heading text-h2 text-text mb-8 text-center">{t.categories.title}</h2>
+        <h2 className="font-heading text-h2 text-text mb-8 text-center">{t.categories.sectionTitle}</h2>
+        <p className="text-body text-center max-w-3xl mx-auto mb-12">
+          {t.categories.sectionDescription}
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {categories.map((category, index) => (
             <div

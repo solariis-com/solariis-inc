@@ -1,3 +1,4 @@
+
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 import { ContactForm } from "@/components/ContactForm";
@@ -62,6 +63,12 @@ const Contact = () => {
             {/* Contact Form */}
             <div>
               <h2 className="mb-8">{t.contact.form.title}</h2>
+              <div className="mb-6 p-4 bg-muted rounded-lg">
+                <h3 className="font-heading text-h4 mb-2 text-primary">What problem are you solving?</h3>
+                <p className="text-body-sm text-text-light">
+                  Help us understand your challenge so we can connect you with the right Connectors and create a tailored approach for your project.
+                </p>
+              </div>
               <ContactForm />
             </div>
           </div>
