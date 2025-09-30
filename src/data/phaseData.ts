@@ -70,7 +70,7 @@ export const designPhases: DesignPhase[] = [
       'Concept Decks'
     ],
     moduleIds: ['m2', 'p3', 'dm3'], // 3 modules
-    gradient: 'from-purple-500 to-pink-500',
+    gradient: 'from-purple-600 to-pink-600',
     displayOrder: 2
   },
   {
@@ -98,7 +98,7 @@ export const designPhases: DesignPhase[] = [
       'Marketing Collateral'
     ],
     moduleIds: ['m4', 'p5', 'p6', 'p8'], // 4 modules
-    gradient: 'from-orange-500 to-red-500',
+    gradient: 'from-orange-600 to-red-600',
     displayOrder: 3
   },
   {
@@ -124,7 +124,7 @@ export const designPhases: DesignPhase[] = [
       'Figma Libraries'
     ],
     moduleIds: ['m5', 'p7'], // 2 modules
-    gradient: 'from-teal-500 to-green-500',
+    gradient: 'from-teal-700 to-teal-800',
     displayOrder: 4
   },
   {
@@ -151,7 +151,7 @@ export const designPhases: DesignPhase[] = [
       'QA Reports'
     ],
     moduleIds: ['p9', 'dm4', 'dm5'], // 3 modules
-    gradient: 'from-green-400 to-blue-500',
+    gradient: 'from-emerald-600 to-cyan-600',
     displayOrder: 5
   }
 ];

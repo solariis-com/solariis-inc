@@ -62,27 +62,35 @@ const Pricing = () => {
           </p>
           
           {/* Billing Toggle */}
-          <div className="inline-flex items-center bg-white rounded-lg p-1 mb-8">
+          <div
+            className="inline-flex items-center bg-white rounded-lg p-1 mb-8"
+            role="group"
+            aria-label="Billing cycle selector"
+          >
             <button
               onClick={() => setBillingCycle('monthly')}
-              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`px-6 py-3 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
                 billingCycle === 'monthly'
                   ? 'bg-accent text-text shadow-sm'
                   : 'text-text-light hover:text-text'
               }`}
+              aria-pressed={billingCycle === 'monthly'}
+              aria-label="Select monthly billing"
             >
               Monthly billing
             </button>
             <button
               onClick={() => setBillingCycle('quarterly')}
-              className={`px-6 py-2 rounded-md text-sm font-medium transition-colors ${
+              className={`px-6 py-3 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${
                 billingCycle === 'quarterly'
                   ? 'bg-accent text-text shadow-sm'
                   : 'text-text-light hover:text-text'
               }`}
+              aria-pressed={billingCycle === 'quarterly'}
+              aria-label="Select quarterly billing and save 10%"
             >
               Quarterly billing
-              <span className="ml-2 text-xs bg-primary text-white px-2 py-0.5 rounded-full">
+              <span className="ml-2 text-xs bg-primary text-white px-2 py-0.5 rounded-full" aria-hidden="true">
                 Save 10%
               </span>
             </button>
@@ -127,8 +135,9 @@ const Pricing = () => {
             </ul>
 
             <button
-              onClick={() => scrollToSection('final-cta')}
-              className="w-full bg-text text-white py-3 px-6 rounded-lg font-semibold hover:bg-text/90 transition-colors text-center block"
+              onClick={() => scrollToSection('contact')}
+              className="w-full bg-text text-white py-3 px-6 rounded-lg font-semibold hover:bg-text/90 transition-colors text-center block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              aria-label="Go to contact section"
             >
               {plans.starter.cta}
             </button>
@@ -177,8 +186,9 @@ const Pricing = () => {
             </ul>
 
             <button
-              onClick={() => scrollToSection('final-cta')}
-              className="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-dark transition-colors text-center block"
+              onClick={() => scrollToSection('contact')}
+              className="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-dark transition-colors text-center block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              aria-label="Go to contact section"
             >
               {plans.growth.cta}
             </button>

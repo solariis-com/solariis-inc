@@ -1,6 +1,6 @@
 
 import { Navbar, Footer } from "@/components/layout";
-import { Hero, HowItWorks, Services, Pricing, FAQ } from "@/features/landing";
+import { Hero, HowItWorks, Services, Pricing, FAQ, Contact } from "@/features/landing";
 
 const Index = () => {
   return (
@@ -11,6 +11,7 @@ const Index = () => {
       <Services />
       <Pricing />
       <FAQ />
+      <Contact />
       <Footer />
     </div>
   );

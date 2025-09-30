@@ -90,16 +90,24 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="text-text hover:text-text-light transition-colors"
+              className="text-text hover:text-text-light transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden">
+          <div
+            className="md:hidden"
+            id="mobile-menu"
+            role="navigation"
+            aria-label="Mobile navigation"
+          >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <button
                 onClick={() => scrollToSection('how-it-works')}

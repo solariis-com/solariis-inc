@@ -1,203 +1,98 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
-import { supabase } from '@/integrations/supabase/client';
-import { MessageCircle } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
+import { InlineWidget } from "react-calendly";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    topic: "",
-    message: ""
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      // Insert into contact_submissions table
-      const { error: submissionError } = await supabase
-        .from('contact_submissions')
-        .insert([{
-          name: formData.name,
-          email: formData.email,
-          subject: formData.topic || 'General',
-          message: formData.message,
-        }]);
-
-      if (submissionError) {
-        throw submissionError;
-      }
-
-      // Send email notification
-      const { error: emailError } = await supabase.functions.invoke('send-contact-email', {
-        body: { 
-          name: formData.name,
-          email: formData.email,
-          subject: formData.topic || 'General',
-          message: formData.message
-        },
-      });
-
-      if (emailError) {
-        console.error('Email sending error:', emailError);
-        toast({
-          title: "Message saved but email notification failed",
-          description: "We received your message but couldn't send the email notification. We'll still get back to you soon.",
-        });
-      } else {
-        toast({
-          title: "Message sent successfully!",
-          description: "We'll get back to you as soon as possible.",
-        });
-      }
-      
-      // Reset form
-      setFormData({ name: "", email: "", topic: "", message: "" });
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      toast({
-        title: "Error sending message",
-        description: "Please try again later.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-accent">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
+    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
           <h2 className="font-heading text-4xl lg:text-5xl text-text mb-4 tracking-tight">
-            Get in Touch
+            Let's Build Smarter
           </h2>
-          <p className="text-xl text-text-light max-w-2xl mx-auto leading-relaxed">
-            Have questions before subscribing? Reach out — we usually reply within a few hours.
+          <p className="text-xl text-text-light max-w-3xl mx-auto leading-relaxed">
+            Schedule a meeting to discuss your project — we typically respond within 2-4 hours during business hours (EST).
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-text mb-2">
-                Name
-              </label>
-              <Input
-                id="name"
-                type="text"
-                placeholder="Your name"
-                value={formData.name}
-                onChange={(e) => handleInputChange('name', e.target.value)}
-                required
-              />
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+
+          {/* Left Column: Calendly Widget */}
+          <div className="lg:col-span-3">
+            <div
+              className="h-[700px] bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden"
+              aria-label="Schedule a meeting calendar"
+            >
+              <InlineWidget url="https://calendly.com/solariis-info/30min" styles={{
+                height: '100%',
+                width: '100%'
+              }} />
             </div>
+          </div>
 
+          {/* Right Column: Contact Info */}
+          <div className="lg:col-span-2 space-y-6">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-text mb-2">
-                Email
-              </label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="your.email@example.com"
-                value={formData.email}
-                onChange={(e) => handleInputChange('email', e.target.value)}
-                required
-              />
-            </div>
-
-            <div>
-              <label htmlFor="topic" className="block text-sm font-medium text-text mb-2">
-                Topic
-              </label>
-              <Select onValueChange={(value) => handleInputChange('topic', value)} value={formData.topic}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select a topic" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="general">General Inquiry</SelectItem>
-                  <SelectItem value="partnership">Partnership</SelectItem>
-                  <SelectItem value="support">Support</SelectItem>
-                  <SelectItem value="pricing">Pricing & Plans</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-text mb-2">
-                Message
-              </label>
-              <Textarea
-                id="message"
-                placeholder="Tell us about your project or how we can help..."
-                className="min-h-[120px]"
-                value={formData.message}
-                onChange={(e) => handleInputChange('message', e.target.value)}
-                required
-              />
-            </div>
-
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
-              {isSubmitting ? "Sending..." : "Send Message"}
-            </Button>
-          </form>
-
-          {/* Contact Info */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="font-semibold text-text text-lg mb-4">
+              <h3 className="text-2xl font-heading font-semibold text-text mb-6">
                 Direct Contact
               </h3>
-              <div className="space-y-3">
-                <p className="text-text-light">
-                  <span className="font-medium">Email:</span>{" "}
-                  <a href="mailto:contacto@solariis.com" className="text-primary hover:underline">
-                    contacto@solariis.com
-                  </a>
-                </p>
-                <p className="text-text-light">
-                  <span className="font-medium">Phone:</span> +58 (412) 0907684
-                </p>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <Mail size={24} className="text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-text mb-1">Email</p>
+                    <a href="mailto:contacto@solariis.com" className="text-text-light hover:text-primary transition-colors">
+                      contacto@solariis.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <MessageCircle size={24} className="text-primary mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-medium text-text mb-1">WhatsApp</p>
+                    <a
+                      href="https://wa.me/584120907684"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-text-light hover:text-primary transition-colors"
+                    >
+                      +58 (412) 0907684
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div>
-              <h3 className="font-semibold text-text text-lg mb-4">
-                Quick Chat
-              </h3>
-              <a
-                href="https://wa.me/584120907684"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 text-primary hover:text-primary-dark transition-colors"
-              >
-                <MessageCircle size={20} />
-                <span>WhatsApp</span>
-              </a>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="font-semibold text-text text-lg mb-2">
                 Response Time
               </h3>
-              <p className="text-text-light text-sm">
-                We typically respond within 2-4 hours during business hours (EST). 
+              <p className="text-text-light text-sm leading-relaxed">
+                We typically respond within 2-4 hours during business hours (EST).
                 For urgent matters, WhatsApp is usually fastest.
               </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-lg">
+              <h3 className="font-semibold text-text text-lg mb-2">
+                What to Expect
+              </h3>
+              <ul className="space-y-2 text-sm text-text-light">
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  <span>Quick response from our team</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  <span>Free consultation call</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  <span>Custom proposal for your needs</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

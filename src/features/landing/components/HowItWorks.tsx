@@ -1,6 +1,5 @@
 
 import { ArrowRight, CheckCircle2, Users, Zap, MessageSquare, FileText, Target, Rocket } from "lucide-react";
-import { designPhases } from "@/data/phaseData";
 
 const HowItWorks = () => {
   const steps = [
@@ -92,15 +91,15 @@ const HowItWorks = () => {
                 </div>
 
                 <div>
-                  <h3 className="font-heading text-xl text-text font-bold">
+                  <h3 className="font-heading text-2xl text-text font-bold mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-sm text-primary font-medium">
+                  <p className="text-sm text-primary font-semibold">
                     {step.subtitle}
                   </p>
                 </div>
 
-                <p className="text-text-light text-sm leading-relaxed">
+                <p className="text-text-light leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -109,42 +108,25 @@ const HowItWorks = () => {
         </div>
 
         {/* Benefits Grid */}
-        <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 mb-16">
-          <h3 className="text-center font-heading text-2xl text-text mb-8">
+        <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl p-8 lg:p-12">
+          <h3 className="text-center font-heading text-3xl lg:text-4xl text-text mb-8 tracking-tight">
             Why Iterative Delivery Works
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => {
               const IconComponent = benefit.icon;
               return (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <IconComponent className="w-8 h-8 text-primary" />
+                <div key={index} className="flex flex-col items-center text-center space-y-3">
+                  <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
+                    <IconComponent className="w-7 h-7 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-text mb-1">{benefit.title}</h4>
-                    <p className="text-sm text-text-light">{benefit.description}</p>
+                    <h4 className="font-heading text-xl text-text font-bold mb-2">{benefit.title}</h4>
+                    <p className="text-text-light">{benefit.description}</p>
                   </div>
                 </div>
               );
             })}
-          </div>
-        </div>
-
-        {/* Phase Timeline */}
-        <div className="text-center">
-          <p className="text-sm text-text-light mb-4">Our work flows through 5 core phases:</p>
-          <div className="flex items-center justify-center space-x-2 flex-wrap gap-2">
-            {designPhases.map((phase, index) => (
-              <div key={phase.id} className="flex items-center">
-                <div className={`bg-gradient-to-br ${phase.gradient} text-white px-4 py-2 rounded-full text-xs font-medium shadow-sm`}>
-                  {phase.name}
-                </div>
-                {index < designPhases.length - 1 && (
-                  <ArrowRight className="w-4 h-4 text-gray-400 mx-1" />
-                )}
-              </div>
-            ))}
           </div>
         </div>
       </div>

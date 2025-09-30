@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
 import { designPhases } from "@/data/phaseData";
 import PhaseCard from "./PhaseCard";
 
 const Services = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -26,12 +32,13 @@ const Services = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <Link
-            to="/categories"
-            className="inline-flex items-center bg-primary text-white px-8 py-4 text-lg font-medium rounded-lg hover:bg-primary-dark transition-colors duration-200"
+          <button
+            onClick={() => scrollToSection('contact')}
+            className="inline-flex items-center bg-primary text-white px-8 py-4 text-lg font-medium rounded-lg hover:bg-primary-dark transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            aria-label="Go to contact section"
           >
-            Explore All Services
-          </Link>
+            Get Started
+          </button>
         </div>
 
         {/* Progressive Journey Text */}
