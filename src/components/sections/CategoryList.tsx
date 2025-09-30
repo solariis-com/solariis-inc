@@ -1,6 +1,5 @@
 
-import { useLanguage } from "../../contexts/LanguageContext";
-import { translations } from "../../translations";
+import { useLanguage, translations } from "@/i18n";
 import ProductCategory from "../ProductCategory";
 
 const CategoryList = () => {

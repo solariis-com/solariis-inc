@@ -137,9 +137,7 @@ const HowItWorks = () => {
           <div className="flex items-center justify-center space-x-2 flex-wrap gap-2">
             {designPhases.map((phase, index) => (
               <div key={phase.id} className="flex items-center">
-                <div className="bg-gradient-to-br text-white px-4 py-2 rounded-full text-xs font-medium shadow-sm"
-                     style={{backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))`}}
-                     className={`bg-gradient-to-br ${phase.gradient} text-white px-4 py-2 rounded-full text-xs font-medium shadow-sm`}>
+                <div className={`bg-gradient-to-br ${phase.gradient} text-white px-4 py-2 rounded-full text-xs font-medium shadow-sm`}>
                   {phase.name}
                 </div>
                 {index < designPhases.length - 1 && (

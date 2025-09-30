@@ -1,7 +1,6 @@
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { useLanguage } from "../../contexts/LanguageContext";
-import { translations } from "../../translations";
+import { useLanguage, translations } from "@/i18n";
 
 const categories = [
   {
