@@ -1,5 +1,5 @@
 
-import { ArrowRight, CheckCircle2, Users, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2, Users, Zap, MessageSquare, FileText, Target, Rocket } from "lucide-react";
 import { designPhases } from "@/data/phaseData";
 
 const HowItWorks = () => {
@@ -9,28 +9,28 @@ const HowItWorks = () => {
       title: "Assessment",
       subtitle: "Share Your Vision",
       description: "We start by discussing your goals, challenges, and timeline. Our structured discovery helps us understand exactly what you need.",
-      icon: "💬"
+      icon: MessageSquare
     },
     {
       number: "02",
       title: "Proposal",
       subtitle: "Choose Your Model",
       description: "We offer flexible engagement options: subscription plans for ongoing needs, fixed-price projects, or custom retainers.",
-      icon: "📋"
+      icon: FileText
     },
     {
       number: "03",
       title: "Scoping",
       subtitle: "Plan & Prioritize",
       description: "We break down your project into phases and prioritized tasks, creating a clear roadmap with timelines and milestones.",
-      icon: "🎯"
+      icon: Target
     },
     {
       number: "04",
       title: "Iterative Delivery",
       subtitle: "Build & Refine",
       description: "We deliver in manageable stages with regular check-ins, allowing continuous feedback and optimization throughout.",
-      icon: "🚀"
+      icon: Rocket
     }
   ];
 
@@ -80,7 +80,12 @@ const HowItWorks = () => {
               {/* Step Card */}
               <div className="relative z-10 text-center space-y-4 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                 <div className="flex items-center justify-center space-x-2 mb-2">
-                  <div className="text-3xl">{step.icon}</div>
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                    {(() => {
+                      const IconComponent = step.icon;
+                      return <IconComponent className="w-6 h-6 text-primary" />;
+                    })()}
+                  </div>
                   <div className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">
                     {step.number}
                   </div>
