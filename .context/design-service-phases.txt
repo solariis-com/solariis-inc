@@ -1,0 +1,26 @@
+Sora Union – Design Service Phases Table
+
+Phase 1: Strategy
+Description: Foundational research, positioning, and planning to guide creative direction.
+Examples of Services: Brand Audit, Market Research, UX/UI Audit, PRD, Audience Research
+Typical Deliverables: Research Reports, Personas, Audit Reports, Strategic Briefs, Product Requirement Definitions
+
+Phase 2: Creativity
+Description: Conceptual exploration and ideation across brand and product experiences.
+Examples of Services: Naming, Creative Concepts, Campaign Concepts, MVP Design
+Typical Deliverables: Naming Options, Creative Territories, Wireframes, Moodboards, Low-Fi Prototypes
+
+Phase 3: Visuals
+Description: Execution of core brand, product, or campaign assets with visual excellence.
+Examples of Services: Brand Identity Design, Website UI, Product Mockups, Content Creation
+Typical Deliverables: Logos, UI Screens, App Interfaces, Visual Assets, Deck Designs, Motion Samples
+
+Phase 4: Guidelines
+Description: Systems and documentation for consistent application across platforms.
+Examples of Services: Brand Guidelines, Design Systems, Content Styleguides
+Typical Deliverables: Brand Books, UI Kits, Component Libraries, Copy Guidelines, Documentation PDFs
+
+Phase 5: Activation & Applications
+Description: Application, launch, and marketing of design work across platforms and channels.
+Examples of Services: Web Launch, Social Media, Ads, Email Campaigns, Campaign Management, QA Support
+Typical Deliverables: Live Website, Campaign Rollout Kits, Email Designs, Analytics Dashboards, Ongoing Maintenance

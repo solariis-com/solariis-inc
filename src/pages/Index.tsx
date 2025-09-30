@@ -1,11 +1,6 @@
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Hero from "../components/onepage/Hero";
-import HowItWorks from "../components/onepage/HowItWorks";
-import Services from "../components/onepage/Services";
-import Pricing from "../components/onepage/Pricing";
-import FAQ from "../components/onepage/FAQ";
+import { Navbar, Footer } from "@/components/layout";
+import { Hero, HowItWorks, Services, Pricing, FAQ } from "@/features/landing";
 
 const Index = () => {
   return (
