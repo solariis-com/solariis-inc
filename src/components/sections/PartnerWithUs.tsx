@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { useLanguage, translations } from "@/i18n";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../translations";
 
 const PartnerWithUs = () => {
   const { language } = useLanguage();

@@ -1,4 +1,5 @@
-import { useLanguage, translations } from "@/i18n";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { translations } from "../../translations";
 
 const WhyChooseUs = () => {
   const { language } = useLanguage();

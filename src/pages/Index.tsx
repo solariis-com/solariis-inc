@@ -1,17 +1,16 @@
-
-import { Navbar, Footer } from "@/components/layout";
-import { Hero, HowItWorks, Services, Pricing, FAQ, Contact } from "@/features/landing";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import HeroSection from "../components/sections/HeroSection";
+import FeaturesSection from "../components/sections/FeaturesSection";
+import CategoriesSection from "../components/sections/CategoriesSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen font-body bg-white">
+    <div className="min-h-screen font-body">
       <Navbar />
-      <Hero />
-      <HowItWorks />
-      <Services />
-      <Pricing />
-      <FAQ />
-      <Contact />
+      <HeroSection />
+      <FeaturesSection />
+      <CategoriesSection />
       <Footer />
     </div>
   );
