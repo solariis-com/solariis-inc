@@ -2,20 +2,85 @@ export const es = {
   nav: {
     home: "Inicio",
     about: "Nosotros",
-    products: "Categorías",
+    products: "Servicios",
     contact: "Contacto",
-    partnerWithUs: "Asóciate con Nosotros"
+    partnerWithUs: "Inicia Tu Expansión"
   },
   hero: {
-    title: "Conectando Marcas de Belleza y Bienestar",
-    subtitle: "con Consumidores Venezolanos",
-    description: "Conectamos marcas internacionales con el mercado venezolano, ofreciendo productos de salud y belleza de alta calidad.",
+    title: "Tu Puerta de Entrada a Venezuela y Latinoamérica",
+    description: "Ayudamos a marcas internacionales a expandirse con perspectiva cultural, alianzas estratégicas e inteligencia impulsada por IA.",
     cta: {
-      partner: "Crezcamos Juntos",
-      learnMore: "Descubre las Oportunidades"
+      partner: "Inicia Tu Expansión",
+      learnMore: "Conoce Más"
+    }
+  },
+  valueProposition: {
+    title: "Por Qué Elegir Solariis",
+    subtitle: "Combinamos experiencia en branding global con tecnología moderna para ayudar a tu marca a tener éxito en Venezuela y Latinoamérica.",
+    culturalBridge: {
+      title: "Puente Cultural",
+      description: "Conecta con consumidores a través de un entendimiento cultural auténtico y conocimientos del mercado."
+    },
+    regulatoryExpertise: {
+      title: "Experiencia Regulatoria",
+      description: "Navega regulaciones de importación, aduana y cumplimiento con confianza."
+    },
+    aiPowered: {
+      title: "Inteligencia con IA",
+      description: "Toma decisiones más inteligentes y rápidas con análisis de datos y tendencias."
+    },
+    creativeSolutions: {
+      title: "Soluciones Creativas",
+      description: "Lanza campañas de branding y marketing que resuenen con audiencias locales."
+    }
+  },
+  services: {
+    title: "Nuestros Servicios",
+    subtitle: "Desde estrategia de entrada al mercado hasta activación de marca a gran escala, ofrecemos soluciones integrales para marcas internacionales que buscan crecer en Venezuela y Latinoamérica.",
+    import: {
+      title: "Servicios de Importación",
+      description: "Aduana, cumplimiento y logística sin complicaciones para productos internacionales."
+    },
+    distribution: {
+      title: "Soluciones de Distribución",
+      description: "Construye tu presencia en el mercado con alianzas de retail y cumplimiento."
+    },
+    branding: {
+      title: "Branding y Localización",
+      description: "Adapta la voz e identidad de tu marca para audiencias locales."
+    },
+    marketAnalysis: {
+      title: "Análisis de Mercado",
+      description: "Comprende el comportamiento del consumidor y descubre oportunidades de crecimiento."
+    },
+    creative: {
+      title: "Campañas Creativas y Digitales",
+      description: "Involucra audiencias a través de storytelling integrado en todos los canales."
+    },
+    aiScouting: {
+      title: "Exploración con IA",
+      description: "Identifica nuevas oportunidades con inteligencia de mercado avanzada."
     }
   },
   about: {
+    title: "Sobre Solariis",
+    description1: "Solariis es una empresa nueva con una misión audaz: cerrar la brecha entre marcas internacionales y los vibrantes mercados de Venezuela y Latinoamérica.",
+    description2: "Nuestro enfoque combina experiencia local, perspectiva regulatoria e inteligencia impulsada por IA — asegurando que las marcas entren a estos mercados con claridad y prosperen a largo plazo.",
+    description3: "En Solariis, no solo representamos marcas — creamos sus historias de expansión y las ayudamos a crecer con confianza.",
+    features: {
+      aiDriven: {
+        title: "Impulsado por IA",
+        description: "Inteligencia de Mercado"
+      },
+      creative: {
+        title: "Creatividad y",
+        description: "Servicios Estratégicos"
+      },
+      alwaysOn: {
+        title: "Siempre Activo",
+        description: "Perspectiva Local"
+      }
+    },
     hero: {
       title: "Transformando el Futuro de la Belleza en Venezuela",
       description: "Solariis está dedicada a introducir y comercializar marcas premium de salud, bienestar y belleza en Venezuela."
@@ -82,106 +147,45 @@ export const es = {
       button: "Contáctanos"
     }
   },
-  features: {
-    forBrands: {
-      title: "Para Marcas",
-      description: "¿Buscas entrar al mercado venezolano? Ofrecemos soluciones integrales de distribución y experiencia en el mercado.",
-      link: "Conoce Más"
-    },
-    forDistributors: {
-      title: "Para Distribuidores",
-      description: "Únete a nuestra red de distribuidores confiables y accede a marcas internacionales premium.",
-      link: "Únete a Nuestra Red"
-    }
-  },
   footer: {
     quickLinks: "Enlaces Rápidos",
-    contact: "Información de Contacto"
-  },
-  contact: {
-    hero: {
-      title: "Ponte en Contacto",
-      subtitle: "Estamos aquí para ayudar y responder cualquier pregunta que puedas tener."
+    companyInfo: {
+      title: "Solariis Import",
+      tagline: "Tu Socio para la Expansión de Marcas Internacionales",
+      description: "Solariis es tu puerta de entrada confiable para expandirse en Venezuela y Latinoamérica — combinando perspectiva cultural, experiencia regulatoria y soluciones innovadoras."
     },
-    reachUs: {
-      title: "Encuéntranos",
-      address: {
-        title: "Dirección",
-        value: "Nueva Esparta, Campiña, T-5, Venezuela"
-      },
-      phone: {
-        title: "Teléfono",
-        value: "+58 (412) 0907684"
-      },
-      email: {
-        title: "Correo",
-        value: "info@solariis.com"
-      }
-    },
-    form: {
-      title: "Envíanos un Mensaje"
+    social: {
+      title: "Síguenos"
     }
   },
-  categories: {
-    title: "Descubre Nuestras Categorías de Productos",
-    description: "En Solariis, traemos productos premium de salud, bienestar y belleza al mercado, cuidadosamente seleccionados para satisfacer las necesidades de consumidores y minoristas.",
-    exploreButton: "¡Explora nuestras categorías!",
-    sectionTitle: "Nuestras Categorías de Productos",
-    sectionDescription: "Nos especializamos en la importación y distribución de marcas de alta calidad en las siguientes categorías:",
-    skincare: {
-      title: "Cuidado de la Piel",
-      description: "Soluciones premium para el cuidado de la piel incluyendo hidratantes, sueros, limpiadores y tratamientos.",
-      items: [
-        "Hidratantes y Cremas",
-        "Sueros y Tratamientos",
-        "Limpiadores y Tónicos",
-        "Protección Solar"
-      ]
+  contact: {
+    title: "¿Listo para hacer crecer tu marca en Venezuela y Latinoamérica?",
+    subtitle: "Exploremos cómo Solariis puede apoyar tu expansión. Completa el formulario a continuación o conéctate con nosotros directamente por WhatsApp.",
+    form: {
+      name: "Nombre",
+      brand: "Marca/Empresa",
+      country: "País",
+      email: "Correo Electrónico",
+      message: "Mensaje",
+      placeholder: "Cuéntanos sobre tu marca y objetivos de expansión...",
+      submit: "Enviar Mensaje",
+      successMessage: "¡Gracias por tu interés! Te responderemos pronto."
     },
-    haircare: {
-      title: "Cuidado del Cabello",
-      description: "Productos profesionales para todos los tipos y necesidades de cabello.",
-      items: [
-        "Champús y Acondicionadores",
-        "Mascarillas Capilares",
-        "Aceites y Sueros",
-        "Productos de Peinado"
-      ]
-    },
-    wellness: {
-      title: "Bienestar y Autocuidado",
-      description: "Soluciones holísticas de bienestar para mente, cuerpo y alma.",
-      items: [
-        "Cuidado Corporal",
-        "Aceites Esenciales",
-        "Suplementos",
-        "Ayudas para Relajación"
-      ]
-    },
-    makeup: {
-      title: "Maquillaje y Belleza",
-      description: "Productos de belleza esenciales para un look natural e impecable.",
-      items: [
-        "BB y CC Creams",
-        "Primers",
-        "Cuidado de Labios",
-        "Cuidado de Ojos"
-      ]
-    },
-    whyChooseUs: {
-      title: "¿Por Qué Elegir Solariis?",
-      items: [
-        "Garantizamos Autenticidad y Calidad – Traemos productos internacionalmente reconocidos de alto estándar.",
-        "Apoyamos a Minoristas y Distribuidores – Proporcionamos una cadena de suministro estructurada con distribución confiable.",
-        "Cumplimos con las Regulaciones Locales – Aseguramos que todos los productos cumplan con los requisitos de seguridad y regulatorios.",
-        "Expandimos el Alcance de la Marca – Ayudamos a las marcas internacionales a establecer una presencia sólida en Venezuela."
-      ]
-    },
-    partnerWithUs: {
-      title: "Asóciate con Nosotros",
-      description: "Ya seas un minorista, distribuidor o marca que busca ingresar al mercado, estamos aquí para colaborar. Explora nuestras categorías de productos y descubre cómo podemos trabajar juntos.",
-      contact: "¡Contáctanos hoy para saber más!",
-      button: "Ponte en Contacto"
+    whatsapp: {
+      title: "¿Prefieres Chatear?",
+      description: "Conéctate con nosotros directamente por WhatsApp para asistencia inmediata y respuestas rápidas.",
+      button: "Habla con nosotros por WhatsApp",
+      defaultMessage: "¡Hola! Estoy interesado en conocer más sobre los servicios de Solariis para mi marca.",
+      toast: {
+        success: {
+          title: "¡Mensaje enviado exitosamente!",
+          description: "Te responderemos lo antes posible."
+        },
+        error: {
+          title: "Error al enviar mensaje",
+          description: "Por favor intenta de nuevo más tarde."
+        }
+      }
     }
   }
 };

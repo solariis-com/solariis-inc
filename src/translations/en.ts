@@ -2,60 +2,118 @@ export const en = {
   nav: {
     home: "Home",
     about: "About",
-    products: "Categories",
+    products: "Services",
     contact: "Contact",
-    partnerWithUs: "Partner With Us"
+    partnerWithUs: "Start Your Expansion"
   },
   hero: {
-    title: "Connecting Beauty and Wellness Brands",
-    subtitle: "with Venezuelan Consumers",
-    description: "We connect international brands with the Venezuelan market, offering high-quality health and beauty products.",
+    title: "Your Gateway to Venezuela & Latin America",
+    description: "We help international brands expand with cultural insight, strategic partnerships, and AI-powered intelligence.",
     cta: {
-      partner: "Partner with Us",
+      partner: "Start Your Expansion",
       learnMore: "Learn More"
     }
   },
-  features: {
-    forBrands: {
-      title: "For Brands",
-      description: "Looking to enter the Venezuelan market? We offer comprehensive distribution solutions and market expertise.",
-      link: "Learn More"
+  valueProposition: {
+    title: "Why Choose Solariis",
+    subtitle: "We combine global branding expertise with modern technology to help your brand succeed in Venezuela and Latin America.",
+    culturalBridge: {
+      title: "Cultural Bridge",
+      description: "Connect with consumers through authentic cultural understanding and market insights."
     },
-    forDistributors: {
-      title: "For Distributors",
-      description: "Join our network of trusted distributors and access premium international brands.",
-      link: "Join Our Network"
+    regulatoryExpertise: {
+      title: "Regulatory Expertise",
+      description: "Navigate import regulations, customs, and compliance with confidence."
+    },
+    aiPowered: {
+      title: "AI-Powered Intelligence",
+      description: "Make smarter, faster decisions with data-driven insights and trend analysis."
+    },
+    creativeSolutions: {
+      title: "Creative Solutions",
+      description: "Launch branding and marketing campaigns that resonate with local audiences."
+    }
+  },
+  services: {
+    title: "Our Services",
+    subtitle: "From market entry strategy to full-scale brand activation, we provide comprehensive solutions for international brands looking to grow in Venezuela and Latin America.",
+    import: {
+      title: "Import Services",
+      description: "Seamless customs, compliance, and logistics for international products."
+    },
+    distribution: {
+      title: "Distribution Solutions",
+      description: "Build your market presence with retail and fulfillment partnerships."
+    },
+    branding: {
+      title: "Branding & Localization",
+      description: "Adapt your brand voice and identity for local audiences."
+    },
+    marketAnalysis: {
+      title: "Market Analysis",
+      description: "Understand consumer behavior and uncover growth opportunities."
+    },
+    creative: {
+      title: "Creative & Digital Campaigns",
+      description: "Engage audiences through integrated storytelling across channels."
+    },
+    aiScouting: {
+      title: "AI-Powered Scouting",
+      description: "Identify new opportunities with advanced market intelligence."
+    }
+  },
+  about: {
+    title: "About Solariis",
+    description1: "Solariis is a new company with a bold mission: to bridge the gap between international brands and the vibrant markets of Venezuela and Latin America.",
+    description2: "Our approach combines local expertise, regulatory insight, and AI-driven intelligence — ensuring that brands enter these markets with clarity and thrive long-term.",
+    description3: "At Solariis, we don't just represent brands — we craft their expansion stories and help them grow with confidence.",
+    features: {
+      aiDriven: {
+        title: "AI-Driven",
+        description: "Market Intelligence"
+      },
+      creative: {
+        title: "Creative &",
+        description: "Strategic Services"
+      },
+      alwaysOn: {
+        title: "Always-On",
+        description: "Local Insight"
+      }
+    }
+  },
+  contact: {
+    title: "Ready to grow your brand in Venezuela & Latin America?",
+    subtitle: "Let's explore how Solariis can support your expansion. Fill out the form below or connect with us directly on WhatsApp.",
+    form: {
+      name: "Name",
+      brand: "Brand/Company",
+      country: "Country",
+      email: "Email",
+      message: "Message",
+      placeholder: "Tell us about your brand and expansion goals...",
+      submit: "Send Message",
+      successMessage: "Thank you for your interest! We'll get back to you soon."
+    },
+    whatsapp: {
+      title: "Prefer to Chat?",
+      description: "Connect with us directly on WhatsApp for immediate assistance and quick answers.",
+      button: "Talk with us on WhatsApp",
+      defaultMessage: "Hello! I'm interested in learning more about Solariis services for my brand."
     }
   },
   footer: {
     quickLinks: "Quick Links",
-    contact: "Contact Information"
-  },
-  contact: {
-    hero: {
-      title: "Get in Touch",
-      subtitle: "We're here to help and answer any questions you might have."
+    companyInfo: {
+      title: "Solariis Import",
+      tagline: "Your Partner for International Brand Expansion",
+      description: "Solariis is your trusted gateway for expanding into Venezuela and Latin America — combining cultural insight, regulatory expertise, and innovative solutions."
     },
-    reachUs: {
-      title: "Reach Us",
-      address: {
-        title: "Address",
-        value: "Nueva Esparta, Campiña, T-5, Venezuela"
-      },
-      phone: {
-        title: "Phone",
-        value: "+58 (412) 0907684"
-      },
-      email: {
-        title: "Email",
-        value: "info@solariis.com"
-      }
-    },
-    form: {
-      title: "Send us a Message"
+    social: {
+      title: "Follow Us"
     }
   },
-  about: {
+  categories: {
     hero: {
       title: "Bringing Global Wellness & Beauty to You",
       description: "Solariis is dedicated to introducing and commercializing premium health, wellbeing, and beauty brands in Venezuela."
@@ -120,68 +178,6 @@ export const en = {
       description: "If you are an international brand looking to enter the Venezuelan market or a retailer interested in premium beauty and wellness products, we'd love to connect.",
       subtitle: "Let's build something great together!",
       button: "Contact Us"
-    }
-  },
-  categories: {
-    title: "Discover Our Product Categories",
-    description: "At Solariis, we bring premium health, wellness, and beauty products to market, carefully curated to meet the needs of consumers and retailers.",
-    exploreButton: "Explore our categories!",
-    sectionTitle: "Our Product Categories",
-    sectionDescription: "We specialize in importing and distributing high-quality brands in the following categories:",
-    skincare: {
-      title: "Skincare",
-      description: "Premium skincare solutions including moisturizers, serums, cleansers, and treatments.",
-      items: [
-        "Moisturizers & Creams",
-        "Serums & Treatments",
-        "Cleansers & Toners",
-        "Sun Protection"
-      ]
-    },
-    haircare: {
-      title: "Haircare",
-      description: "Professional products for all hair types and needs.",
-      items: [
-        "Shampoos & Conditioners",
-        "Hair Masks",
-        "Oils & Serums",
-        "Styling Products"
-      ]
-    },
-    wellness: {
-      title: "Wellness & Self-Care",
-      description: "Holistic wellness solutions for mind, body, and soul.",
-      items: [
-        "Body Care",
-        "Essential Oils",
-        "Supplements",
-        "Relaxation Aids"
-      ]
-    },
-    makeup: {
-      title: "Makeup & Beauty",
-      description: "Essential beauty products for a natural and flawless look.",
-      items: [
-        "BB & CC Creams",
-        "Primers",
-        "Lip Care",
-        "Eye Care"
-      ]
-    },
-    whyChooseUs: {
-      title: "Why Choose Solariis?",
-      items: [
-        "We Guarantee Authenticity & Quality – We bring internationally recognized products of high standard.",
-        "We Support Retailers & Distributors – We provide a structured supply chain with reliable distribution.",
-        "We Comply with Local Regulations – We ensure all products meet safety and regulatory requirements.",
-        "We Expand Brand Reach – We help international brands establish a strong presence in Venezuela."
-      ]
-    },
-    partnerWithUs: {
-      title: "Partner With Us",
-      description: "Whether you're a retailer, distributor, or brand looking to enter the market, we're here to collaborate. Explore our product categories and discover how we can work together.",
-      contact: "Contact us today to learn more!",
-      button: "Get in Touch"
     }
   }
 };

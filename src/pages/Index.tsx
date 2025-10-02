@@ -1,16 +1,20 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroSection from "../components/sections/HeroSection";
-import FeaturesSection from "../components/sections/FeaturesSection";
-import CategoriesSection from "../components/sections/CategoriesSection";
+import { ValueProposition } from "../components/sections/ValueProposition";
+import { AboutSection } from "../components/sections/AboutSection";
+import { ServicesSection } from "../components/sections/ServicesSection";
+import { ContactSection } from "../components/sections/ContactSection";
 
 const Index = () => {
   return (
     <div className="min-h-screen font-body">
       <Navbar />
       <HeroSection />
-      <FeaturesSection />
-      <CategoriesSection />
+      <ValueProposition />
+      <AboutSection />
+      <ServicesSection />
+      <ContactSection />
       <Footer />
     </div>
   );

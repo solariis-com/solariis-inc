@@ -1,21 +1,11 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Globe } from "lucide-react";
-import logo from "../assets/logo.svg";
-import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations";
+import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import logoImage from 'figma:asset/d594796c144c809d4bf868f60096e2a73e6761cc.png';
 
-const Navbar = () => {
+export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const { language, setLanguage } = useLanguage();
-  const t = translations[language];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,19 +26,20 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { id: 'home', label: t.nav.home },
-    { id: 'about', label: t.nav.about },
-    { id: 'services', label: t.nav.products },
-    { id: 'contact', label: t.nav.contact }
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'services', label: 'Services' },
+    { id: 'contact', label: 'Contact' }
   ];
 
   return (
     <nav className="fixed top-4 left-4 right-4 z-50 flex justify-center">
-      <div
-        className={`transition-all duration-500 ease-out transform ${isScrolled
-            ? 'bg-white/90 backdrop-blur-md shadow-2xl border border-black/5 scale-95'
+      <div 
+        className={`transition-all duration-500 ease-out transform ${
+          isScrolled 
+            ? 'bg-white/90 backdrop-blur-md shadow-2xl border border-black/5 scale-95' 
             : 'bg-transparent border-transparent shadow-none'
-          } rounded-full px-6 py-3 max-w-4xl w-full`}
+        } rounded-full px-6 py-3 max-w-4xl w-full`}
       >
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -58,9 +49,9 @@ const Navbar = () => {
               className="flex items-center group"
             >
               <div className="h-14 transition-all duration-300 group-hover:scale-105">
-                <img
-                  src={logo}
-                  alt="Solariis Complete Logo"
+                <img 
+                  src={logoImage}
+                  alt="Solariis Complete Logo with Artistic Element"
                   className="h-full w-auto object-contain"
                   style={{
                     filter: isScrolled ? 'none' : 'brightness(0) invert(1)',
@@ -77,8 +68,9 @@ const Navbar = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="px-3 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:bg-white/20 font-body"
-                style={{
+                className="px-3 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:bg-white/20"
+                style={{ 
+                  fontFamily: 'Rethink Sans, sans-serif',
                   fontWeight: '400',
                   fontSize: '0.9rem',
                   color: isScrolled ? '#000000' : '#FFFFFF'
@@ -87,24 +79,7 @@ const Navbar = () => {
                 {item.label}
               </button>
             ))}
-
-            {/* Language Selector */}
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 px-3 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:bg-white/20"
-                style={{ color: isScrolled ? '#000000' : '#FFFFFF' }}>
-                <Globe size={18} />
-                <span className="ml-1 text-sm">{language.toUpperCase()}</span>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white border border-gray-200 shadow-lg">
-                <DropdownMenuItem onClick={() => setLanguage('en')} className="hover:bg-gray-100">
-                  English
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setLanguage('es')} className="hover:bg-gray-100">
-                  Español
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
+            
             <Button
               onClick={() => scrollToSection('contact')}
               className="ml-2 rounded-full px-6 py-2 transition-all duration-300 hover:scale-105 shadow-lg"
@@ -113,8 +88,23 @@ const Navbar = () => {
                 color: isScrolled ? '#FFFFFF' : '#FF6A00',
                 fontSize: '0.9rem'
               }}
+              onMouseEnter={(e) => {
+                if (isScrolled) {
+                  e.currentTarget.style.backgroundColor = '#CC5500';
+                  e.currentTarget.style.color = '#FFFFFF';
+                } else {
+                  e.currentTarget.style.backgroundColor = '#000000';
+                  e.currentTarget.style.color = '#FFFFFF';
+                }
+                e.currentTarget.style.transform = 'scale(1.05)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = isScrolled ? '#FF6A00' : '#FFFFFF';
+                e.currentTarget.style.color = isScrolled ? '#FFFFFF' : '#FF6A00';
+                e.currentTarget.style.transform = 'scale(1)';
+              }}
             >
-              {t.nav.partnerWithUs}
+              Start Your Expansion
             </Button>
           </div>
 
@@ -134,19 +124,21 @@ const Navbar = () => {
       {/* Mobile Navigation Dropdown */}
       {isOpen && (
         <div className="fixed top-20 left-4 right-4 md:hidden">
-          <div
-            className={`transition-all duration-300 transform ${isScrolled
-                ? 'bg-white/95 backdrop-blur-md shadow-2xl border border-black/5'
+          <div 
+            className={`transition-all duration-300 transform ${
+              isScrolled 
+                ? 'bg-white/95 backdrop-blur-md shadow-2xl border border-black/5' 
                 : 'bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg'
-              } rounded-2xl p-6`}
+            } rounded-2xl p-6`}
           >
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left py-3 px-4 rounded-xl transition-all duration-200 hover:bg-white/20 font-body"
-                  style={{
+                  className="text-left py-3 px-4 rounded-xl transition-all duration-200 hover:bg-white/20"
+                  style={{ 
+                    fontFamily: 'Rethink Sans, sans-serif',
                     fontWeight: '400',
                     color: isScrolled ? '#000000' : '#FFFFFF'
                   }}
@@ -154,27 +146,7 @@ const Navbar = () => {
                   {item.label}
                 </button>
               ))}
-
-              {/* Mobile Language Selector */}
-              <div className="flex items-center space-x-4 px-4 py-3">
-                <button
-                  onClick={() => setLanguage('en')}
-                  className={`font-body transition-colors ${language === 'en' ? 'font-semibold' : ''
-                    }`}
-                  style={{ color: isScrolled ? '#000000' : '#FFFFFF' }}
-                >
-                  English
-                </button>
-                <button
-                  onClick={() => setLanguage('es')}
-                  className={`font-body transition-colors ${language === 'es' ? 'font-semibold' : ''
-                    }`}
-                  style={{ color: isScrolled ? '#000000' : '#FFFFFF' }}
-                >
-                  Español
-                </button>
-              </div>
-
+              
               <Button
                 onClick={() => scrollToSection('contact')}
                 className="w-full mt-4 rounded-xl"
@@ -183,7 +155,7 @@ const Navbar = () => {
                   color: '#FFFFFF'
                 }}
               >
-                {t.nav.partnerWithUs}
+                Start Your Expansion
               </Button>
             </div>
           </div>
@@ -191,6 +163,4 @@ const Navbar = () => {
       )}
     </nav>
   );
-};
-
-export default Navbar;
+}

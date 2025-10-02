@@ -1,151 +1,156 @@
-import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, MessageCircle, MessageSquare } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Instagram, Twitter } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
-import LogoSvg from "../assets/logo.svg";
-import { useState, FormEvent } from "react";
 
 const Footer = () => {
   const { language } = useLanguage();
   const t = translations[language];
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setError("");
-
-    if (!email || !password) {
-      setError("Please fill in all fields");
-      return;
-    }
-
-    if (!email.includes("@")) {
-      setError("Please enter a valid email address");
-      return;
-    }
-
-    try {
-      setError("Incorrect email or password");
-    } catch (err) {
-      setError("An error occurred during login");
-      console.error(err);
+  const scrollToSection = (sectionId: string) => {
+    if (sectionId === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
-    <footer className="bg-accent mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Quick Links section */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-text">{t.footer.quickLinks}</h4>
+    <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-[#F5F5F5]">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* Company Info */}
+          <div className="md:col-span-2">
+            <h3 className="mb-4 text-black">
+              {t.footer.companyInfo.title}
+            </h3>
+            <p className="body-small mb-4 text-[#666666]">
+              {t.footer.companyInfo.tagline}
+            </p>
+            <p className="body-small mb-6 text-[#666666]">
+              {t.footer.companyInfo.description}
+            </p>
+
+            {/* Contact Info */}
+            <div className="space-y-3">
+              <div className="flex items-center">
+                <Mail className="w-4 h-4 mr-3 text-[#FF6A00]" />
+                <span className="body-small text-black">
+                  info@solariis.com
+                </span>
+              </div>
+
+              <div className="flex items-center">
+                <Phone className="w-4 h-4 mr-3 text-[#FF6A00]" />
+                <span className="body-small text-black">
+                  +58 (412) 0907684
+                </span>
+              </div>
+
+              <div className="flex items-center">
+                <MapPin className="w-4 h-4 mr-3 text-[#FF6A00]" />
+                <span className="body-small text-black">
+                  Caracas, Venezuela
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="mb-4 text-black">
+              {t.footer.quickLinks}
+            </h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-text-light hover:text-text transition-colors">
+                <button
+                  onClick={() => scrollToSection('home')}
+                  className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+                >
                   {t.nav.home}
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/about" className="text-text-light hover:text-text transition-colors">
+                <button
+                  onClick={() => scrollToSection('about')}
+                  className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+                >
                   {t.nav.about}
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/categories" className="text-text-light hover:text-text transition-colors">
+                <button
+                  onClick={() => scrollToSection('services')}
+                  className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+                >
                   {t.nav.products}
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/contact" className="text-text-light hover:text-text transition-colors">
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+                >
                   {t.nav.contact}
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
 
-          <div className="space-y-4">
-            <h4 className="font-semibold text-text">{t.footer.contact}</h4>
-            <ul className="space-y-2">
-              <li className="flex items-center space-x-2 text-text-light">
-                <Mail size={16} />
-                <span>info@solariis.com</span>
-              </li>
-              <li className="flex items-center space-x-2 text-text-light">
-                <Phone size={16} />
-                <span>+58 (412) 0907684</span>
-              </li>
-              <li className="flex items-center space-x-2 text-text-light">
-                <MapPin size={16} />
-                <span>Nueva Esparta, Campiña, T-5, Venezuela</span>
-              </li>
-              <li className="flex items-center space-x-2 text-text-light">
-                <MessageCircle size={16} />
-                <a 
-                  href="https://wa.me/584120907684" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-text transition-colors"
-                >
-                  WhatsApp
-                </a>
-              </li>
-              {/* <li className="flex items-center space-x-2 text-text-light">
-                <MessageSquare size={16} />
-                <a 
-                  href="https://t.me/solariis" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-text transition-colors"
-                >
-                  Telegram
-                </a>
-              </li> */}
-            </ul>
-          </div>
-
-          {/* Login Form section */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-text">Distributor Login</h4>
-            <p className="text-text-light">Access your distributor or reseller account</p>
-            {error && (
-              <p className="text-red-500 text-sm">{error}</p>
-            )}
-            <form onSubmit={handleSubmit} className="space-y-2">
-              <input
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <button
-                type="submit"
-                className="w-full bg-primary hover:bg-primary-dark text-text px-4 py-2 rounded-lg transition-colors"
+          {/* Social Links */}
+          <div>
+            <h4 className="mb-4 text-black">
+              {t.footer.social.title}
+            </h4>
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                className="p-2 rounded-lg hover:scale-110 transition-transform duration-200 bg-[#FF6A00]"
+                aria-label="LinkedIn"
               >
-                Login
-              </button>
-            </form>
+                <Linkedin className="w-5 h-5 text-white" />
+              </a>
+
+              <a
+                href="#"
+                className="p-2 rounded-lg hover:scale-110 transition-transform duration-200 bg-[#CC5500]"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5 text-white" />
+              </a>
+
+              <a
+                href="#"
+                className="p-2 rounded-lg hover:scale-110 transition-transform duration-200 bg-[#000000]"
+                aria-label="Twitter"
+              >
+                <Twitter className="w-5 h-5 text-white" />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-200">
-          <div className="flex justify-center space-x-4 mb-4">
-            <div className="flex items-end">
-              <img src={LogoSvg} alt="Solariis Logo" className="w-36 h-auto" />
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-[#52342D]/20">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="body-small mb-4 md:mb-0 text-[#666666]">
+              © 2024 Solariis Import. All rights reserved.
+            </p>
+
+            <div className="flex space-x-6">
+              <a
+                href="#"
+                className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+              >
+                Terms of Service
+              </a>
             </div>
           </div>
-          <p className="text-center text-text-light text-body-sm">
-            © 2025 Solariis Venezuela C.A. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
