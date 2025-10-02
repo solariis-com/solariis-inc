@@ -64,21 +64,19 @@ export const es = {
   },
   about: {
     title: "Sobre Solariis",
-    description1: "Solariis es una empresa nueva con una misión audaz: cerrar la brecha entre marcas internacionales y los vibrantes mercados de Venezuela y Latinoamérica.",
-    description2: "Nuestro enfoque combina experiencia local, perspectiva regulatoria e inteligencia impulsada por IA — asegurando que las marcas entren a estos mercados con claridad y prosperen a largo plazo.",
-    description3: "En Solariis, no solo representamos marcas — creamos sus historias de expansión y las ayudamos a crecer con confianza.",
+    description: "Solariis es una empresa nueva con una misión audaz: cerrar la brecha entre marcas internacionales y los vibrantes mercados de Venezuela y Latinoamérica. Nuestro enfoque combina experiencia local, perspectiva regulatoria e inteligencia impulsada por IA — asegurando que las marcas entren a estos mercados con claridad y prosperen a largo plazo. En Solariis, no solo representamos marcas — creamos sus historias de expansión y las ayudamos a crecer con confianza.",
     features: {
       aiDriven: {
         title: "Impulsado por IA",
-        description: "Inteligencia de Mercado"
+        description: "Aprovechamos IA avanzada y análisis de datos para proporcionar información de mercado en tiempo real, análisis de comportamiento del consumidor e inteligencia competitiva. Nuestro enfoque impulsado por tecnología ayuda a las marcas a tomar decisiones informadas e identificar las mejores oportunidades en los mercados latinoamericanos."
       },
       creative: {
         title: "Creatividad y",
-        description: "Servicios Estratégicos"
+        description: "Desde la localización de marcas hasta campañas de marketing integradas, desarrollamos estrategias creativas que resuenan con las audiencias latinoamericanas. Nuestro equipo combina perspectivas culturales con técnicas probadas para asegurar conexiones auténticas con los consumidores locales."
       },
       alwaysOn: {
         title: "Siempre Activo",
-        description: "Perspectiva Local"
+        description: "Con raíces profundas en Venezuela y Latinoamérica, proporcionamos inteligencia de mercado continua y orientación regulatoria. Nuestra presencia sobre el terreno asegura que navegues los matices culturales, requisitos de cumplimiento y dinámicas del mercado con confianza."
       }
     },
     hero: {

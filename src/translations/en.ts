@@ -64,21 +64,19 @@ export const en = {
   },
   about: {
     title: "About Solariis",
-    description1: "Solariis is a new company with a bold mission: to bridge the gap between international brands and the vibrant markets of Venezuela and Latin America.",
-    description2: "Our approach combines local expertise, regulatory insight, and AI-driven intelligence — ensuring that brands enter these markets with clarity and thrive long-term.",
-    description3: "At Solariis, we don't just represent brands — we craft their expansion stories and help them grow with confidence.",
+    description: "Solariis is a new company with a bold mission: to bridge the gap between international brands and the vibrant markets of Venezuela and Latin America. Our approach combines local expertise, regulatory insight, and AI-driven intelligence — ensuring that brands enter these markets with clarity and thrive long-term. At Solariis, we don't just represent brands — we craft their expansion stories and help them grow with confidence.",
     features: {
       aiDriven: {
         title: "AI-Driven",
-        description: "Market Intelligence"
+        description: "We leverage advanced AI and data analytics to provide real-time market insights, consumer behavior analysis, and competitive intelligence. Our technology-driven approach helps brands make informed decisions and identify the best opportunities in Latin American markets."
       },
       creative: {
         title: "Creative &",
-        description: "Strategic Services"
+        description: "From brand localization to integrated marketing campaigns, we develop creative strategies that resonate with Latin American audiences. Our team combines cultural insights with proven techniques to ensure authentic connections with local consumers."
       },
       alwaysOn: {
         title: "Always-On",
-        description: "Local Insight"
+        description: "With deep roots in Venezuela and Latin America, we provide continuous market intelligence and regulatory guidance. Our on-the-ground presence ensures you navigate cultural nuances, compliance requirements, and market dynamics with confidence."
       }
     }
   },

@@ -49,7 +49,7 @@ export function ValueProposition() {
             >
               <div
                 className="inline-flex items-center justify-center w-16 h-16 rounded-full mb-6 group-hover:scale-110 transition-transform duration-300"
-                style={{ backgroundColor: index % 2 === 0 ? '#FF6A00' : '#000000' }}
+                style={{ backgroundColor: '#000000' }}
               >
                 <value.icon className="w-8 h-8 text-white" />
               </div>
