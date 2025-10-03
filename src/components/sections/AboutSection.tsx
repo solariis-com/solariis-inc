@@ -17,7 +17,7 @@ export function AboutSection() {
           {t.about.description}
         </p>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 text-center group">
             <div className="w-16 h-16 mx-auto mb-6 rounded-xl bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
               <Brain className="w-8 h-8 text-[#FF6A00]" />
