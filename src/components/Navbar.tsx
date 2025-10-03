@@ -45,9 +45,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-4 left-4 right-4 z-50 flex justify-center">
       <div
-        className={`transition-all duration-500 ease-out transform ${isScrolled
-            ? 'bg-white/90 backdrop-blur-md shadow-2xl border border-black/5 scale-95'
-            : 'bg-transparent border-transparent shadow-none'
+        className={`transition-all duration-500 ease-out transform bg-white/90 backdrop-blur-md shadow-2xl border border-black/5 ${isScrolled ? 'scale-95' : ''
           } rounded-full px-6 py-3 max-w-4xl w-full`}
       >
         <div className="flex justify-between items-center">
@@ -62,10 +60,6 @@ const Navbar = () => {
                   src={logo}
                   alt="Solariis Complete Logo"
                   className="h-full w-auto object-contain"
-                  style={{
-                    filter: isScrolled ? 'none' : 'brightness(0) invert(1)',
-                    transition: 'filter 0.3s ease'
-                  }}
                 />
               </div>
             </button>
@@ -81,7 +75,7 @@ const Navbar = () => {
                 style={{
                   fontWeight: '400',
                   fontSize: '0.9rem',
-                  color: isScrolled ? '#000000' : '#FFFFFF'
+                  color: '#000000'
                 }}
               >
                 {item.label}
@@ -91,7 +85,7 @@ const Navbar = () => {
             {/* Language Selector */}
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center space-x-1 px-3 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:bg-white/20"
-                style={{ color: isScrolled ? '#000000' : '#FFFFFF' }}>
+                style={{ color: '#000000' }}>
                 <Globe size={18} />
                 <span className="ml-1 text-sm">{language.toUpperCase()}</span>
               </DropdownMenuTrigger>
@@ -109,8 +103,8 @@ const Navbar = () => {
               onClick={() => scrollToSection('contact')}
               className="ml-2 rounded-full px-6 py-2 transition-all duration-300 hover:scale-105 shadow-lg"
               style={{
-                backgroundColor: isScrolled ? '#FF6A00' : '#FFFFFF',
-                color: isScrolled ? '#FFFFFF' : '#FF6A00',
+                backgroundColor: '#FF6A00',
+                color: '#FFFFFF',
                 fontSize: '0.9rem'
               }}
             >
@@ -123,7 +117,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-full transition-all duration-200 hover:bg-white/20"
-              style={{ color: isScrolled ? '#000000' : '#FFFFFF' }}
+              style={{ color: '#000000' }}
             >
               {isOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -135,10 +129,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="fixed top-20 left-4 right-4 md:hidden">
           <div
-            className={`transition-all duration-300 transform ${isScrolled
-                ? 'bg-white/95 backdrop-blur-md shadow-2xl border border-black/5'
-                : 'bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg'
-              } rounded-2xl p-6`}
+            className="transition-all duration-300 transform bg-white/95 backdrop-blur-md shadow-2xl border border-black/5 rounded-2xl p-6"
           >
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
@@ -148,7 +139,7 @@ const Navbar = () => {
                   className="text-left py-3 px-4 rounded-xl transition-all duration-200 hover:bg-white/20 font-body"
                   style={{
                     fontWeight: '400',
-                    color: isScrolled ? '#000000' : '#FFFFFF'
+                    color: '#000000'
                   }}
                 >
                   {item.label}
@@ -161,7 +152,7 @@ const Navbar = () => {
                   onClick={() => setLanguage('en')}
                   className={`font-body transition-colors ${language === 'en' ? 'font-semibold' : ''
                     }`}
-                  style={{ color: isScrolled ? '#000000' : '#FFFFFF' }}
+                  style={{ color: '#000000' }}
                 >
                   English
                 </button>
@@ -169,7 +160,7 @@ const Navbar = () => {
                   onClick={() => setLanguage('es')}
                   className={`font-body transition-colors ${language === 'es' ? 'font-semibold' : ''
                     }`}
-                  style={{ color: isScrolled ? '#000000' : '#FFFFFF' }}
+                  style={{ color: '#000000' }}
                 >
                   Español
                 </button>
