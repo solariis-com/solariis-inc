@@ -35,21 +35,21 @@ const Footer = () => {
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-3 text-[#FF6A00]" />
                 <span className="body-small text-black">
-                  info@solariis.com
+                  {t.footer.contact.email}
                 </span>
               </div>
 
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-3 text-[#FF6A00]" />
                 <span className="body-small text-black">
-                  +58 (412) 0907684
+                  {t.footer.contact.phone}
                 </span>
               </div>
 
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-3 text-[#FF6A00]" />
                 <span className="body-small text-black">
-                  Caracas, Venezuela
+                  {t.footer.contact.location}
                 </span>
               </div>
             </div>
@@ -133,7 +133,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-[#52342D]/20">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="body-small mb-4 md:mb-0 text-[#666666]">
-              © 2024 Solariis Import. All rights reserved.
+              {t.footer.copyright}
             </p>
 
             <div className="flex space-x-6">
@@ -141,13 +141,13 @@ const Footer = () => {
                 href="#"
                 className="body-small hover:underline transition-colors duration-200 text-[#666666]"
               >
-                Privacy Policy
+                {t.footer.privacyPolicy}
               </a>
               <a
                 href="#"
                 className="body-small hover:underline transition-colors duration-200 text-[#666666]"
               >
-                Terms of Service
+                {t.footer.termsOfService}
               </a>
             </div>
           </div>

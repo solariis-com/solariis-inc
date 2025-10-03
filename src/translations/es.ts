@@ -7,8 +7,8 @@ export const es = {
     partnerWithUs: "Inicia Tu Expansión"
   },
   hero: {
-    title: "Tu Puerta de Entrada a Venezuela y Latinoamérica",
-    description: "Ayudamos a marcas internacionales a expandirse con perspectiva cultural, alianzas estratégicas e inteligencia impulsada por IA.",
+    title: "Tu Puerta de Entrada a Venezuela",
+    description: "Ayudamos a marcas internacionales a expandirse en Venezuela con perspectiva cultural, alianzas estratégicas e inteligencia impulsada por IA.",
     cta: {
       partner: "Inicia Tu Expansión",
       learnMore: "Conoce Más"
@@ -16,7 +16,7 @@ export const es = {
   },
   valueProposition: {
     title: "Por Qué Elegir Solariis",
-    subtitle: "Combinamos experiencia en branding global con tecnología moderna para ayudar a tu marca a tener éxito en Venezuela y Latinoamérica.",
+    subtitle: "Combinamos experiencia en branding global con tecnología moderna para ayudar a tu marca a tener éxito en Venezuela.",
     culturalBridge: {
       title: "Puente Cultural",
       description: "Conecta con consumidores a través de un entendimiento cultural auténtico y conocimientos del mercado."
@@ -36,7 +36,7 @@ export const es = {
   },
   services: {
     title: "Nuestros Servicios",
-    subtitle: "Desde estrategia de entrada al mercado hasta activación de marca a gran escala, ofrecemos soluciones integrales para marcas internacionales que buscan crecer en Venezuela y Latinoamérica.",
+    subtitle: "Desde estrategia de entrada al mercado hasta activación de marca a gran escala, ofrecemos soluciones integrales para marcas internacionales que buscan crecer en Venezuela.",
     import: {
       title: "Servicios de Importación",
       description: "Aduana, cumplimiento y logística sin complicaciones para productos internacionales."
@@ -64,19 +64,19 @@ export const es = {
   },
   about: {
     title: "Sobre Solariis",
-    description: "Solariis es una empresa nueva con una misión audaz: cerrar la brecha entre marcas internacionales y los vibrantes mercados de Venezuela y Latinoamérica. Nuestro enfoque combina experiencia local, perspectiva regulatoria e inteligencia impulsada por IA — asegurando que las marcas entren a estos mercados con claridad y prosperen a largo plazo. En Solariis, no solo representamos marcas — creamos sus historias de expansión y las ayudamos a crecer con confianza.",
+    description: "Solariis es una empresa nueva con una misión audaz: cerrar la brecha entre marcas internacionales y el vibrante mercado venezolano. Nuestro enfoque combina experiencia local, perspectiva regulatoria e inteligencia impulsada por IA — asegurando que las marcas entren a este mercado con claridad y prosperen a largo plazo. En Solariis, no solo representamos marcas — creamos sus historias de expansión y las ayudamos a crecer con confianza.",
     features: {
       aiDriven: {
         title: "Impulsado por IA",
-        description: "Aprovechamos IA avanzada y análisis de datos para proporcionar información de mercado en tiempo real, análisis de comportamiento del consumidor e inteligencia competitiva. Nuestro enfoque impulsado por tecnología ayuda a las marcas a tomar decisiones informadas e identificar las mejores oportunidades en los mercados latinoamericanos."
+        description: "Aprovechamos IA avanzada y análisis de datos para proporcionar información de mercado en tiempo real, análisis de comportamiento del consumidor e inteligencia competitiva. Nuestro enfoque impulsado por tecnología ayuda a las marcas a tomar decisiones informadas e identificar las mejores oportunidades en el mercado venezolano."
       },
       creative: {
         title: "Creatividad y",
-        description: "Desde la localización de marcas hasta campañas de marketing integradas, desarrollamos estrategias creativas que resuenan con las audiencias latinoamericanas. Nuestro equipo combina perspectivas culturales con técnicas probadas para asegurar conexiones auténticas con los consumidores locales."
+        description: "Desde la localización de marcas hasta campañas de marketing integradas, desarrollamos estrategias creativas que resuenan con las audiencias venezolanas. Nuestro equipo combina perspectivas culturales con técnicas probadas para asegurar conexiones auténticas con los consumidores locales."
       },
       alwaysOn: {
         title: "Siempre Activo",
-        description: "Con raíces profundas en Venezuela y Latinoamérica, proporcionamos inteligencia de mercado continua y orientación regulatoria. Nuestra presencia sobre el terreno asegura que navegues los matices culturales, requisitos de cumplimiento y dinámicas del mercado con confianza."
+        description: "Con raíces profundas en Venezuela, proporcionamos inteligencia de mercado continua y orientación regulatoria. Nuestra presencia sobre el terreno asegura que navegues los matices culturales, requisitos de cumplimiento y dinámicas del mercado con confianza."
       }
     },
     hero: {
@@ -150,14 +150,22 @@ export const es = {
     companyInfo: {
       title: "Solariis Import",
       tagline: "Tu Socio para la Expansión de Marcas Internacionales",
-      description: "Solariis es tu puerta de entrada confiable para expandirse en Venezuela y Latinoamérica — combinando perspectiva cultural, experiencia regulatoria y soluciones innovadoras."
+      description: "Solariis es tu puerta de entrada confiable para expandirse en Venezuela — combinando perspectiva cultural, experiencia regulatoria y soluciones innovadoras."
+    },
+    contact: {
+      email: "info@solariis.com",
+      phone: "+58 (412) 0907684",
+      location: "Caracas, Venezuela"
     },
     social: {
       title: "Síguenos"
-    }
+    },
+    copyright: "© 2024 Solariis Import. Todos los derechos reservados.",
+    privacyPolicy: "Política de Privacidad",
+    termsOfService: "Términos de Servicio"
   },
   contact: {
-    title: "¿Listo para hacer crecer tu marca en Venezuela y Latinoamérica?",
+    title: "¿Listo para hacer crecer tu marca en Venezuela?",
     subtitle: "Exploremos cómo Solariis puede apoyar tu expansión. Completa el formulario a continuación o conéctate con nosotros directamente por WhatsApp.",
     form: {
       name: "Nombre",
@@ -167,7 +175,13 @@ export const es = {
       message: "Mensaje",
       placeholder: "Cuéntanos sobre tu marca y objetivos de expansión...",
       submit: "Enviar Mensaje",
-      successMessage: "¡Gracias por tu interés! Te responderemos pronto."
+      successMessage: "¡Gracias por tu interés! Te responderemos pronto.",
+      errors: {
+        nameRequired: "El nombre debe tener al menos 2 caracteres",
+        brandRequired: "El nombre de la marca/empresa es requerido",
+        countryRequired: "El país es requerido",
+        emailInvalid: "Por favor ingresa un correo electrónico válido"
+      }
     },
     whatsapp: {
       title: "¿Prefieres Chatear?",

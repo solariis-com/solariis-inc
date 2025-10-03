@@ -25,24 +25,24 @@ export function ContactSection() {
 
     // Basic validation
     if (!formData.name.trim() || formData.name.length < 2) {
-      toast.error("Name must be at least 2 characters long");
+      toast.error(t.contact.form.errors.nameRequired);
       return;
     }
 
     if (!formData.brand.trim() || formData.brand.length < 2) {
-      toast.error("Brand/Company name is required");
+      toast.error(t.contact.form.errors.brandRequired);
       return;
     }
 
     if (!formData.country.trim() || formData.country.length < 2) {
-      toast.error("Country is required");
+      toast.error(t.contact.form.errors.countryRequired);
       return;
     }
 
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      toast.error("Please enter a valid email address");
+      toast.error(t.contact.form.errors.emailInvalid);
       return;
     }
 

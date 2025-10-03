@@ -7,8 +7,8 @@ export const en = {
     partnerWithUs: "Start Your Expansion"
   },
   hero: {
-    title: "Your Gateway to Venezuela & Latin America",
-    description: "We help international brands expand with cultural insight, strategic partnerships, and AI-powered intelligence.",
+    title: "Your Gateway to Venezuela",
+    description: "We help international brands expand into Venezuela with cultural insight, strategic partnerships, and AI-powered intelligence.",
     cta: {
       partner: "Start Your Expansion",
       learnMore: "Learn More"
@@ -16,7 +16,7 @@ export const en = {
   },
   valueProposition: {
     title: "Why Choose Solariis",
-    subtitle: "We combine global branding expertise with modern technology to help your brand succeed in Venezuela and Latin America.",
+    subtitle: "We combine global branding expertise with modern technology to help your brand succeed in Venezuela.",
     culturalBridge: {
       title: "Cultural Bridge",
       description: "Connect with consumers through authentic cultural understanding and market insights."
@@ -36,7 +36,7 @@ export const en = {
   },
   services: {
     title: "Our Services",
-    subtitle: "From market entry strategy to full-scale brand activation, we provide comprehensive solutions for international brands looking to grow in Venezuela and Latin America.",
+    subtitle: "From market entry strategy to full-scale brand activation, we provide comprehensive solutions for international brands looking to grow in Venezuela.",
     import: {
       title: "Import Services",
       description: "Seamless customs, compliance, and logistics for international products."
@@ -64,24 +64,24 @@ export const en = {
   },
   about: {
     title: "About Solariis",
-    description: "Solariis is a new company with a bold mission: to bridge the gap between international brands and the vibrant markets of Venezuela and Latin America. Our approach combines local expertise, regulatory insight, and AI-driven intelligence — ensuring that brands enter these markets with clarity and thrive long-term. At Solariis, we don't just represent brands — we craft their expansion stories and help them grow with confidence.",
+    description: "Solariis is a new company with a bold mission: to bridge the gap between international brands and the vibrant Venezuelan market. Our approach combines local expertise, regulatory insight, and AI-driven intelligence — ensuring that brands enter this market with clarity and thrive long-term. At Solariis, we don't just represent brands — we craft their expansion stories and help them grow with confidence.",
     features: {
       aiDriven: {
         title: "AI-Driven",
-        description: "We leverage advanced AI and data analytics to provide real-time market insights, consumer behavior analysis, and competitive intelligence. Our technology-driven approach helps brands make informed decisions and identify the best opportunities in Latin American markets."
+        description: "We leverage advanced AI and data analytics to provide real-time market insights, consumer behavior analysis, and competitive intelligence. Our technology-driven approach helps brands make informed decisions and identify the best opportunities in the Venezuelan market."
       },
       creative: {
         title: "Creative &",
-        description: "From brand localization to integrated marketing campaigns, we develop creative strategies that resonate with Latin American audiences. Our team combines cultural insights with proven techniques to ensure authentic connections with local consumers."
+        description: "From brand localization to integrated marketing campaigns, we develop creative strategies that resonate with Venezuelan audiences. Our team combines cultural insights with proven techniques to ensure authentic connections with local consumers."
       },
       alwaysOn: {
         title: "Always-On",
-        description: "With deep roots in Venezuela and Latin America, we provide continuous market intelligence and regulatory guidance. Our on-the-ground presence ensures you navigate cultural nuances, compliance requirements, and market dynamics with confidence."
+        description: "With deep roots in Venezuela, we provide continuous market intelligence and regulatory guidance. Our on-the-ground presence ensures you navigate cultural nuances, compliance requirements, and market dynamics with confidence."
       }
     }
   },
   contact: {
-    title: "Ready to grow your brand in Venezuela & Latin America?",
+    title: "Ready to grow your brand in Venezuela?",
     subtitle: "Let's explore how Solariis can support your expansion. Fill out the form below or connect with us directly on WhatsApp.",
     form: {
       name: "Name",
@@ -91,7 +91,13 @@ export const en = {
       message: "Message",
       placeholder: "Tell us about your brand and expansion goals...",
       submit: "Send Message",
-      successMessage: "Thank you for your interest! We'll get back to you soon."
+      successMessage: "Thank you for your interest! We'll get back to you soon.",
+      errors: {
+        nameRequired: "Name must be at least 2 characters long",
+        brandRequired: "Brand/Company name is required",
+        countryRequired: "Country is required",
+        emailInvalid: "Please enter a valid email address"
+      }
     },
     whatsapp: {
       title: "Prefer to Chat?",
@@ -105,11 +111,19 @@ export const en = {
     companyInfo: {
       title: "Solariis Import",
       tagline: "Your Partner for International Brand Expansion",
-      description: "Solariis is your trusted gateway for expanding into Venezuela and Latin America — combining cultural insight, regulatory expertise, and innovative solutions."
+      description: "Solariis is your trusted gateway for expanding into Venezuela — combining cultural insight, regulatory expertise, and innovative solutions."
+    },
+    contact: {
+      email: "info@solariis.com",
+      phone: "+58 (412) 0907684",
+      location: "Caracas, Venezuela"
     },
     social: {
       title: "Follow Us"
-    }
+    },
+    copyright: "© 2024 Solariis Import. All rights reserved.",
+    privacyPolicy: "Privacy Policy",
+    termsOfService: "Terms of Service"
   },
   categories: {
     hero: {
