@@ -4,7 +4,30 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Lovable-based React/TypeScript single-page application for Solariis Inc, featuring a multi-section landing page with internationalization support (English/Spanish). The project uses Vite, React, shadcn/ui components, and Supabase for backend services.
+This is a React/TypeScript single-page application for Solariis Inc, featuring a multi-section landing page with internationalization support (English/Spanish). The project uses Vite, React, shadcn/ui components, and Supabase for backend services.
+
+### About Solariis
+
+**Solariis** is an international trade and brand representation company that connects global beauty, wellness, lifestyle, and consumer brands with the Venezuelan market. We act as a gateway partner for companies seeking to expand into Venezuela, offering cultural expertise, regulatory guidance, and innovative AI-powered strategies.
+
+**Mission:** Bridge the gap between international brands and Venezuela through strategic, technology-driven, and culturally nuanced approaches to brand expansion.
+
+**Vision:** Become the leading import and brand representation hub in Venezuela, recognized for blending trust, creativity, and AI-driven intelligence.
+
+**Core Services:**
+- Import & Distribution – Customs, logistics, and compliance navigation
+- Brand Representation – Trusted local partnership and ambassadorship
+- Branding & Localization – Culturally-tailored messaging and identity
+- Market Analysis – Consumer insights, competition tracking, opportunity mapping
+- Creative Campaigns – Storytelling, content, and digital marketing activations
+- AI-Powered Scouting – Data-driven market intelligence and trend monitoring
+
+**Differentiators:**
+- AI as competitive advantage for market analysis and opportunity scouting
+- Deep cultural intelligence of Venezuelan consumer behaviors
+- 25+ years of branding, design, and communication expertise
+- Transparency and trust in partnerships
+- Hybrid approach blending global standards with local know-how
 
 ## Development Commands
 
@@ -182,9 +205,7 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 
 ## Development Notes
 
-- Created with Lovable (lovable.dev) - changes via Lovable auto-commit to repo
 - Vite dev server with React SWC plugin for fast refresh
 - TypeScript strict mode with path aliases
 - ESLint configured with React hooks rules
-- Component tagging enabled in dev mode via `lovable-tagger`
 - VS Code settings configured for team consistency (format on save, ESLint auto-fix)
