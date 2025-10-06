@@ -1,193 +1,131 @@
 export const es = {
   nav: {
     home: "Inicio",
-    about: "Nosotros",
+    about: "Quiénes Somos",
     products: "Servicios",
     contact: "Contacto",
     partnerWithUs: "Inicia Tu Expansión"
   },
   hero: {
-    title: "Tu Puerta de Entrada a Venezuela",
-    description: "Ayudamos a marcas internacionales a expandirse en Venezuela con perspectiva cultural, alianzas estratégicas e inteligencia impulsada por IA.",
+    title: "Estrategia, Creatividad e Inteligencia para Marcas que Inspiran.",
+    description:
+      "Solariis es un laboratorio creativo de expansión de marcas. Fusionamos diseño digital, branding, storytelling y nuevas tecnologías impulsadas por inteligencia artificial para que las marcas globales brillen con autenticidad en Venezuela. Creamos experiencias, campañas y estrategias que inspiran y generan conexión real.",
     cta: {
-      partner: "Inicia Tu Expansión",
+      partner: "Descubre Cómo Expandirte",
       learnMore: "Conoce Más"
     }
   },
   valueProposition: {
     title: "Por Qué Elegir Solariis",
-    subtitle: "Combinamos experiencia en branding global con tecnología moderna para ayudar a tu marca a tener éxito en Venezuela.",
+    subtitle:
+      "Combinamos experiencia, creatividad e inteligencia tecnológica para construir marcas globales que se adaptan, prosperan y conectan auténticamente con el mercado venezolano.",
     culturalBridge: {
-      title: "Puente Cultural",
-      description: "Conecta con consumidores a través de un entendimiento cultural auténtico y conocimientos del mercado."
+      title: "Embajadores de Marca Global",
+      description:
+        "Representamos y desarrollamos marcas internacionales con visión estratégica y sensibilidad cultural, creando puentes entre lo global y lo local."
     },
     regulatoryExpertise: {
-      title: "Experiencia Regulatoria",
-      description: "Navega regulaciones de importación, aduana y cumplimiento con confianza."
+      title: "Branding y Creatividad Estratégica",
+      description:
+        "Más de dos décadas en diseño, branding y comunicación nos permiten elevar cada marca con propósito, coherencia y narrativa visual sólida."
     },
     aiPowered: {
-      title: "Inteligencia con IA",
-      description: "Toma decisiones más inteligentes y rápidas con análisis de datos y tendencias."
+      title: "Inteligencia y Tecnología Aplicada",
+      description:
+        "Usamos inteligencia artificial y análisis predictivo para entender tendencias, consumidores y oportunidades con precisión."
     },
     creativeSolutions: {
-      title: "Soluciones Creativas",
-      description: "Lanza campañas de branding y marketing que resuenen con audiencias locales."
+      title: "Conocimiento Local, Presencia Real",
+      description:
+        "Estamos en Venezuela y entendemos su dinámica comercial y cultural. Creamos alianzas sostenibles junto a distribuidores nacionales."
     }
   },
   services: {
     title: "Nuestros Servicios",
-    subtitle: "Desde estrategia de entrada al mercado hasta activación de marca a gran escala, ofrecemos soluciones integrales para marcas internacionales que buscan crecer en Venezuela.",
+    subtitle:
+      "Integramos estrategia, diseño, comunicación y tecnología para impulsar marcas internacionales en su expansión hacia Venezuela y Latinoamérica.",
     import: {
-      title: "Servicios de Importación",
-      description: "Aduana, cumplimiento y logística sin complicaciones para productos internacionales."
+      title: "Estrategia y Posicionamiento",
+      description:
+        "Definimos propósito, voz y posicionamiento para conectar visión global con relevancia local."
     },
     distribution: {
-      title: "Soluciones de Distribución",
-      description: "Construye tu presencia en el mercado con alianzas de retail y cumplimiento."
+      title: "Branding y Diseño Integral",
+      description:
+        "Creamos identidades visuales coherentes y memorables en todos los formatos físicos y digitales."
     },
     branding: {
-      title: "Branding y Localización",
-      description: "Adapta la voz e identidad de tu marca para audiencias locales."
+      title: "Diseño Digital y Experiencias",
+      description:
+        "Diseñamos sitios web, plataformas y aplicaciones móviles con enfoque estratégico y estético."
     },
     marketAnalysis: {
-      title: "Análisis de Mercado",
-      description: "Comprende el comportamiento del consumidor y descubre oportunidades de crecimiento."
+      title: "Marketing y Campañas Creativas",
+      description:
+        "Fusionamos storytelling, arte y estrategia para conectar marcas con audiencias a través de contenido y medios digitales."
     },
     creative: {
-      title: "Campañas Creativas y Digitales",
-      description: "Involucra audiencias a través de storytelling integrado en todos los canales."
+      title: "Inteligencia de Mercado e IA",
+      description:
+        "Analizamos datos y comportamientos mediante IA para anticipar tendencias y optimizar decisiones."
     },
     aiScouting: {
-      title: "Exploración con IA",
-      description: "Identifica nuevas oportunidades con inteligencia de mercado avanzada."
+      title: "Representación y Alianzas",
+      description:
+        "Actuamos como socios locales, gestionando expansión y relaciones comerciales sólidas en el mercado venezolano."
     }
   },
   about: {
-    title: "Sobre Solariis",
-    description: "Solariis es una empresa nueva con una misión audaz: cerrar la brecha entre marcas internacionales y el vibrante mercado venezolano. Nuestro enfoque combina experiencia local, perspectiva regulatoria e inteligencia impulsada por IA — asegurando que las marcas entren a este mercado con claridad y prosperen a largo plazo. En Solariis, no solo representamos marcas — creamos sus historias de expansión y las ayudamos a crecer con confianza.",
+    title: "Quiénes Somos",
+    description:
+      "Solariis es una firma venezolana de expansión y representación de marcas internacionales. Nuestra esencia combina estrategia, creatividad y tecnología para construir marcas sólidas, relevantes y preparadas para el futuro. Nacimos de la experiencia de más de dos décadas en branding, diseño, tecnología, innovación y desarrollo de producto digital, con una visión compartida: conectar marcas globales con el potencial del mercado venezolano a través de creatividad inteligente y ejecución impecable.",
     features: {
       aiDriven: {
-        title: "Impulsado por IA",
-        description: "Aprovechamos IA avanzada y análisis de datos para proporcionar información de mercado en tiempo real, análisis de comportamiento del consumidor e inteligencia competitiva. Nuestro enfoque impulsado por tecnología ayuda a las marcas a tomar decisiones informadas e identificar las mejores oportunidades en el mercado venezolano."
+        title: "Nuestra Visión",
+        description:
+          "Ser el socio estratégico más confiable para marcas internacionales que buscan crecer en Venezuela y Latinoamérica, uniendo inteligencia creativa, tecnología avanzada y conocimiento local para generar valor sostenible y diferenciado."
       },
       creative: {
-        title: "Creatividad y",
-        description: "Desde la localización de marcas hasta campañas de marketing integradas, desarrollamos estrategias creativas que resuenan con las audiencias venezolanas. Nuestro equipo combina perspectivas culturales con técnicas probadas para asegurar conexiones auténticas con los consumidores locales."
+        title: "Nuestra Experiencia",
+        description:
+          "El equipo de Solariis ha colaborado con empresas y marcas líderes en sectores como fintech, blockchain, tecnología, consumo masivo, salud, comunicación y entretenimiento. Nuestra experiencia abarca auditorías de marca, percepción de marca, diseño digital, desarrollo de productos, estrategias web y branding integral, combinando visión estética con análisis de negocio."
       },
       alwaysOn: {
-        title: "Siempre Activo",
-        description: "Con raíces profundas en Venezuela, proporcionamos inteligencia de mercado continua y orientación regulatoria. Nuestra presencia sobre el terreno asegura que navegues los matices culturales, requisitos de cumplimiento y dinámicas del mercado con confianza."
+        title: "Nuestro Compromiso",
+        description:
+          "En Solariis, convertimos la experiencia en innovación. Diseñamos estrategias, marcas y productos impulsados por inteligencia, creatividad y propósito, para que cada expansión sea una historia de impacto y conexión real."
       }
-    },
-    hero: {
-      title: "Transformando el Futuro de la Belleza en Venezuela",
-      description: "Solariis está dedicada a introducir y comercializar marcas premium de salud, bienestar y belleza en Venezuela."
-    },
-    whoWeAre: {
-      title: "Nuestra Esencia",
-      description: "Solariis es una empresa comprometida con la importación, representación y comercialización de marcas premium en las industrias de salud, bienestar y belleza. Nuestro objetivo es conectar marcas globales con el mercado venezolano, asegurando el acceso a productos innovadores de alta calidad."
-    },
-    mission: {
-      title: "Nuestro Propósito",
-      description: "En Solariis, creemos en empoderar a los consumidores con productos de bienestar y belleza confiables y de alta calidad. Nuestra misión es introducir y posicionar estratégicamente marcas internacionales, asegurando una penetración exitosa en el mercado mientras mantenemos la integridad y el valor de cada marca que representamos."
-    },
-    vision: {
-      title: "Nuestro Horizonte",
-      description: "Aspiramos a establecer a Solariis como un actor clave en la industria de la belleza y el bienestar, construyendo relaciones a largo plazo con marcas internacionales, minoristas y consumidores mientras mantenemos la excelencia y confiabilidad en la distribución."
-    },
-    whatWeDo: {
-      title: "Cómo Creamos Valor",
-      items: {
-        brandRepresentation: {
-          title: "Embajadores de Marcas Visionarias",
-          description: "Actuamos como representantes oficiales de marcas internacionales de belleza y bienestar."
-        },
-        importDistribution: {
-          title: "Importación y Distribución",
-          description: "Llevamos productos de alta calidad a cadenas minoristas confiables, farmacias y plataformas de comercio electrónico."
-        },
-        marketing: {
-          title: "Marketing y Reconocimiento de Marca",
-          description: "Desarrollamos estrategias localizadas, marketing digital y activaciones minoristas para posicionar marcas efectivamente."
-        },
-        regulatory: {
-          title: "Soporte Regulatorio y de Cumplimiento",
-          description: "Gestionamos la logística de importación, registros legales y cumplimiento del mercado local para una entrada de marca sin problemas."
-        }
-      }
-    },
-    whyChooseUs: {
-      title: "¿Por Qué Elegir Solariis?",
-      description: "Estamos comprometidos con la construcción de alianzas sólidas y asegurando que las marcas internacionales tengan éxito en el mercado venezolano.",
-      items: [
-        {
-          title: "Red Estratégica de Retail y Distribución",
-          description: "Acceso a minoristas líderes, farmacias y mercados en línea."
-        },
-        {
-          title: "Experiencia Regulatoria y de Cumplimiento",
-          description: "Asegurando una entrada suave al mercado y adherencia a las regulaciones locales."
-        },
-        {
-          title: "Soporte de Marca y Crecimiento",
-          description: "Desarrollando estrategias de marketing personalizadas para mejorar el reconocimiento de marca y el compromiso del consumidor."
-        },
-        {
-          title: "Compromiso con la Excelencia",
-          description: "Manteniendo altos estándares de calidad y prácticas comerciales éticas en cada asociación."
-        }
-      ]
-    },
-    cta: {
-      title: "Contáctanos",
-      description: "Si eres una marca internacional que busca ingresar al mercado venezolano o un minorista interesado en productos premium de belleza y bienestar, nos encantaría conectar.",
-      subtitle: "¡Construyamos algo grandioso juntos!",
-      button: "Contáctanos"
     }
   },
-  footer: {
-    quickLinks: "Enlaces Rápidos",
-    companyInfo: {
-      title: "Solariis Import",
-      tagline: "Tu Socio para la Expansión de Marcas Internacionales",
-      description: "Solariis es tu puerta de entrada confiable para expandirse en Venezuela — combinando perspectiva cultural, experiencia regulatoria y soluciones innovadoras."
-    },
-    contact: {
-      email: "info@solariis.com",
-      phone: "+58 (412) 0907684",
-      location: "Caracas, Venezuela"
-    },
-    social: {
-      title: "Síguenos"
-    },
-    copyright: "© 2024 Solariis Import. Todos los derechos reservados.",
-    privacyPolicy: "Política de Privacidad",
-    termsOfService: "Términos de Servicio"
-  },
   contact: {
-    title: "¿Listo para hacer crecer tu marca en Venezuela?",
-    subtitle: "Exploremos cómo Solariis puede apoyar tu expansión. Completa el formulario a continuación o conéctate con nosotros directamente por WhatsApp.",
+    title: "¿Listos para llevar tu marca al siguiente nivel?",
+    subtitle:
+      "Hablemos sobre cómo Solariis puede acompañarte en tu expansión. Nuestro equipo une estrategia, creatividad y tecnología para crear conexiones auténticas con el mercado venezolano.",
     form: {
       name: "Nombre",
-      brand: "Marca/Empresa",
+      brand: "Marca o Empresa",
       country: "País",
       email: "Correo Electrónico",
       message: "Mensaje",
-      placeholder: "Cuéntanos sobre tu marca y objetivos de expansión...",
-      submit: "Enviar Mensaje",
-      successMessage: "¡Gracias por tu interés! Te responderemos pronto.",
+      placeholder:
+        "Cuéntanos sobre tu marca, tus objetivos y cómo visualizas tu expansión...",
+      submit: "Conversemos",
+      successMessage:
+        "¡Gracias por tu interés! Nuestro equipo se pondrá en contacto contigo muy pronto.",
       errors: {
         nameRequired: "El nombre debe tener al menos 2 caracteres",
-        brandRequired: "El nombre de la marca/empresa es requerido",
+        brandRequired: "El nombre de la marca o empresa es requerido",
         countryRequired: "El país es requerido",
         emailInvalid: "Por favor ingresa un correo electrónico válido"
       }
     },
     whatsapp: {
-      title: "¿Prefieres Chatear?",
-      description: "Conéctate con nosotros directamente por WhatsApp para asistencia inmediata y respuestas rápidas.",
-      button: "Habla con nosotros por WhatsApp",
-      defaultMessage: "¡Hola! Estoy interesado en conocer más sobre los servicios de Solariis para mi marca.",
+      title: "¿Prefieres hablar directamente?",
+      description:
+        "Conéctate con nosotros por WhatsApp para recibir atención personalizada y respuestas rápidas.",
+      button: "Habla con Nosotros por WhatsApp",
+      defaultMessage:
+        "¡Hola! Me gustaría conversar con Solariis sobre cómo expandir mi marca en Venezuela.",
       toast: {
         success: {
           title: "¡Mensaje enviado exitosamente!",
@@ -199,5 +137,25 @@ export const es = {
         }
       }
     }
+  },
+  footer: {
+    quickLinks: "Enlaces Rápidos",
+    companyInfo: {
+      title: "Solariis Import",
+      tagline: "Estrategia, Creatividad e Inteligencia para Marcas Globales",
+      description:
+        "En Solariis representamos, impulsamos y creamos marcas que trascienden fronteras. Combinamos experiencia local, visión global e innovación tecnológica para abrirte camino en Venezuela."
+    },
+    contact: {
+      email: "info@solariis.com",
+      phone: "+58 (412) 0907684",
+      location: "Caracas, Venezuela"
+    },
+    social: {
+      title: "Síguenos"
+    },
+    copyright: "© 2025 Solariis Import. Todos los derechos reservados.",
+    privacyPolicy: "Política de Privacidad",
+    termsOfService: "Términos de Servicio"
   }
 };
