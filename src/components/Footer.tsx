@@ -15,18 +15,18 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-[#F5F5F5]">
+    <footer className="py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F5F5]">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <h3 className="mb-4 text-black">
+            <h3 className="mb-4 text-black font-heading text-h4">
               {t.footer.companyInfo.title}
             </h3>
-            <p className="body-small mb-4 text-[#666666]">
+            <p className="body-small mb-4 text-[#666666] leading-relaxed">
               {t.footer.companyInfo.tagline}
             </p>
-            <p className="body-small mb-6 text-[#666666]">
+            <p className="body-small mb-6 text-[#666666] leading-relaxed">
               {t.footer.companyInfo.description}
             </p>
 
@@ -57,14 +57,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-4 text-black">
+            <h4 className="mb-4 text-black font-heading text-h5">
               {t.footer.quickLinks}
             </h4>
             <ul className="space-y-2">
               <li>
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+                  className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
                 >
                   {t.nav.home}
                 </button>
@@ -72,7 +72,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+                  className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
                 >
                   {t.nav.about}
                 </button>
@@ -80,7 +80,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+                  className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
                 >
                   {t.nav.products}
                 </button>
@@ -88,7 +88,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+                  className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
                 >
                   {t.nav.contact}
                 </button>
@@ -98,13 +98,13 @@ const Footer = () => {
 
           {/* Social Links */}
           <div>
-            <h4 className="mb-4 text-black">
+            <h4 className="mb-4 text-black font-heading text-h5">
               {t.footer.social.title}
             </h4>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="p-2 rounded-lg hover:scale-110 transition-transform duration-200 bg-[#FF6A00]"
+                className="p-2 rounded-lg hover:scale-110 transition-all duration-300 bg-[#FF6A00] hover:bg-[#CC5500]"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5 text-white" />
@@ -112,7 +112,7 @@ const Footer = () => {
 
               <a
                 href="#"
-                className="p-2 rounded-lg hover:scale-110 transition-transform duration-200 bg-[#CC5500]"
+                className="p-2 rounded-lg hover:scale-110 transition-all duration-300 bg-[#FF6A00] hover:bg-[#CC5500]"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5 text-white" />
@@ -120,7 +120,7 @@ const Footer = () => {
 
               <a
                 href="#"
-                className="p-2 rounded-lg hover:scale-110 transition-transform duration-200 bg-[#000000]"
+                className="p-2 rounded-lg hover:scale-110 transition-all duration-300 bg-[#000000] hover:bg-[#FF6A00]"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5 text-white" />
@@ -139,13 +139,13 @@ const Footer = () => {
             <div className="flex space-x-6">
               <a
                 href="#"
-                className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+                className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
               >
                 {t.footer.privacyPolicy}
               </a>
               <a
                 href="#"
-                className="body-small hover:underline transition-colors duration-200 text-[#666666]"
+                className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
               >
                 {t.footer.termsOfService}
               </a>

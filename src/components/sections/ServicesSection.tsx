@@ -40,36 +40,33 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="services" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-[#F5F5F5]">
+    <section id="services" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="mb-4 text-black">
+        <div className="text-center mb-12">
+          <h2 className="mb-6 text-black font-heading text-h2">
             {t.services.title}
           </h2>
-          <p className="body-large max-w-3xl mx-auto text-black">
+          <p className="body-large max-w-3xl mx-auto text-[#666666]">
             {t.services.subtitle}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 group"
+              className="bg-[#FAFAFA] p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
             >
               <div className="flex items-center mb-6">
-                <div
-                  className="flex items-center justify-center w-12 h-12 rounded-lg mr-4 group-hover:scale-110 transition-transform duration-300"
-                  style={{ backgroundColor: '#FF6A00' }}
-                >
+                <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#FF6A00] mr-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-black font-heading text-h4">
+                <h3 className="text-black font-heading text-h4 leading-tight">
                   {service.title}
                 </h3>
               </div>
 
-              <p className="body-small text-[#666666]">
+              <p className="body-small text-[#666666] leading-relaxed">
                 {service.description}
               </p>
             </div>

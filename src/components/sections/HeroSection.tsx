@@ -31,21 +31,21 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto w-full">
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr] lg:grid-cols-[2fr_3fr] gap-6 md:gap-8 lg:gap-12 items-center">
+      <div className="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Text Content */}
           <div className="text-center lg:text-left">
-            <h1 className="display-text text-white mb-6 text-4xl md:text-5xl lg:text-6xl xl:text-[64px]">
+            <h1 className="font-heading text-white mb-6 text-4xl sm:text-5xl lg:text-6xl xl:text-[4rem] leading-tight">
               {t.hero.title}
             </h1>
 
-            <p className="body-large text-white/90 mb-8 max-w-lg mx-auto lg:mx-0 text-sm md:text-base lg:text-lg">
+            <p className="body-large text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               {t.hero.description}
             </p>
 
             <Button
               size="lg"
-              className="bg-white text-[#FF6A00] hover:bg-[#000000] hover:text-white transition-all duration-300 px-8 py-4"
+              className="bg-white text-[#FF6A00] hover:bg-[#000000] hover:text-white transition-all duration-300 px-8 py-6 text-lg font-medium"
               onClick={scrollToContact}
             >
               {t.hero.cta.partner}
@@ -53,9 +53,9 @@ const HeroSection = () => {
           </div>
 
           {/* Right Column - Hero Image */}
-          <div className="flex justify-center lg:justify-start order-1 md:order-2">
+          <div className="flex justify-center lg:justify-end">
             <div
-              className="relative w-full max-w-xs md:max-w-sm lg:max-w-xl xl:max-w-2xl aspect-[4/3] overflow-hidden group hover:scale-105 transition-all duration-500 shadow-2xl"
+              className="relative w-full max-w-md lg:max-w-xl aspect-[4/3] overflow-hidden group hover:scale-105 transition-all duration-500 shadow-2xl"
               style={{
                 borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
                 animation: 'blob 8s ease-in-out infinite'

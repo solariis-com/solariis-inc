@@ -73,19 +73,19 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-black">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-white mb-4">
+          <h2 className="text-white font-heading text-h2 mb-6">
             {t.contact.title}
           </h2>
-          <p className="body-large text-white/90 max-w-2xl mx-auto">
+          <p className="body-large text-white/90 max-w-3xl mx-auto leading-relaxed">
             {t.contact.subtitle}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-xl">
+          <div className="bg-white p-8 rounded-2xl shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -167,18 +167,18 @@ export function ContactSection() {
 
           {/* WhatsApp Option */}
           <div className="flex flex-col justify-center items-center text-center">
-            <div className="bg-white/10 p-8 rounded-xl backdrop-blur-sm">
+            <div className="bg-white/10 p-8 rounded-2xl backdrop-blur-sm">
               <MessageCircle className="w-16 h-16 text-white mx-auto mb-6" />
-              <h3 className="text-white mb-4">
+              <h3 className="text-white font-heading text-h4 mb-4">
                 {t.contact.whatsapp.title}
               </h3>
-              <p className="body-large text-white/90 mb-6">
+              <p className="body-large text-white/90 mb-6 leading-relaxed">
                 {t.contact.whatsapp.description}
               </p>
               <Button
                 onClick={handleWhatsApp}
                 variant="outline"
-                className="bg-transparent border-white text-white hover:bg-white hover:text-[#FF6A00]"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#FF6A00] transition-all duration-300"
               >
                 {t.contact.whatsapp.button}
               </Button>
