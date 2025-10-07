@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['"Julius Sans One"', 'sans-serif'],
+        heading: ['"Rethink Sans"', 'sans-serif'],
         body: ['"Rethink Sans"', 'sans-serif'],
       },
       colors: {
@@ -57,14 +57,14 @@ export default {
         },
       },
       fontSize: {
-        'display': ['clamp(2rem, 5vw, 3rem)', { lineHeight: '1.1', fontWeight: '500' }],
-        'h1': ['clamp(1.75rem, 4vw, 2.5rem)', { lineHeight: '1.2', fontWeight: '500' }],
-        'h2': ['clamp(1.5rem, 3vw, 2rem)', { lineHeight: '1.2' }],
-        'h3': ['clamp(1.25rem, 2.5vw, 1.75rem)', { lineHeight: '1.3' }],
-        'h4': ['clamp(1.125rem, 2vw, 1.5rem)', { lineHeight: '1.4' }],
-        'body-lg': ['clamp(1rem, 1.5vw, 1.125rem)', { lineHeight: '1.6', fontWeight: '100' }],
-        'body': ['clamp(0.875rem, 1.25vw, 1.125rem)', { lineHeight: '1.5', fontWeight: '100' }],
-        'body-sm': ['clamp(0.75rem, 1vw, 1rem)', { lineHeight: '1.4', fontWeight: '100' }],
+        'display': ['clamp(2rem, 5vw, 4rem)', { lineHeight: '1', fontWeight: '500' }],
+        'h1': ['clamp(2rem, 4vw, 4rem)', { lineHeight: '1', fontWeight: '500' }],
+        'h2': ['clamp(1.5rem, 3vw, 2rem)', { lineHeight: '1.3', fontWeight: '400' }],
+        'h3': ['clamp(1.25rem, 2.5vw, 1.5rem)', { lineHeight: '1.4', fontWeight: '400' }],
+        'h4': ['clamp(1.125rem, 2vw, 1.25rem)', { lineHeight: '1.4', fontWeight: '400' }],
+        'body-lg': ['clamp(1rem, 1.5vw, 1.125rem)', { lineHeight: '1.6', fontWeight: '400' }],
+        'body': ['clamp(0.875rem, 1.25vw, 1.125rem)', { lineHeight: '1.5', fontWeight: '400' }],
+        'body-sm': ['clamp(0.75rem, 1vw, 1rem)', { lineHeight: '1.4', fontWeight: '400' }],
         'button': ['1rem', { lineHeight: '1.5', letterSpacing: '0.05em', textTransform: 'uppercase' }],
         'caption': ['0.75rem', { lineHeight: '1.4' }],
         'input': ['1rem', { lineHeight: '1.5' }],

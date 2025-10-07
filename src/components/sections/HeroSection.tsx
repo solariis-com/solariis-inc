@@ -11,41 +11,23 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 lg:pt-24">
-      {/* Background Gradient */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          background: 'linear-gradient(135deg, #FF6A00 0%, #E56B55 100%)'
-        }}
-      />
-
-      {/* Optional Background Pattern */}
-      <div className="absolute inset-0 z-10 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        />
-      </div>
-
+    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 lg:pt-24 bg-[#F5F5F5]">
       {/* Content */}
-      <div className="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+      <div className="relative z-20 max-w-[1280px] mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column - Text Content */}
-          <div className="text-center lg:text-left">
-            <h1 className="font-heading text-white mb-6 text-4xl sm:text-5xl lg:text-6xl xl:text-[4rem] leading-tight">
+          <div className="text-left">
+            <h1 className="font-body font-medium text-black mb-6 text-[64px] leading-[64px]">
               {t.hero.title}
             </h1>
 
-            <p className="body-large text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-[18px] leading-[28px] font-body font-normal text-black mb-8 max-w-[512px]">
               {t.hero.description}
             </p>
 
             <Button
               size="lg"
-              className="bg-white text-[#FF6A00] hover:bg-[#000000] hover:text-white transition-all duration-300 px-8 py-6 text-lg font-medium"
+              className="bg-[#FF6A00] text-white hover:bg-[#CC5500] transition-all duration-300 px-8 py-4 text-sm font-medium rounded-[6px]"
               onClick={scrollToContact}
             >
               {t.hero.cta.partner}

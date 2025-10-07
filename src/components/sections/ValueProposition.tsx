@@ -45,7 +45,7 @@ export function ValueProposition() {
           {values.map((value, index) => (
             <div
               key={index}
-              className="text-center p-8 rounded-2xl bg-[#FAFAFA] hover:shadow-md transition-all duration-300 group"
+              className="text-center p-8 rounded-[12px] bg-[#f8f8f8] hover:shadow-md transition-all duration-300 group"
             >
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#000000] mb-6 group-hover:scale-110 transition-transform duration-300">
                 <value.icon className="w-8 h-8 text-white" />

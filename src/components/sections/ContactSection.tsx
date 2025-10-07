@@ -73,7 +73,7 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-black">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-[896px] mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-white font-heading text-h2 mb-6">
             {t.contact.title}
@@ -85,7 +85,7 @@ export function ContactSection() {
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-white p-8 rounded-[12px] shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -167,7 +167,7 @@ export function ContactSection() {
 
           {/* WhatsApp Option */}
           <div className="flex flex-col justify-center items-center text-center">
-            <div className="bg-white/10 p-8 rounded-2xl backdrop-blur-sm">
+            <div className="bg-white/10 p-8 rounded-[12px] backdrop-blur-sm">
               <MessageCircle className="w-16 h-16 text-white mx-auto mb-6" />
               <h3 className="text-white font-heading text-h4 mb-4">
                 {t.contact.whatsapp.title}

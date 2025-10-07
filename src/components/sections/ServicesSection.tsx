@@ -55,7 +55,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#FAFAFA] p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 group"
+              className="bg-[#f8f8f8] p-8 rounded-[12px] shadow-sm hover:shadow-md transition-all duration-300 group"
             >
               <div className="flex items-center mb-6">
                 <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#FF6A00] mr-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
