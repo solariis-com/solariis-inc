@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Instagram, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
 
@@ -15,40 +15,40 @@ const Footer = () => {
   };
 
   return (
-    <footer className="py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F5F5]">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+    <footer className="py-12 lg:py-[47px] px-4 sm:px-6 lg:px-[120px] xl:px-[200px] bg-neutral-100">
+      <div className="max-w-[1280px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-8 lg:mb-12">
           {/* Company Info */}
-          <div className="md:col-span-2">
-            <h3 className="mb-4 text-black font-heading text-h4">
+          <div>
+            <h3 className="mb-4 font-['Rethink_Sans'] font-normal text-[24px] lg:text-[28px] leading-[33.6px] lg:leading-[36.4px] text-black">
               {t.footer.companyInfo.title}
             </h3>
-            <p className="body-small mb-4 text-[#666666] leading-relaxed">
+            <p className="font-['Rethink_Sans'] font-normal text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] text-[#666666] mb-4">
               {t.footer.companyInfo.tagline}
             </p>
-            <p className="body-small mb-6 text-[#666666] leading-relaxed">
+            <p className="font-['Rethink_Sans'] font-normal text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] text-[#666666] mb-6">
               {t.footer.companyInfo.description}
             </p>
 
             {/* Contact Info */}
-            <div className="space-y-3">
-              <div className="flex items-center">
-                <Mail className="w-4 h-4 mr-3 text-[#FF6A00]" />
-                <span className="body-small text-black">
+            <div className="space-y-3 pt-2">
+              <div className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-[#FF6A00]" />
+                <span className="font-['Rethink_Sans'] font-normal text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] text-black">
                   {t.footer.contact.email}
                 </span>
               </div>
 
-              <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-3 text-[#FF6A00]" />
-                <span className="body-small text-black">
+              <div className="flex items-center gap-3">
+                <Phone className="w-4 h-4 text-[#FF6A00]" />
+                <span className="font-['Rethink_Sans'] font-normal text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] text-black">
                   {t.footer.contact.phone}
                 </span>
               </div>
 
-              <div className="flex items-center">
-                <MapPin className="w-4 h-4 mr-3 text-[#FF6A00]" />
-                <span className="body-small text-black">
+              <div className="flex items-center gap-3">
+                <MapPin className="w-4 h-4 text-[#FF6A00]" />
+                <span className="font-['Rethink_Sans'] font-normal text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] text-black">
                   {t.footer.contact.location}
                 </span>
               </div>
@@ -57,14 +57,14 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-4 text-black font-heading text-h5">
+            <h4 className="mb-4 font-['Rethink_Sans'] font-normal text-[20px] lg:text-[24px] leading-[28px] lg:leading-[33.6px] text-black">
               {t.footer.quickLinks}
             </h4>
             <ul className="space-y-2">
               <li>
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
+                  className="font-['Rethink_Sans'] font-normal text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] text-[#666666] hover:text-[#FF6A00] transition-colors duration-300"
                 >
                   {t.nav.home}
                 </button>
@@ -72,7 +72,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
+                  className="font-['Rethink_Sans'] font-normal text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] text-[#666666] hover:text-[#FF6A00] transition-colors duration-300"
                 >
                   {t.nav.about}
                 </button>
@@ -80,7 +80,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
+                  className="font-['Rethink_Sans'] font-normal text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] text-[#666666] hover:text-[#FF6A00] transition-colors duration-300"
                 >
                   {t.nav.products}
                 </button>
@@ -88,64 +88,32 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
+                  className="font-['Rethink_Sans'] font-normal text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] text-[#666666] hover:text-[#FF6A00] transition-colors duration-300"
                 >
                   {t.nav.contact}
                 </button>
               </li>
             </ul>
           </div>
-
-          {/* Social Links */}
-          <div>
-            <h4 className="mb-4 text-black font-heading text-h5">
-              {t.footer.social.title}
-            </h4>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="p-2 rounded-lg hover:scale-110 transition-all duration-300 bg-[#FF6A00] hover:bg-[#CC5500]"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5 text-white" />
-              </a>
-
-              <a
-                href="#"
-                className="p-2 rounded-lg hover:scale-110 transition-all duration-300 bg-[#FF6A00] hover:bg-[#CC5500]"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5 text-white" />
-              </a>
-
-              <a
-                href="#"
-                className="p-2 rounded-lg hover:scale-110 transition-all duration-300 bg-[#000000] hover:bg-[#FF6A00]"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5 text-white" />
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-[#52342D]/20">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="body-small mb-4 md:mb-0 text-[#666666]">
+        <div className="pt-8 border-t border-gray-300">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="font-['Rethink_Sans'] font-normal text-[12px] lg:text-[14px] leading-[18px] lg:leading-[21px] text-[#666666]">
               {t.footer.copyright}
             </p>
 
-            <div className="flex space-x-6">
+            <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
               <a
                 href="#"
-                className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
+                className="font-['Rethink_Sans'] font-normal text-[12px] lg:text-[14px] leading-[18px] lg:leading-[21px] text-[#666666] hover:text-[#FF6A00] transition-colors duration-300"
               >
                 {t.footer.privacyPolicy}
               </a>
               <a
                 href="#"
-                className="body-small hover:text-[#FF6A00] transition-colors duration-300 text-[#666666]"
+                className="font-['Rethink_Sans'] font-normal text-[12px] lg:text-[14px] leading-[18px] lg:leading-[21px] text-[#666666] hover:text-[#FF6A00] transition-colors duration-300"
               >
                 {t.footer.termsOfService}
               </a>

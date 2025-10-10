@@ -1,21 +1,15 @@
-import { Navigation } from "./components/Navigation";
-import { Hero } from "./components/Hero";
-import { ValueProposition } from "./components/ValueProposition";
-import { About } from "./components/About";
-import { Services } from "./components/Services";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
+import SectionsHomepage from "./imports/SectionsHomepage";
+import Nav from "./components/Nav";
+import HeroWithGradient from "./components/HeroWithGradient";
 
 export default function App() {
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      <Hero />
-      <ValueProposition />
-      <About />
-      <Services />
-      <Contact />
-      <Footer />
+    <div className="w-full min-h-screen bg-white">
+      <Nav />
+      <div className="w-full">
+        <HeroWithGradient />
+        <SectionsHomepage />
+      </div>
     </div>
   );
 }

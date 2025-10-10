@@ -1,6 +1,7 @@
 import { Button } from "../ui/button";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { translations } from "../../translations";
+import heroImage from "../../assets/images/hero/hero.png";
 
 const HeroSection = () => {
   const { language } = useLanguage();
@@ -11,53 +12,46 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 lg:pt-24 bg-[#F5F5F5]">
-      {/* Content */}
-      <div className="relative z-20 max-w-[1280px] mx-auto w-full px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-[32px] py-[80px] md:py-[120px] lg:py-[150px]">
+      {/* Background Images */}
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-0 overflow-hidden">
+          <img
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+            src={heroImage}
+          />
+        </div>
+      </div>
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-orange-500/40 via-orange-400/30 to-transparent" data-name="Gradient" />
+
+      {/* Content Container */}
+      <div className="relative z-10 w-full max-w-[1280px]">
+        <div className="flex gap-[48px] items-center justify-center w-full">
           {/* Left Column - Text Content */}
-          <div className="text-left">
-            <h1 className="font-body font-medium text-black mb-6 text-[64px] leading-[64px]">
+          <div className="flex flex-col gap-[24px] items-start w-full lg:w-[492.8px]">
+            <h1 className="font-['Rethink_Sans'] font-extrabold text-black text-[clamp(3rem,10vw,8rem)] lg:text-[128px] leading-[1.04] lg:leading-[133px] whitespace-pre-line">
               {t.hero.title}
             </h1>
 
-            <p className="text-[18px] leading-[28px] font-body font-normal text-black mb-8 max-w-[512px]">
-              {t.hero.description}
-            </p>
+            <div className="w-full max-w-[555px] pb-[8px]">
+              <p className="font-['Rethink_Sans'] font-normal text-[clamp(1rem,1.5vw,1.125rem)] lg:text-[18px] leading-[28px] text-black">
+                {t.hero.description}
+              </p>
+            </div>
 
             <Button
-              size="lg"
-              className="bg-[#FF6A00] text-white hover:bg-[#CC5500] transition-all duration-300 px-8 py-4 text-sm font-medium rounded-[6px]"
+              className="bg-white text-black hover:bg-gray-100 h-[44px] px-[32px] py-[16px] text-[14px] leading-[20px] font-medium rounded-[6px] transition-all duration-300 hover:scale-105"
               onClick={scrollToContact}
             >
               {t.hero.cta.partner}
             </Button>
           </div>
 
-          {/* Right Column - Hero Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div
-              className="relative w-full max-w-md lg:max-w-xl aspect-[4/3] overflow-hidden group hover:scale-105 transition-all duration-500 shadow-2xl"
-              style={{
-                borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
-                animation: 'blob 8s ease-in-out infinite'
-              }}
-            >
-              <img
-                src="/lovable-uploads/2402b619-b4b5-464a-b073-a3f87599ae58.png"
-                alt={t.hero.imageAlt || "Luxury beauty brand application showcasing premium cosmetics"}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              />
-
-              {/* Overlay for better contrast */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
-
-              {/* Floating accent elements */}
-              <div className="absolute top-4 right-4 w-3 h-3 bg-white/70 rounded-full animate-pulse"></div>
-              <div className="absolute bottom-6 left-6 w-2 h-2 bg-white/50 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-              <div className="absolute top-1/3 left-4 w-1.5 h-1.5 bg-white/60 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
-            </div>
-          </div>
+          {/* Right side spacer - only visible on large screens */}
+          <div className="hidden lg:block flex-1 min-h-px min-w-px" />
         </div>
       </div>
     </section>

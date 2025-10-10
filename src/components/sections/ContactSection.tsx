@@ -72,24 +72,30 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-black">
+    <section id="contact" className="py-16 lg:py-[95px] px-4 sm:px-6 lg:px-[120px] xl:px-[200px] bg-black">
       <div className="max-w-[896px] mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-white font-heading text-h2 mb-6">
+        {/* Header */}
+        <div className="text-center mb-12 lg:mb-[48px]">
+          <h2 className="font-['Rethink_Sans'] font-normal text-[28px] lg:text-[32px] leading-[36.4px] lg:leading-[38.4px] text-white mb-4 lg:mb-[15px]">
             {t.contact.title}
           </h2>
-          <p className="body-large text-white/90 max-w-3xl mx-auto leading-relaxed">
-            {t.contact.subtitle}
-          </p>
+          <div className="max-w-[672px] mx-auto">
+            <p className="font-['Rethink_Sans'] font-normal text-[16px] lg:text-[18px] leading-[24px] lg:leading-[28.8px] text-white/90">
+              {t.contact.subtitle}
+            </p>
+          </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[48px]">
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-[12px] shadow-lg">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <Label htmlFor="name" className="text-black">{t.contact.form.name} *</Label>
+          <div className="bg-white p-[32px] rounded-[12px] w-full">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-[24px]">
+              {/* Name and Brand row */}
+              <div className="flex gap-[16px]">
+                <div className="flex flex-col gap-[9px] flex-1 pt-[5px]">
+                  <Label htmlFor="name" className="font-['Rethink_Sans'] font-medium text-[14px] leading-[14px] text-black">
+                    {t.contact.form.name} *
+                  </Label>
                   <Input
                     id="name"
                     name="name"
@@ -97,12 +103,14 @@ export function ContactSection() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="mt-1 bg-[#F8F8F8] border-[#E0E0E0]"
+                    className="h-[40px] bg-[#F8F8F8] border-[#E0E0E0] rounded-[6px] px-[13px] py-[11px]"
                   />
                 </div>
 
-                <div>
-                  <Label htmlFor="brand" className="text-black">{t.contact.form.brand} *</Label>
+                <div className="flex flex-col gap-[9px] flex-1 pt-[5px]">
+                  <Label htmlFor="brand" className="font-['Rethink_Sans'] font-medium text-[14px] leading-[14px] text-black">
+                    {t.contact.form.brand} *
+                  </Label>
                   <Input
                     id="brand"
                     name="brand"
@@ -110,14 +118,17 @@ export function ContactSection() {
                     required
                     value={formData.brand}
                     onChange={handleChange}
-                    className="mt-1 bg-[#F8F8F8] border-[#E0E0E0]"
+                    className="h-[40px] bg-[#F8F8F8] border-[#E0E0E0] rounded-[6px] px-[13px] py-[11px]"
                   />
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <Label htmlFor="country" className="text-black">{t.contact.form.country} *</Label>
+              {/* Country and Email row */}
+              <div className="flex gap-[16px]">
+                <div className="flex flex-col gap-[9px] flex-1 pt-[5px]">
+                  <Label htmlFor="country" className="font-['Rethink_Sans'] font-medium text-[14px] leading-[14px] text-black">
+                    {t.contact.form.country} *
+                  </Label>
                   <Input
                     id="country"
                     name="country"
@@ -125,12 +136,14 @@ export function ContactSection() {
                     required
                     value={formData.country}
                     onChange={handleChange}
-                    className="mt-1 bg-[#F8F8F8] border-[#E0E0E0]"
+                    className="h-[40px] bg-[#F8F8F8] border-[#E0E0E0] rounded-[6px] px-[13px] py-[11px]"
                   />
                 </div>
 
-                <div>
-                  <Label htmlFor="email" className="text-black">{t.contact.form.email} *</Label>
+                <div className="flex flex-col gap-[9px] flex-1 pt-[5px]">
+                  <Label htmlFor="email" className="font-['Rethink_Sans'] font-medium text-[14px] leading-[14px] text-black">
+                    {t.contact.form.email} *
+                  </Label>
                   <Input
                     id="email"
                     name="email"
@@ -138,27 +151,31 @@ export function ContactSection() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="mt-1 bg-[#F8F8F8] border-[#E0E0E0]"
+                    className="h-[40px] bg-[#F8F8F8] border-[#E0E0E0] rounded-[6px] px-[13px] py-[11px]"
                   />
                 </div>
               </div>
 
-              <div>
-                <Label htmlFor="message" className="text-black">{t.contact.form.message}</Label>
+              {/* Message textarea */}
+              <div className="flex flex-col gap-[9px] pt-[5px]">
+                <Label htmlFor="message" className="font-['Rethink_Sans'] font-medium text-[14px] leading-[14px] text-black">
+                  {t.contact.form.message}
+                </Label>
                 <Textarea
                   id="message"
                   name="message"
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder={t.contact.form.placeholder || "Tell us about your brand and expansion goals..."}
-                  className="mt-1 bg-[#F8F8F8] border-[#E0E0E0]"
+                  placeholder={t.contact.form.placeholder || "Cuéntanos sobre tu marca, tus objetivos y cómo visualizas tu expansión..."}
+                  className="min-h-[98px] bg-[#F8F8F8] border-[#E0E0E0] rounded-[6px] px-[13px] py-[9px] font-['Rethink_Sans'] text-[14px] resize-none"
                 />
               </div>
 
+              {/* Submit button */}
               <Button
                 type="submit"
-                className="w-full bg-[#FF6A00] text-white hover:bg-[#CC5500]"
+                className="w-full h-[40px] bg-[#FF6A00] text-white hover:bg-[#CC5500] rounded-[6px] font-['Rethink_Sans'] font-medium text-[14px] leading-[20px]"
               >
                 {t.contact.form.submit}
               </Button>
@@ -166,19 +183,30 @@ export function ContactSection() {
           </div>
 
           {/* WhatsApp Option */}
-          <div className="flex flex-col justify-center items-center text-center">
-            <div className="bg-white/10 p-8 rounded-[12px] backdrop-blur-sm">
-              <MessageCircle className="w-16 h-16 text-white mx-auto mb-6" />
-              <h3 className="text-white font-heading text-h4 mb-4">
+          <div className="relative w-full h-[438px]">
+            <div className="absolute inset-0 backdrop-blur-[2px] bg-[#FF6A00] rounded-[12px] flex flex-col items-center justify-center p-[32px]">
+              {/* WhatsApp Icon */}
+              <div className="size-[64px] mb-[24px]">
+                <MessageCircle className="w-full h-full text-white" strokeWidth={2.2} />
+              </div>
+
+              {/* Heading */}
+              <h3 className="font-['Rethink_Sans'] font-medium text-[24px] lg:text-[28px] leading-[33.6px] lg:leading-[36.4px] text-white text-center mb-[16px]">
                 {t.contact.whatsapp.title}
               </h3>
-              <p className="body-large text-white/90 mb-6 leading-relaxed">
-                {t.contact.whatsapp.description}
-              </p>
+
+              {/* Description */}
+              <div className="max-w-[360px] mb-[32px]">
+                <p className="font-['Rethink_Sans'] font-normal text-[16px] lg:text-[18px] leading-[24px] lg:leading-[28.8px] text-white/90 text-center">
+                  {t.contact.whatsapp.description}
+                </p>
+              </div>
+
+              {/* Button */}
               <Button
                 onClick={handleWhatsApp}
                 variant="outline"
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#FF6A00] transition-all duration-300"
+                className="h-[40px] bg-transparent border border-white text-white hover:bg-white hover:text-[#FF6A00] rounded-[6px] px-[17px] py-[9px] font-['Rethink_Sans'] font-medium text-[14px] leading-[20px] transition-all duration-300"
               >
                 {t.contact.whatsapp.button}
               </Button>

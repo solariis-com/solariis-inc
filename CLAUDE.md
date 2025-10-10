@@ -64,7 +64,12 @@ IMMEDIATELY after implementing any front-end change:
 6. **Capture evidence - Take full page screenshot at desktop viewport (1440px) of each changed view
 7. **Check for errors - Run mcp__playwright__browser_console_messages
 
+
 This verification ensures changes meet design standards and user requirements.
+
+### Figma Integration
+When a Figma link is provided:
+- Use **figma MCP** to retrieve the design and get the relevant code
 
 ### Comprehensive Design Review
 Invoke the @agent-design-review subagent for thorough design validation when:

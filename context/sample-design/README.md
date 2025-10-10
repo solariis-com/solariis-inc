@@ -1,7 +1,7 @@
 
-  # Corporate Website for Solariis Inc
+  # Landing Page
 
-  This is a code bundle for Corporate Website for Solariis Inc. The original project is available at https://www.figma.com/design/HvoCkXBAweJzLsztFYs4k1/Corporate-Website-for-Solariis-Inc.
+  This is a code bundle for Landing Page. The original project is available at https://www.figma.com/design/A8xIuaf7rn1pnzCWcW4LVY/Landing-Page.
 
   ## Running the code
 

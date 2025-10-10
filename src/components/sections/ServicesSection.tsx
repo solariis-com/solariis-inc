@@ -1,6 +1,6 @@
-import { Package, Truck, Palette, BarChart3, Megaphone, Search } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
+import { StarIcon, MiscIcon, MoonIcon, CodeIcon, TriangleIcon, EllipseIcon } from "../icons/ServiceIcons";
 
 export function ServicesSection() {
   const { language } = useLanguage();
@@ -8,67 +8,94 @@ export function ServicesSection() {
 
   const services = [
     {
-      icon: Package,
+      Icon: StarIcon,
+      tag: "Brand Strategy",
       title: t.services.import.title,
       description: t.services.import.description
     },
     {
-      icon: Truck,
+      Icon: MiscIcon,
+      tag: "Fluid Branding",
       title: t.services.distribution.title,
       description: t.services.distribution.description
     },
     {
-      icon: Palette,
+      Icon: MoonIcon,
+      tag: "UX/UI Web & Mobile Apps",
       title: t.services.branding.title,
       description: t.services.branding.description
     },
     {
-      icon: BarChart3,
+      Icon: CodeIcon,
+      tag: "Creative & Content Lab",
       title: t.services.marketAnalysis.title,
       description: t.services.marketAnalysis.description
     },
     {
-      icon: Megaphone,
+      Icon: TriangleIcon,
+      tag: "AI & Innovation",
       title: t.services.creative.title,
       description: t.services.creative.description
     },
     {
-      icon: Search,
+      Icon: EllipseIcon,
+      tag: "Brand Expansion & Partnerships",
       title: t.services.aiScouting.title,
       description: t.services.aiScouting.description
     }
   ];
 
   return (
-    <section id="services" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="mb-6 text-black font-heading text-h2">
+    <section id="services" className="py-16 lg:py-[95px] px-4 sm:px-6 lg:px-[120px] xl:px-[200px] bg-white overflow-clip">
+      <div className="max-w-[1280px] mx-auto">
+        <div className="text-center mb-12 lg:mb-[64px]">
+          <h2 className="mb-4 lg:mb-[15.405px] text-black font-['Rethink_Sans'] font-bold text-[32px] lg:text-[40px] leading-[38.4px]">
             {t.services.title}
           </h2>
-          <p className="body-large max-w-3xl mx-auto text-[#666666]">
+          <p className="font-['Rethink_Sans'] font-normal text-[16px] lg:text-[18px] leading-[24px] lg:leading-[28.8px] text-black max-w-[768px] mx-auto">
             {t.services.subtitle}
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-y-[24px] lg:gap-x-[32px]">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#f8f8f8] p-8 rounded-[12px] shadow-sm hover:shadow-md transition-all duration-300 group"
+              className="bg-[#f2f4f7] p-8 lg:px-[32px] lg:py-[32px] lg:pb-[48px] rounded-[22px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] hover:shadow-md transition-all duration-300 group flex flex-col gap-[15px] min-h-[384px]"
             >
-              <div className="flex items-center mb-6">
-                <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[#FF6A00] mr-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="w-6 h-6 text-white" />
+              {/* Tag */}
+              <div className="flex gap-[10px] items-start w-full">
+                <div className="h-[34px] relative flex-shrink-0 max-w-full">
+                  <div className="bg-white h-[26px] rounded-[50px] px-[12px] sm:px-[16.5px] flex items-center overflow-hidden max-w-full">
+                    <ul className="list-disc list-inside">
+                      <li className="font-['Rethink_Sans'] font-normal text-[9px] sm:text-[11px] leading-[16px] text-black truncate">
+                        {service.tag}
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <h3 className="text-black font-heading text-h4 leading-tight">
+              </div>
+
+              {/* Icon */}
+              <div className="flex flex-col gap-[10px] h-[70px] items-center justify-center w-full">
+                <div className="flex items-center justify-center">
+                  <service.Icon />
+                </div>
+              </div>
+
+              {/* Title */}
+              <div className="flex flex-col gap-[10px] items-center text-center">
+                <h3 className="font-['Rethink_Sans'] font-medium text-[20px] lg:text-[24px] leading-[28px] lg:leading-[33.6px] text-black">
                   {service.title}
                 </h3>
               </div>
 
-              <p className="body-small text-[#666666] leading-relaxed">
-                {service.description}
-              </p>
+              {/* Description */}
+              <div className="flex flex-col items-start">
+                <p className="font-['Rethink_Sans'] font-normal text-[14px] lg:text-[16px] leading-[21px] lg:leading-[24px] text-[#666666]">
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Globe } from "lucide-react";
-import logo from "../assets/logo.svg";
+import { SolariisLogo } from "./SolariisLogo";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations";
 import { Button } from "./ui/button";
@@ -55,12 +55,8 @@ const Navbar = () => {
               onClick={() => scrollToSection('home')}
               className="flex items-center group"
             >
-              <div className="h-14 transition-all duration-300 group-hover:scale-105">
-                <img
-                  src={logo}
-                  alt="Solariis Complete Logo"
-                  className="h-full w-auto object-contain"
-                />
+              <div className="transition-all duration-300 group-hover:scale-105">
+                <SolariisLogo className="h-[43.313px] w-[182.75px]" />
               </div>
             </button>
           </div>
