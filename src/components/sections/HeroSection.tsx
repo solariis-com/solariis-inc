@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-[32px] py-[80px] md:py-[120px] lg:py-[150px]">
+    <section className="relative w-full min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-[32px] pt-[120px] pb-[60px] md:pt-[140px] md:pb-[80px] lg:pt-[150px] lg:pb-[100px]">
       {/* Background Images */}
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 overflow-hidden">
