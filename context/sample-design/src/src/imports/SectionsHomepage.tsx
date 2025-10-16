@@ -1120,7 +1120,7 @@ function Card4() {
 
 function Container10() {
   return (
-    <div className="absolute content-stretch flex gap-[32px] items-start justify-center left-[-5px] right-[-5px] top-[201.3px]" data-name="Container">
+    <div className="absolute content-stretch flex gap-[32px] items-start justify-center left-0 right-0 top-[201.3px]" data-name="Container">
       <Card5 />
       <Card2 />
       <Card3 />
@@ -1131,7 +1131,7 @@ function Container10() {
 
 function Container11() {
   return (
-    <div className="absolute h-[913px] left-[84px] top-[76px] w-[1753px]" data-name="Container">
+    <div className="absolute h-[913px] left-1/2 top-[76px] translate-x-[-50%] w-full max-w-[1280px] px-8" data-name="Container">
       <Container6 />
       <Container10 />
     </div>
@@ -1140,7 +1140,7 @@ function Container11() {
 
 function WhySolariis() {
   return (
-    <div className="bg-white h-[1065px] relative shrink-0 w-[1920px]" data-name="Why Solariis">
+    <div className="bg-white h-[1065px] relative shrink-0 w-full" data-name="Why Solariis">
       <Container11 />
     </div>
   );
@@ -1409,7 +1409,7 @@ function Container19() {
 
 function Container20() {
   return (
-    <div className="absolute content-stretch flex flex-col gap-[32px] items-center left-1/2 top-[95px] translate-x-[-50%] w-[1280px]" data-name="Container">
+    <div className="absolute content-stretch flex flex-col gap-[32px] items-center left-1/2 top-[95px] translate-x-[-50%] w-full max-w-[1280px] px-8" data-name="Container">
       <Heading6 />
       <Container12 />
       <Container19 />
@@ -1434,7 +1434,7 @@ function Component18() {
 
 function WhoWeAre() {
   return (
-    <div className="h-[1117.59px] overflow-clip relative shrink-0 w-[1920px]" data-name="Who We Are">
+    <div className="bg-[#f5f1ed] h-[1117.59px] overflow-clip relative shrink-0 w-full" data-name="Who We Are">
       <Container20 />
       <Component18 />
     </div>
@@ -2074,7 +2074,7 @@ function Container48() {
 
 function OurServices() {
   return (
-    <div className="absolute box-border content-stretch flex flex-col h-[1228px] items-start left-0 pb-[96px] pt-[95px] px-[320px] top-0 w-[1920px]" data-name="Our Services">
+    <div className="absolute box-border content-stretch flex flex-col h-[1228px] items-center left-0 pb-[96px] pt-[95px] px-8 top-0 w-full" data-name="Our Services">
       <Container48 />
     </div>
   );
@@ -2082,7 +2082,7 @@ function OurServices() {
 
 function OurServices1() {
   return (
-    <div className="h-[1228px] relative shrink-0 w-[1920px]" data-name="Our Services">
+    <div className="h-[1228px] relative shrink-0 w-full" data-name="Our Services">
       <OurServices />
     </div>
   );
@@ -2674,7 +2674,7 @@ function Container58() {
 
 function Ideas() {
   return (
-    <div className="bg-white box-border content-stretch flex flex-col h-[2134px] items-start px-[320px] py-[95px] relative shrink-0 w-[1920px]" data-name="Ideas">
+    <div className="bg-white box-border content-stretch flex flex-col h-[2134px] items-center px-8 py-[95px] relative shrink-0 w-full" data-name="Ideas">
       <Container58 />
     </div>
   );
@@ -2991,7 +2991,7 @@ function Container76() {
 
 function Contact() {
   return (
-    <div className="bg-black box-border content-stretch flex flex-col items-start pb-[96px] pt-[95px] px-[512px] relative shrink-0 w-[1920px]" data-name="Contact">
+    <div className="bg-black box-border content-stretch flex flex-col items-center pb-[96px] pt-[95px] px-8 relative shrink-0 w-full" data-name="Contact">
       <Container76 />
     </div>
   );
@@ -3407,11 +3407,14 @@ function Container93() {
 
 function Footer() {
   return (
-    <div className="bg-neutral-100 box-border content-stretch flex flex-col h-[497px] items-start pb-[48px] pt-[47px] px-[320px] relative shrink-0 w-[1920px]" data-name="Footer">
+    <div className="bg-neutral-100 box-border content-stretch flex flex-col h-[497px] items-center pb-[48px] pt-[47px] px-8 relative shrink-0 w-full" data-name="Footer">
       <Container93 />
     </div>
   );
 }
+
+// Export individual sections
+export { WhySolariis, WhoWeAre, OurServices1, Ideas, Contact, Footer };
 
 export default function SectionsHomepage() {
   return (

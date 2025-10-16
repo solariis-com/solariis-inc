@@ -60,7 +60,7 @@ function Container7() {
 
 function Container8() {
   return (
-    <div className="content-stretch flex flex-col h-full items-start justify-center max-w-[1280px] relative shrink-0 w-[1280px]" data-name="Container">
+    <div className="content-stretch flex flex-col h-full items-start justify-center max-w-[1280px] relative shrink-0 w-full px-8" data-name="Container">
       <Container7 />
     </div>
   );
