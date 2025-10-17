@@ -1,73 +1,73 @@
 export const en = {
   nav: {
     home: "Home",
-    about: "About Us",
+    about: "Mission",
     products: "Services",
     contact: "Contact",
     partnerWithUs: "Start Your Expansion"
   },
   hero: {
-    title: "Strategy, Creativity & Intelligence for Inspiring Brands.",
+    title: "Brand. Strategy. Connection.",
     description:
-      "Solariis is a creative brand expansion lab. We merge digital design, branding, storytelling, and AI-powered technologies to help global brands shine with authenticity in Venezuela. We craft experiences, campaigns, and strategies that inspire and create real connections.",
+      "SOLARIIS is a creative lab and strategic partner for international brands. We blend design, branding, and artificial intelligence to represent, adapt, and make global brands shine in Venezuela.",
     cta: {
-      partner: "Discover How to Expand",
+      partner: "Discover How to Evolve",
       learnMore: "Learn More"
     }
   },
   valueProposition: {
-    title: "Why Choose Solariis",
+    title: "Why Shine with SOLARIIS",
     subtitle:
-      "We combine experience, creativity, and technological intelligence to build global brands that adapt, thrive, and connect authentically with the Venezuelan market.",
+      "More than representing brands, we create, drive, and grow them. Where a brand's light is born, SOLARIIS is there. We create experiences, identities, and products that transcend borders.",
     culturalBridge: {
       title: "Global Brand Ambassadors",
       description:
-        "We represent and develop international brands with strategic vision and cultural sensitivity, creating bridges between global and local markets."
+        "We accompany local and international brands in their evolution. We combine strategy, design, and cultural vision to build presence and real connection in every market."
     },
     regulatoryExpertise: {
-      title: "Strategic Branding & Creativity",
+      title: "Branding & Strategic Creativity",
       description:
-        "Over two decades in design, branding, and communication allow us to elevate each brand with purpose, coherence, and a strong visual narrative."
+        "With over two decades of experience in design, branding, and communication, we create and develop brands, products, and campaigns with coherence, vision, and a visual identity that connects and endures."
     },
     aiPowered: {
       title: "Applied Intelligence & Technology",
       description:
-        "We use artificial intelligence and predictive analysis to understand trends, consumers, and opportunities with precision."
+        "We integrate artificial intelligence, predictive analysis, and technological development to anticipate trends, understand audiences, and create digital solutions that drive growth and brand connection."
     },
     creativeSolutions: {
-      title: "Local Knowledge, Real Presence",
+      title: "Localization & Sustainable Expansion",
       description:
-        "We are based in Venezuela and understand its commercial and cultural dynamics. We build sustainable partnerships with national distributors."
+        "We transform global brands into local experiences. With intelligent localization and valuable partnerships, we achieve expansion with real connection and lasting presence."
     }
   },
   services: {
     title: "Our Services",
     subtitle:
-      "We integrate strategy, design, communication, and technology to drive international brands in their expansion across Venezuela and Latin America.",
+      "We combine strategy, design, and AI-powered technology to create, transform, and expand brands that evolve with the world.",
     import: {
       title: "Strategy & Positioning",
       description:
-        "We define purpose, voice, and positioning to connect global vision with local relevance."
+        "We define the essence, voice, and approach of each brand to connect global vision with local relevance."
     },
     distribution: {
       title: "Branding & Integrated Design",
       description:
-        "We create coherent, memorable visual identities across physical and digital formats."
+        "We create coherent and memorable visual identities across all physical and digital formats."
     },
     branding: {
       title: "Digital Design & Experiences",
       description:
-        "We design websites, platforms, and mobile applications with strategic and aesthetic focus."
+        "We design websites, platforms, and applications with balance between strategy, functionality, and aesthetics."
     },
     marketAnalysis: {
       title: "Marketing & Creative Campaigns",
       description:
-        "We blend storytelling, art, and strategy to connect brands with audiences through content and digital media."
+        "We combine storytelling, art, and strategy to create content that inspires, connects, and strengthens relationships with audiences."
     },
     creative: {
-      title: "Market Intelligence & AI",
+      title: "Applied Artificial Intelligence",
       description:
-        "We analyze data and behaviors using AI to anticipate trends and optimize decisions."
+        "We apply AI to analyze, create, and connect: from content generation and sentiment analysis to intelligent brand experiences."
     },
     aiScouting: {
       title: "Representation & Partnerships",
@@ -76,31 +76,31 @@ export const en = {
     }
   },
   about: {
-    title: "About Us",
+    title: "Who We Are",
     description:
-      "Solariis is a Venezuelan firm specialized in brand expansion and international representation. Our essence combines strategy, creativity, and technology to build strong, relevant, and future-ready brands. We were born from over two decades of experience in branding, design, technology, innovation, and digital product development, with one vision: connecting global brands to the potential of the Venezuelan market through intelligent creativity and flawless execution.",
+      "SOLARIIS is a creative brand and technology lab born in Venezuela with global vision. We create and transform brands and products that connect cultures, markets, and generations. We merge strategy, design, and artificial intelligence to build relevant, future-ready identities.",
     features: {
       aiDriven: {
-        title: "Our Vision",
+        title: "Our Mission",
         description:
-          "To be the most trusted strategic partner for international brands seeking to grow in Venezuela and Latin America, combining creative intelligence, advanced technology, and local knowledge to generate sustainable and differentiated value."
+          "We exist to create brands that cross borders and come to life in new markets. We are creative and technological partners who drive the expansion of global brands in Venezuela with intelligence, design, and cultural vision."
       },
       creative: {
         title: "Our Experience",
         description:
-          "The Solariis team has collaborated with leading companies and brands across industries such as fintech, blockchain, technology, consumer goods, health, communication, and entertainment. Our expertise spans brand audits, perception analysis, digital design, product development, web strategies, and integrated branding—combining aesthetic vision with business insight."
+          "Our team brings together over two decades of expertise in branding, design, communication, and digital development. We've worked alongside leading brands in Fintech, Blockchain, Consumer Goods, Health, Technology, and Entertainment, contributing strategic vision and creative excellence to every project."
       },
       alwaysOn: {
-        title: "Our Commitment",
+        title: "Our Essence",
         description:
-          "At Solariis, we transform experience into innovation. We design strategies, brands, and products driven by intelligence, creativity, and purpose—turning every expansion into a story of impact and genuine connection."
+          "Our essence lies in creating with intelligence, emotion, and vision. We unite creativity, strategy, and technology to bring brands and experiences to life that connect people, cultures, and markets with authenticity."
       }
     }
   },
   contact: {
-    title: "Ready to take your brand to the next level?",
+    title: "Is Your Brand Ready to Evolve?",
     subtitle:
-      "Let's talk about how Solariis can support your expansion. Our team combines strategy, creativity, and technology to build authentic connections with the Venezuelan market.",
+      "Let's talk about how to transform your vision into a living, relevant brand. At SOLARIIS, listening to you is where everything begins.",
     form: {
       name: "Name",
       brand: "Brand or Company",
@@ -111,7 +111,7 @@ export const en = {
         "Tell us about your brand, your goals, and how you envision your expansion...",
       submit: "Let's Talk",
       successMessage:
-        "Thank you for your interest! Our team will get in touch with you very soon.",
+        "Thank you for your interest! Our team will contact you very soon.",
       errors: {
         nameRequired: "Name must be at least 2 characters long",
         brandRequired: "Brand or company name is required",
@@ -120,16 +120,16 @@ export const en = {
       }
     },
     whatsapp: {
-      title: "Prefer to chat directly?",
+      title: "Let's Talk on WhatsApp?",
       description:
-        "Connect with us on WhatsApp for personalized assistance and quick responses.",
-      button: "Talk with Us on WhatsApp",
+        "We're listening. Every project begins with a conversation.",
+      button: "Chat Now",
       defaultMessage:
-        "Hello! I'd like to talk with Solariis about how to expand my brand in Venezuela.",
+        "Hello! I'd like to talk with Solariis about expanding my brand in Venezuela.",
       toast: {
         success: {
           title: "Message sent successfully!",
-          description: "We'll reply as soon as possible."
+          description: "Thank you for reaching out! We'll respond as soon as possible."
         },
         error: {
           title: "Error sending message",
@@ -141,10 +141,10 @@ export const en = {
   footer: {
     quickLinks: "Quick Links",
     companyInfo: {
-      title: "Solariis Import",
-      tagline: "Strategy, Creativity & Intelligence for Global Brands",
+      title: "SOLARIIS Corp",
+      tagline: "Strategy, Creativity & Artificial Intelligence for Brands That Inspire.",
       description:
-        "At Solariis, we represent, empower, and build brands that transcend borders. We combine local expertise, global vision, and technological innovation to open your path in Venezuela."
+        "From Venezuela, we connect cultures, markets, and ideas. At Solariis, brands become experiences that travel beyond borders."
     },
     contact: {
       email: "info@solariis.com",

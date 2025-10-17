@@ -31,13 +31,31 @@ export function IdeasSection() {
       gradient: "from-orange-600/90 to-red-600/90"
     },
     {
-      tag: language === 'es' ? "Modelos Generados por IA" : "AI-Generated Models",
-      title: language === 'es' ? "Modelos Generados por IA" : "AI-Generated Models",
+      tag: language === 'es' ? "Generación de Imágenes y Videos con IA" : "AI-Generated Images & Videos",
+      title: language === 'es' ? "Generación de Imágenes y Videos con IA" : "AI-Generated Images & Videos",
       description: language === 'es'
-        ? "Creación de modelos visuales únicos usando inteligencia artificial de última generación"
-        : "Creation of unique visual models using cutting-edge artificial intelligence",
+        ? "Creación de contenido visual y audiovisual único usando inteligencia artificial de última generación"
+        : "Creation of unique visual and audiovisual content using cutting-edge artificial intelligence",
       image: project2,
       gradient: "from-purple-600/90 to-pink-600/90"
+    },
+    {
+      tag: language === 'es' ? "Modelos y Campañas Generados por IA" : "AI-Generated Models & Campaigns",
+      title: language === 'es' ? "Modelos y Campañas Generados por IA" : "AI-Generated Models & Campaigns",
+      description: language === 'es'
+        ? "Modelos virtuales y campañas completas creadas con inteligencia artificial para tu marca"
+        : "Virtual models and complete campaigns created with artificial intelligence for your brand",
+      image: project4,
+      gradient: "from-emerald-600/90 to-teal-600/90"
+    },
+    {
+      tag: language === 'es' ? "Campañas Creativas" : "Creative Campaigns",
+      title: language === 'es' ? "Campañas Creativas" : "Creative Campaigns",
+      description: language === 'es'
+        ? "Conceptos innovadores que capturan la atención y dejan huella en tu audiencia"
+        : "Innovative concepts that capture attention and leave a mark on your audience",
+      image: project5,
+      gradient: "from-amber-600/90 to-orange-600/90"
     },
     {
       tag: language === 'es' ? "Campañas de Social Media" : "Social Media Campaigns",
@@ -49,31 +67,13 @@ export function IdeasSection() {
       gradient: "from-blue-600/90 to-cyan-600/90"
     },
     {
-      tag: "Fluid Branding",
-      title: "Fluid Branding",
+      tag: language === 'es' ? "Branding Fluido" : "Fluid Branding",
+      title: language === 'es' ? "Branding Fluido" : "Fluid Branding",
       description: language === 'es'
         ? "Identidades visuales dinámicas que se adaptan a diferentes contextos y plataformas"
         : "Dynamic visual identities that adapt to different contexts and platforms",
-      image: project4,
-      gradient: "from-emerald-600/90 to-teal-600/90"
-    },
-    {
-      tag: language === 'es' ? "Imágenes Generadas por IA" : "AI-Generated Images",
-      title: language === 'es' ? "Imágenes Generadas por IA" : "AI-Generated Images",
-      description: language === 'es'
-        ? "Contenido visual personalizado creado con tecnología de inteligencia artificial"
-        : "Personalized visual content created with artificial intelligence technology",
-      image: project5,
-      gradient: "from-rose-600/90 to-pink-600/90"
-    },
-    {
-      tag: language === 'es' ? "Campañas Creativas" : "Creative Campaigns",
-      title: language === 'es' ? "Campañas Creativas" : "Creative Campaigns",
-      description: language === 'es'
-        ? "Conceptos innovadores que capturan la atención y dejan huella en tu audiencia"
-        : "Innovative concepts that capture attention and leave a mark on your audience",
       image: project6,
-      gradient: "from-amber-600/90 to-orange-600/90"
+      gradient: "from-rose-600/90 to-pink-600/90"
     }
   ];
 
