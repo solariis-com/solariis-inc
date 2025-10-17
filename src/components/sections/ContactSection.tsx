@@ -51,37 +51,40 @@ export function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      // Submit to Netlify Forms
+      // Get form element and prepare data
       const formElement = e.target as HTMLFormElement;
       const formDataToSend = new FormData(formElement);
 
-      const response = await fetch('/', {
+      // Try Netlify Forms submission
+      const response = await fetch(formElement.action || window.location.pathname, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formDataToSend as any).toString(),
       });
 
-      if (!response.ok) {
+      // Accept both success responses and redirects
+      if (response.ok || response.status === 303 || response.status === 301 || response.status === 302) {
+        // Success
+        console.log('Form submitted successfully');
+        toast.success(t.contact.form.successMessage || "Thank you for your interest! We'll get back to you soon.");
+
+        // Clear form
+        setFormData({
+          name: "",
+          brand: "",
+          country: "",
+          email: "",
+          message: ""
+        });
+      } else {
         throw new Error('Form submission failed');
       }
-
-      // Success
-      console.log('Form submitted successfully to Netlify');
-      toast.success(t.contact.form.successMessage || "Thank you for your interest! We'll get back to you soon.");
-
-      // Clear form
-      setFormData({
-        name: "",
-        brand: "",
-        country: "",
-        email: "",
-        message: ""
-      });
     } catch (error) {
       console.error('Form submission error:', error);
+      // Show a more helpful error message
       toast.error(language === 'es'
-        ? 'Error al enviar el formulario. Por favor intenta de nuevo.'
-        : 'Error submitting form. Please try again.');
+        ? 'Hubo un problema al enviar el formulario. Por favor, intenta contactarnos por WhatsApp.'
+        : 'There was a problem submitting the form. Please try contacting us via WhatsApp.');
     } finally {
       setIsSubmitting(false);
     }
@@ -120,6 +123,7 @@ export function ContactSection() {
             <form
               name="contact"
               method="POST"
+              action="/"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
