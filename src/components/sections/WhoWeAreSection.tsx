@@ -112,7 +112,7 @@ const WhoWeAreSection = () => {
   const isSpanish = language === "es";
 
   return (
-    <section className="relative w-full py-24 px-4 bg-[#f5f1ed] overflow-hidden">
+    <section id="about" className="relative w-full py-24 px-4 bg-[#f5f1ed] overflow-hidden">
       {/* Gradient overlay - from top left #F5F5F5 to bottom right #FFEDD5 */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#F5F5F5] to-[#FFEDD5] pointer-events-none" />
 
