@@ -45,31 +45,37 @@ export const en = {
     subtitle:
       "We combine strategy, design, and AI-powered technology to create, transform, and expand brands that evolve with the world.",
     import: {
+      tag: "Brand Strategy",
       title: "Strategy & Positioning",
       description:
         "We define the essence, voice, and approach of each brand to connect global vision with local relevance."
     },
     distribution: {
+      tag: "Fluid Branding",
       title: "Branding & Integrated Design",
       description:
         "We create coherent and memorable visual identities across all physical and digital formats."
     },
     branding: {
+      tag: "UX/UI Web & Mobile Apps",
       title: "Digital Design & Experiences",
       description:
         "We design websites, platforms, and applications with balance between strategy, functionality, and aesthetics."
     },
     marketAnalysis: {
+      tag: "Creative & Content Lab",
       title: "Marketing & Creative Campaigns",
       description:
         "We combine storytelling, art, and strategy to create content that inspires, connects, and strengthens relationships with audiences."
     },
     creative: {
+      tag: "AI & Innovation",
       title: "Applied Artificial Intelligence",
       description:
         "We apply AI to analyze, create, and connect: from content generation and sentiment analysis to intelligent brand experiences."
     },
     aiScouting: {
+      tag: "Brand Expansion & Partnerships",
       title: "Representation & Partnerships",
       description:
         "We act as local partners, managing expansion and strong business relationships in the Venezuelan market."

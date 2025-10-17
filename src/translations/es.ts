@@ -45,31 +45,37 @@ export const es = {
     subtitle:
       "Combinamos estrategia, diseño y tecnología impulsada por inteligencia artificial para crear, transformar y expandir marcas que evolucionan con el mundo.",
     import: {
+      tag: "ESTRATEGIA DE MARCA",
       title: "Estrategia y Posicionamiento",
       description:
         "Definimos la esencia, la voz y el enfoque de cada marca para conectar visión global con relevancia local."
     },
     distribution: {
+      tag: "BRANDING FLUÍDO",
       title: "Branding y Diseño Integral",
       description:
         "Creamos identidades visuales coherentes y memorables en todos los formatos físicos y digitales."
     },
     branding: {
+      tag: "UX/UI Web & Mobile Apps",
       title: "Diseño Digital y Experiencias",
       description:
         "Diseñamos sitios web, plataformas y aplicaciones con equilibrio entre estrategia, funcionalidad y estética."
     },
     marketAnalysis: {
+      tag: "CREATIVIDAD Y CONTENIDO",
       title: "Marketing y Campañas Creativas",
       description:
         "Combinamos storytelling, arte y estrategia para crear contenido que inspira, conecta y fortalece la relación con las audiencias."
     },
     creative: {
+      tag: "INTELIGENCIA ARTIFICIAL E INNOVACIÓN",
       title: "Inteligencia Artificial Aplicada",
       description:
         "Aplicamos IA para analizar, crear y conectar: desde generación de contenido y análisis de sentimiento hasta experiencias inteligentes de marca."
     },
     aiScouting: {
+      tag: "EXPANSIÓN DE MARCA Y LOCALIZACIÓN",
       title: "Representación y Alianzas",
       description:
         "Actuamos como socios locales, gestionando expansión y relaciones comerciales sólidas en el mercado venezolano."

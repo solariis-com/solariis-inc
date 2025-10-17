@@ -9,37 +9,37 @@ export function ServicesSection() {
   const services = [
     {
       Icon: StarIcon,
-      tag: "Brand Strategy",
+      tag: t.services.import.tag,
       title: t.services.import.title,
       description: t.services.import.description
     },
     {
       Icon: MiscIcon,
-      tag: "Fluid Branding",
+      tag: t.services.distribution.tag,
       title: t.services.distribution.title,
       description: t.services.distribution.description
     },
     {
       Icon: MoonIcon,
-      tag: "UX/UI Web & Mobile Apps",
+      tag: t.services.branding.tag,
       title: t.services.branding.title,
       description: t.services.branding.description
     },
     {
       Icon: CodeIcon,
-      tag: "Creative & Content Lab",
+      tag: t.services.marketAnalysis.tag,
       title: t.services.marketAnalysis.title,
       description: t.services.marketAnalysis.description
     },
     {
       Icon: TriangleIcon,
-      tag: "AI & Innovation",
+      tag: t.services.creative.tag,
       title: t.services.creative.title,
       description: t.services.creative.description
     },
     {
       Icon: EllipseIcon,
-      tag: "Brand Expansion & Partnerships",
+      tag: t.services.aiScouting.tag,
       title: t.services.aiScouting.title,
       description: t.services.aiScouting.description
     }
