@@ -3050,7 +3050,7 @@ function Heading11() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Heading 3">
       <div className="flex flex-col font-['Rethink_Sans:Regular',_sans-serif] font-normal justify-center leading-[0] relative shrink-0 text-[28px] text-black w-full">
-        <p className="leading-[36.4px]">Solariis Corp C.A.</p>
+        <p className="leading-[36.4px]">Solariis</p>
       </div>
     </div>
   );
