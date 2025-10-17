@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Label } from "../ui/label";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Loader2 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 import { toast } from "sonner";
@@ -19,8 +19,9 @@ export function ContactSection() {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Basic validation
@@ -46,17 +47,44 @@ export function ContactSection() {
       return;
     }
 
-    // Handle form submission
-    console.log("Form submitted:", formData);
-    // Here you would typically send the data to your backend
-    toast.success(t.contact.form.successMessage || "Thank you for your interest! We'll get back to you soon.");
-    setFormData({
-      name: "",
-      brand: "",
-      country: "",
-      email: "",
-      message: ""
-    });
+    // Start submission
+    setIsSubmitting(true);
+
+    try {
+      // Submit to Netlify Forms
+      const formElement = e.target as HTMLFormElement;
+      const formDataToSend = new FormData(formElement);
+
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formDataToSend as any).toString(),
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
+
+      // Success
+      console.log('Form submitted successfully to Netlify');
+      toast.success(t.contact.form.successMessage || "Thank you for your interest! We'll get back to you soon.");
+
+      // Clear form
+      setFormData({
+        name: "",
+        brand: "",
+        country: "",
+        email: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast.error(language === 'es'
+        ? 'Error al enviar el formulario. Por favor intenta de nuevo.'
+        : 'Error submitting form. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -89,7 +117,22 @@ export function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[48px]">
           {/* Contact Form */}
           <div className="bg-white p-[32px] rounded-[12px] w-full">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-[24px]">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-[24px]"
+            >
+              {/* Hidden fields for Netlify Forms */}
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="hidden">
+                <label>
+                  Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+              </div>
+
               {/* Name and Brand row */}
               <div className="flex gap-[16px]">
                 <div className="flex flex-col gap-[9px] flex-1 pt-[5px]">
@@ -175,9 +218,14 @@ export function ContactSection() {
               {/* Submit button */}
               <Button
                 type="submit"
-                className="w-full h-[40px] bg-[#FF6A00] text-white hover:bg-[#CC5500] rounded-[6px] font-['Rethink_Sans'] font-medium text-[14px] leading-[20px]"
+                disabled={isSubmitting}
+                className="w-full h-[40px] bg-[#FF6A00] text-white hover:bg-[#CC5500] disabled:opacity-50 disabled:cursor-not-allowed rounded-[6px] font-['Rethink_Sans'] font-medium text-[14px] leading-[20px] flex items-center justify-center gap-2"
               >
-                {t.contact.form.submit}
+                {isSubmitting && <Loader2 className="w-4 h-4 animate-spin" />}
+                {isSubmitting
+                  ? (language === 'es' ? 'Enviando...' : 'Sending...')
+                  : t.contact.form.submit
+                }
               </Button>
             </form>
           </div>
